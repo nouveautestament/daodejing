@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html"><b><font color="red">CH35</font></b></a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/35.html"> https://www.daodejing.org/35.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11626">https://ctext.org/dictionary.pl?if=en&id=11626</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/35.htm"> https://www.tao-te-king.org/35.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC35.pdf">http://www.daoisopen.com/downloads/CC35.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#35">https://laozirecited.com/#35</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">執大象，天下往。往而不害，安平大。樂與餌，過客止。道之出口，淡乎其無味，視之不足見，聽之不足聞，用之不足既。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11626" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/zhi2.mp3').play()" class="zh">執</span><span class="pinyin">zhí</span><span class="fr">tenir en main</span><span class="subinfo1"> garder</span><span class="subinfo2"> effectuer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=執">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/執">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=執">#C</a> <a target="_blank" href="https://www.zdic.net/hans/執">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/da4.mp3').play()" class="zh">大</span><span class="pinyin">dà</span><span class="fr">grand</span><span class="subinfo1"> grand, vaste, grand, haut</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=大">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/大">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=大">#C</a> <a target="_blank" href="https://www.zdic.net/hans/大">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xiang4.mp3').play()" class="zh">象</span><span class="pinyin">xiàng</span><span class="fr">éléphant</span><span class="subinfo1"> ivoire</span><span class="subinfo2"> figure, image</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=象">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/象">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=象">#C</a> <a target="_blank" href="https://www.zdic.net/hans/象">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wang3.mp3').play()" class="zh">往</span><span class="pinyin">wǎng</span><span class="fr">allez</span><span class="subinfo1"> partez</span><span class="subinfo2"> passé, autrefois</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=往">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/往">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=往">#C</a> <a target="_blank" href="https://www.zdic.net/hans/往">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wang3.mp3').play()" class="zh">往</span><span class="pinyin">wǎng</span><span class="fr">allez</span><span class="subinfo1"> partez</span><span class="subinfo2"> passé, autrefois</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=往">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/往">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=往">#C</a> <a target="_blank" href="https://www.zdic.net/hans/往">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/er2.mp3').play()" class="zh">而</span><span class="pinyin">ér</span><span class="fr">et</span><span class="subinfo1"> et puis</span><span class="subinfo2"> et pourtant ; mais</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=而">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/而">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=而">#C</a> <a target="_blank" href="https://www.zdic.net/hans/而">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/hai4.mp3').play()" class="zh">害</span><span class="pinyin">hài</span><span class="fr">blesser</span><span class="subinfo1"> nuire</span><span class="subinfo2"> détruire, tuer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=害">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/害">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=害">#C</a> <a target="_blank" href="https://www.zdic.net/hans/害">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/an1.mp3').play()" class="zh">安</span><span class="pinyin">ān</span><span class="fr">paisible</span><span class="subinfo1"> tranquille, tranquille</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=安">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/安">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=安">#C</a> <a target="_blank" href="https://www.zdic.net/hans/安">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ping2.mp3').play()" class="zh">平</span><span class="pinyin">píng</span><span class="fr">plat</span><span class="subinfo1"> de niveau, même </span><span class="subinfo2"> pacifique</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=平">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/平">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=平">#C</a> <a target="_blank" href="https://www.zdic.net/hans/平">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/da4.mp3').play()" class="zh">大</span><span class="pinyin">dà</span><span class="fr">grand</span><span class="subinfo1"> grand, vaste, grand, haut</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=大">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/大">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=大">#C</a> <a target="_blank" href="https://www.zdic.net/hans/大">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/le4.mp3').play()" class="zh">樂</span><span class="pinyin">lè</span><span class="fr">heureux</span><span class="subinfo1"> heureux</span><span class="subinfo2"> agréable; musique</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=樂">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/樂">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=樂">#C</a> <a target="_blank" href="https://www.zdic.net/hans/樂">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu3.mp3').play()" class="zh">與</span><span class="pinyin">yǔ</span><span class="fr">et</span><span class="subinfo1"> avec</span><span class="subinfo2"> à; pour; donner, accorder</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=與">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/與">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=與">#C</a> <a target="_blank" href="https://www.zdic.net/hans/與">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/er3.mp3').play()" class="zh">餌</span><span class="pinyin">ěr</span><span class="fr">appât</span><span class="subinfo1"> appâter, attirer</span><span class="subinfo2"> boulettes</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=餌">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/餌">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=餌">#C</a> <a target="_blank" href="https://www.zdic.net/hans/餌">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/guo4.mp3').play()" class="zh">過</span><span class="pinyin">guò</span><span class="fr">passer</span><span class="subinfo1"> traverser, traverser</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=過">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/過">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=過">#C</a> <a target="_blank" href="https://www.zdic.net/hans/過">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ke4.mp3').play()" class="zh">客</span><span class="pinyin">kè</span><span class="fr">invité</span><span class="subinfo1"> voyageur</span><span class="subinfo2"> client</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=客">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/客">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=客">#C</a> <a target="_blank" href="https://www.zdic.net/hans/客">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi3.mp3').play()" class="zh">止</span><span class="pinyin">zhǐ</span><span class="fr">arrêter</span><span class="subinfo1"> arrêter, renoncer</span><span class="subinfo2"> détenir</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=止">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/止">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=止">#C</a> <a target="_blank" href="https://www.zdic.net/hans/止">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/dao4.mp3').play()" class="zh">道</span><span class="pinyin">dào</span><span class="fr">Voie</span><span class="subinfo1"> chemin, route, rue </span><span class="subinfo2"> méthode, manière ; raconter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=道">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/道">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=道">#C</a> <a target="_blank" href="https://www.zdic.net/hans/道">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chu1.mp3').play()" class="zh">出</span><span class="pinyin">chū</span><span class="fr">sortez</span><span class="subinfo1"> envoyez</span><span class="subinfo2"> rester; produire</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=出">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/出">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=出">#C</a> <a target="_blank" href="https://www.zdic.net/hans/出">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/kou2.mp3').play()" class="zh">口</span><span class="pinyin">kóu</span><span class="fr">bouche</span><span class="subinfo1"> extrémité ouverte</span><span class="subinfo2"> entrée, portail</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=口">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/口">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=口">#C</a> <a target="_blank" href="https://www.zdic.net/hans/口">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/dan4.mp3').play()" class="zh">淡</span><span class="pinyin">dàn</span><span class="fr">faible</span><span class="subinfo1"> aqueux</span><span class="subinfo2"> fade, insipide</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=淡">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/淡">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=淡">#C</a> <a target="_blank" href="https://www.zdic.net/hans/淡">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/hu1.mp3').play()" class="zh">乎</span><span class="pinyin">hū</span><span class="fr">particule finale interrogative ou exclamative</span><span class="subinfo1">-</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=乎">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/乎">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=乎">#C</a> <a target="_blank" href="https://www.zdic.net/hans/乎">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei4.mp3').play()" class="zh">味</span><span class="pinyin">wèi</span><span class="fr">goût</span><span class="subinfo1"> odeur, odeur </span><span class="subinfo2"> délicatesse</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=味">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/味">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=味">#C</a> <a target="_blank" href="https://www.zdic.net/hans/味">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">視</span><span class="pinyin">shì</span><span class="fr">regarder</span><span class="subinfo1"> inspecter, observer, voir</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=視">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/視">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=視">#C</a> <a target="_blank" href="https://www.zdic.net/hans/視">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zu2.mp3').play()" class="zh">足</span><span class="pinyin">zú</span><span class="fr">pied</span><span class="subinfo1"> atteindre, satisfaire, assez</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=足">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/足">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=足">#C</a> <a target="_blank" href="https://www.zdic.net/hans/足">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jian4.mp3').play()" class="zh">見</span><span class="pinyin">jiàn</span><span class="fr">voir</span><span class="subinfo1"> observer, contempler</span><span class="subinfo2"> percevoir</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=見">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/見">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=見">#C</a> <a target="_blank" href="https://www.zdic.net/hans/見">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/ting1.mp3').play()" class="zh">聽</span><span class="pinyin">tīng</span><span class="fr">entendre</span><span class="subinfo1"> écouter</span><span class="subinfo2"> comprendre; obéir</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=聽">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/聽">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=聽">#C</a> <a target="_blank" href="https://www.zdic.net/hans/聽">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zu2.mp3').play()" class="zh">足</span><span class="pinyin">zú</span><span class="fr">pied</span><span class="subinfo1"> atteindre, satisfaire, assez</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=足">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/足">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=足">#C</a> <a target="_blank" href="https://www.zdic.net/hans/足">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wen2.mp3').play()" class="zh">聞</span><span class="pinyin">wén</span><span class="fr">entendre</span><span class="subinfo1"> odeur</span><span class="subinfo2"> faire connaître; nouvelles</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=聞">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/聞">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=聞">#C</a> <a target="_blank" href="https://www.zdic.net/hans/聞">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yong4.mp3').play()" class="zh">用</span><span class="pinyin">yòng</span><span class="fr">utiliser</span><span class="subinfo1"> employer, appliquer, exploiter </span><span class="subinfo2"> utiliser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=用">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/用">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=用">#C</a> <a target="_blank" href="https://www.zdic.net/hans/用">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zu2.mp3').play()" class="zh">足</span><span class="pinyin">zú</span><span class="fr">pied</span><span class="subinfo1"> atteindre, satisfaire, assez</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=足">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/足">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=足">#C</a> <a target="_blank" href="https://www.zdic.net/hans/足">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ji4.mp3').play()" class="zh">既</span><span class="pinyin">jì</span><span class="fr">déjà</span><span class="subinfo1"> de facto</span><span class="subinfo2"> depuis; alors</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=既">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/既">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=既">#C</a> <a target="_blank" href="https://www.zdic.net/hans/既">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('35');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="35" class="trs" style="">tenir en main grand éléphant ， ciel dessous allez 。 allez et ne-pas blesser ， paisible plat grand 。 heureux et appât ， passer invité arrêter 。 Voie de sortez bouche ， faible particule finale interrogative ou exclamative le sien négatif goût ， regarder de ne-pas pied voir ， entendre de ne-pas pied entendre ， utiliser de ne-pas pied déjà 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap35" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 35</b></p><br><p>Celle qui est centrée sur le Tao</p><p>peut aller où elle veut, sans danger.</p><p>Elle perçoit l'harmonie universelle,</p><p>même au milieu de grandes souffrances,</p><p>car elle a trouvé la paix dans son cœur.</p><p>La musique ou l’odeur d’une bonne cuisine</p><p>peuvent inciter les gens à s’arrêter et à apprécier.</p><p>Mais les mots qui évoquent le Tao</p><p>semblent monotones et sans saveur.</p><p>Quand on le cherche, il n’y a rien à voir.</p><p>Quand on l’écoute, il n’y a rien à entendre.</p><p>Quand on l’utilise, il est inépuisable.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_35" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XXXV</b><br><br><p>Le Saint garde<a href="#ancrage_35-1"><small><sup><span id="lien_35-1">&#160;(1)</span></sup></small></a> la grande image (le Tao), et tous les peuples de l’empire accourent à lui.</p><p>Ils accourent, et il ne leur fait point de mal&#160;; il leur procure la paix, le calme et la quiétude.</p><p>La musique et les mets exquis retiennent l’étranger qui passe<a href="#ancrage_35-2"><small><sup><span id="lien_35-2">&#160;(2)</span></sup></small></a>.</p><p>Mais lorsque le Tao sort de notre bouche, il est fade et sans saveur.</p><p>On le regarde et l’on ne peut le voir&#160;; on l’écoute et l’on ne peut l’entendre&#160;; on l’emploie et l’on ne peut l’épuiser.</p><p><br /> </p><div style="text-align:center;clear:both;">NOTES.</div><br><p><a href="#lien_35-1"><span id="ancrage_35-1">(1)</span></a> E&#160;: Le mot <i>tchi</i> <span class="lang-zh" style="font-size: 150%;">執</span> veut dire  «&#160;garder, conserver.&#160;» La grande image, c’est le Tao. Le Saint conserve le Tao&#160;; il pratique le  <i>nonagir</i>, et tout l’empire vient se soumettre à lui. L’empire s’étant soumis à lui, le Saint à son tour peut lui procurer de grands avantages,et le faire jouir de la paix, du calme et de la quiétude. Suivant <i>Liu-kie-fou</i>, les mots <i>ngan</i> <span class="lang-zh" style="font-size: 150%;">安</span>, <i>p’ing</i> <span class="lang-zh" style="font-size: 150%;">平</span> et <i>thaï</i> <span class="lang-zh" style="font-size: 150%;">泰</span>, expriment différents degrés de repos&#160;; <i>p’ing</i> <span class="lang-zh" style="font-size: 150%;">平</span> est le superlatif de <i>ngan</i> <span class="lang-zh" style="font-size: 150%;">安</span>, et <i>thaï</i> <span class="lang-zh" style="font-size: 150%;">泰</span> le superlatif de <i>p’ing</i> <span class="lang-zh" style="font-size: 150%;">平</span>. La langue française ne possède pas de mots qui puissent rendre ces différentes nuances. </p><p><a href="#lien_35-2"><span id="ancrage_35-2">(2)</span></a> E et <i>Son-tsen-yeou&#160;: </i>Si l’on fait entendre de la musique, si l’on sert des mets exquis, cela suffit pour arrêter le voyageur qui passe. Mais (B) lorsque la musique a cessé, lorsque les mets exquis sont consommés, le voyageur se retire à la hâte. Cette comparaison montre que les jouissances du siècle sont illusoires et n’ont qu’une faible durée. </p><p>Il n’en est pas de même du Tao. Quoiqu’il ne puisse réjouir nos oreilles ni flatter notre goût (<i>sic</i> et <i>Pi-ching</i>) comme la musique et les mets exquis, (E) dès qu’on l’a adopté et qu’on en fait usage, il peut s’étendre au monde entier et à la postérité la plus reculée.</p><p>La musique et les mets sont quelque chose de trop chétif pour être mis en comparaison avec le Tao. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 35</b><br><br>Celui qui suit le Tao<br>peut parcourir le monde<br>en toute quiétude.<br>Il trouvera partout<br>paix,<br>équilibre,<br>sécurité.<br>Il s'avance,<br>impassible,<br>dans la sérénité.<br>Musique et bonne table<br>attirent le passant.<br>Mais la bouche qui parle du Tao<br>ne le retient pas.<br>Car<br>ce qu'elle dit est sans saveur :<br>on le regarde<br>et on ne le voit pas,<br>on l'écoute,<br>et on ne l'entend pas.<br>Pourtant,<br>celui qui puise dans le Tao<br>a puisé l'inépuisable. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 35</b><br><br>Celui qui est fidèle au grand œuvre (grand symbole, grande image)<br>Le monde vient à lui.<br>S’il vient ainsi et n’en éprouve aucun mal<br>Il trouve paix et équilibre.<br><br>Musique et nourriture<br>Arrêtent celui qui passe<br>Mais la voie qui traverse la bouche<br>Est sans saveur.<br><br>Elle ne peut être vue<br>Elle ne peut être entendue<br>Pourtant elle s’avère inépuisable.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 35</b><br><br>Attachez-vous à la Grande Idée, et le monde avancera. Il avancera sans peine, dans la paix, la sérénité et l'abondance.<br>La musique et la bonne chère attirent le voyageur de passage et il s'arrête. Mais ce qui vient du Tao ne flatte pas le palais, car il est sans saveur. On le regarde, mais cela ne suffit pas pour le voir; on l'écoute, mais cela ne suffi pas pour l'entendre.<br>Si l'on a recours à lui, on ne peut l'épuiser.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 35</b><br><br>Parce qu’il ressemble au grand prototype (le Principe, par son dévouement désintéressé), tous vont au Sage. Il les accueille tous, leur fait du bien, leur donne repos, paix et bonheur.<br>La musique et la bonne chère retiennent pour une nuit seulement un hôte qui passe (les plaisirs sensuels sont passagers et il n’en reste rien). Tandis que l’exposé du grand principe du dévouement désintéressé, simple et sans apprêt, qui ne charme ni les yeux ni les oreilles, plaît, se grave, et est d’une fécondité inépuisable en applications pratiques.<br></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 35</b><br><br><p>Ils tiennent la grande image¹,</p><p>tout le monde y va.</p><p>Ils s'y rendent sans nuire,</p><p>tranquilles, plats, paisibles.</p><p>Joyeux, ils offrent des gâteaux:</p><p>"visiteur, arrête-toi ici."</p><p>Leur voie sort de la bouche,</p><p>fade, elle n'a pas de goût.</p><p>Les regarder sans voir suffisamment,</p><p>les écouter sans entendre suffisamment,</p><p>leur utilité n'est pas suffisante depuis lors.</p><p>1. une procession</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 35</b></p><br><p>Celui qui tient la grande image, tout le monde accourt à</p><p>lui. Ceux qui accourent ne subissent pas de tort, mais demeurent</p><p>en paix et union (avec le ciel et la terre).</p><p>La musique et les appâts font s’arrêter un étranger qui</p><p>passe. Mais les paroles qu’on dit sur la Voie, comme elles</p><p>sont fades et sans saveur ! Regardée, elle ne vaut pas qu’on</p><p>la voie ; écoutée, elle ne vaut pas qu’on l’entende. Mais employée,</p><p>elle ne peut être épuisée.</p><p>***</p><p>Pour l’expression « Image », appliquée à la Voie, comparer XIV, XXI</p><p>et XLI. Je pense que l’idée est le contraire de XXIX : saisir, conquérir</p><p>tout le monde par l’activité. « Union » (avec le ciel et la terre) est mon</p><p>interprétation de t’ai (128), mot que je prends dans le sens qu’il a</p><p>comme désignation du 11e hexagramme du Livre des Mutations, où</p><p>sa signification est définie comme je le fais ici.</p><p>Pour « les paroles », je suis avec Ma Siu louen une vieille leçon yen</p><p>(5) au lieu de k’eou (129) « bouche » ; yen donne une rime avec kien</p><p>(130) « voir » et wen (131) « entendre » ; cette leçon est donc sûre.</p><p>Il semble qu’après l’allusion à la « musique » et aux « appâts » quelque</p><p>chose soit tombé du texte.</p><p>Pour la fin de ce chapitre, voir XIV et Tchouang tseu XXII, 7 (Legge</p><p>11, p. 68 69) : « Nous la regardons, mais il n’y a pas de forme ; nous</p><p>l’écoutons, mais il n’y a pas de son... La Voie ne peut être entendue ;</p><p>ce que l’on entend ne l’est pas. La Voie ne peut être vue ; ce que l’on</p><p>voit ne l’est pas. La Voie ne peut être exprimée ; ce que l’on exprime</p><p>ne l’est pas »</p><p>Les mots pou tsou (132) dans le texte semblent indiquer que la Voie,</p><p>en apparence, « ne vaut pas » être vue ou entendue. La dernière</p><p>phrase (dans laquelle je lis, avec Ho chang kong, « ne peut » au lieu</p><p>de « ne vaut ») est alors une finale inattendue, bien que le contraste</p><p>ne soit exprimé d’aucune façon. Pour la pensée, voir la dernière ligne</p><p>de VI.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

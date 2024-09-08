@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html"><b><font color="red">CH47</font></b></a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/47.html"> https://www.daodejing.org/47.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11638">https://ctext.org/dictionary.pl?if=en&id=11638</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/47.htm"> https://www.tao-te-king.org/47.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC47.pdf">http://www.daoisopen.com/downloads/CC47.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#47">https://laozirecited.com/#47</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">不出戶知天下；不闚牖見天道。其出彌遠，其知彌少。是以聖人不行而知，不見而名，不為而成。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11638" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chu1.mp3').play()" class="zh">出</span><span class="pinyin">chū</span><span class="fr">sortez</span><span class="subinfo1"> envoyez</span><span class="subinfo2"> rester; produire</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=出">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/出">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=出">#C</a> <a target="_blank" href="https://www.zdic.net/hans/出">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/hu4.mp3').play()" class="zh">戶</span><span class="pinyin">hù</span><span class="fr">porte</span><span class="subinfo1"> famille, ménage</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=戶">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/戶">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=戶">#C</a> <a target="_blank" href="https://www.zdic.net/hans/戶">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">知</span><span class="pinyin">zhī</span><span class="fr">connaître</span><span class="subinfo1"> savoir</span><span class="subinfo2"> percevoir, comprendre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=知">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/知">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=知">#C</a> <a target="_blank" href="https://www.zdic.net/hans/知">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/kui1.mp3').play()" class="zh">闚</span><span class="pinyin">kuī</span><span class="fr">éclair</span><span class="subinfo1"> clignotant</span><span class="subinfo2"> voler un regard</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=闚">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/闚">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=闚">#C</a> <a target="_blank" href="https://www.zdic.net/hans/闚">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/you3.mp3').play()" class="zh">牖</span><span class="pinyin">yǒu</span><span class="fr">fenêtre</span><span class="subinfo1"> diriger l’illumination</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=牖">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/牖">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=牖">#C</a> <a target="_blank" href="https://www.zdic.net/hans/牖">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jian4.mp3').play()" class="zh">見</span><span class="pinyin">jiàn</span><span class="fr">voir</span><span class="subinfo1"> observer, contempler</span><span class="subinfo2"> percevoir</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=見">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/見">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=見">#C</a> <a target="_blank" href="https://www.zdic.net/hans/見">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dao4.mp3').play()" class="zh">道</span><span class="pinyin">dào</span><span class="fr">Voie</span><span class="subinfo1"> chemin, route, rue </span><span class="subinfo2"> méthode, manière ; raconter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=道">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/道">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=道">#C</a> <a target="_blank" href="https://www.zdic.net/hans/道">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chu1.mp3').play()" class="zh">出</span><span class="pinyin">chū</span><span class="fr">sortez</span><span class="subinfo1"> envoyez</span><span class="subinfo2"> rester; produire</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=出">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/出">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=出">#C</a> <a target="_blank" href="https://www.zdic.net/hans/出">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/mi2.mp3').play()" class="zh">彌</span><span class="pinyin">mí</span><span class="fr">étendu</span><span class="subinfo1"> plein</span><span class="subinfo2"> remplir; complet</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=彌">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/彌">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=彌">#C</a> <a target="_blank" href="https://www.zdic.net/hans/彌">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yuan3.mp3').play()" class="zh">遠</span><span class="pinyin">yuǎn</span><span class="fr">lointain</span><span class="subinfo1"> éloigné, lointain</span><span class="subinfo2"> profond</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=遠">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/遠">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=遠">#C</a> <a target="_blank" href="https://www.zdic.net/hans/遠">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">知</span><span class="pinyin">zhī</span><span class="fr">connaître</span><span class="subinfo1"> savoir</span><span class="subinfo2"> percevoir, comprendre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=知">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/知">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=知">#C</a> <a target="_blank" href="https://www.zdic.net/hans/知">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/mi2.mp3').play()" class="zh">彌</span><span class="pinyin">mí</span><span class="fr">étendu</span><span class="subinfo1"> plein</span><span class="subinfo2"> remplir; complet</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=彌">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/彌">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=彌">#C</a> <a target="_blank" href="https://www.zdic.net/hans/彌">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shao3.mp3').play()" class="zh">少</span><span class="pinyin">shǎo</span><span class="fr">peu</span><span class="subinfo1"> moins, inadéquat</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=少">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/少">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=少">#C</a> <a target="_blank" href="https://www.zdic.net/hans/少">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng4.mp3').play()" class="zh">聖</span><span class="pinyin">shèng</span><span class="fr">saint</span><span class="subinfo1"> sacré</span><span class="subinfo2"> sage</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=聖">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/聖">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=聖">#C</a> <a target="_blank" href="https://www.zdic.net/hans/聖">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">人</span><span class="pinyin">rén</span><span class="fr">humain</span><span class="subinfo1"> personnes</span><span class="subinfo2"> humanité, homme; quelqu'un d'autre ; tout le monde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=人">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/人">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=人">#C</a> <a target="_blank" href="https://www.zdic.net/hans/人">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xing2.mp3').play()" class="zh">行</span><span class="pinyin">xíng</span><span class="fr">aller</span><span class="subinfo1"> marcher</span><span class="subinfo2"> déménager, voyager; circuler</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=行">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/行">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=行">#C</a> <a target="_blank" href="https://www.zdic.net/hans/行">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/er2.mp3').play()" class="zh">而</span><span class="pinyin">ér</span><span class="fr">et</span><span class="subinfo1"> et puis</span><span class="subinfo2"> et pourtant ; mais</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=而">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/而">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=而">#C</a> <a target="_blank" href="https://www.zdic.net/hans/而">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">知</span><span class="pinyin">zhī</span><span class="fr">connaître</span><span class="subinfo1"> savoir</span><span class="subinfo2"> percevoir, comprendre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=知">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/知">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=知">#C</a> <a target="_blank" href="https://www.zdic.net/hans/知">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jian4.mp3').play()" class="zh">見</span><span class="pinyin">jiàn</span><span class="fr">voir</span><span class="subinfo1"> observer, contempler</span><span class="subinfo2"> percevoir</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=見">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/見">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=見">#C</a> <a target="_blank" href="https://www.zdic.net/hans/見">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/er2.mp3').play()" class="zh">而</span><span class="pinyin">ér</span><span class="fr">et</span><span class="subinfo1"> et puis</span><span class="subinfo2"> et pourtant ; mais</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=而">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/而">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=而">#C</a> <a target="_blank" href="https://www.zdic.net/hans/而">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ming2.mp3').play()" class="zh">名</span><span class="pinyin">míng</span><span class="fr">nom</span><span class="subinfo1"> grade, titre, position</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=名">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/名">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=名">#C</a> <a target="_blank" href="https://www.zdic.net/hans/名">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/er2.mp3').play()" class="zh">而</span><span class="pinyin">ér</span><span class="fr">et</span><span class="subinfo1"> et puis</span><span class="subinfo2"> et pourtant ; mais</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=而">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/而">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=而">#C</a> <a target="_blank" href="https://www.zdic.net/hans/而">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/cheng2.mp3').play()" class="zh">成</span><span class="pinyin">chéng</span><span class="fr">terminé</span><span class="subinfo1"> fini, accomplir</span><span class="subinfo2"> réparé</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=成">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/成">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=成">#C</a> <a target="_blank" href="https://www.zdic.net/hans/成">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('47');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="47" class="trs" style="">ne-pas sortez porte connaître ciel dessous ； ne-pas éclair fenêtre voir ciel Voie 。 le sien sortez étendu lointain ， le sien connaître étendu peu 。 en effet au moyen de saint humain ne-pas aller et connaître ， ne-pas voir et nom ， ne-pas faire et terminé 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap47" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 47</b></p><br><p>Sans ouvrir votre porte,</p><p>vous pouvez ouvrir votre cœur au monde.</p><p>Sans regarder par votre fenêtre,</p><p>vous pouvez voir l'essence du Tao.</p><p>Plus on sait,</p><p>moins on comprend.</p><p>Le Maître arrive sans partir,</p><p>voit la lumière sans regarder,</p><p>accomplit sans rien faire.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_47" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XLVII</b><br><br><p>Sans sortir de ma maison, je connais l’univers<a href="#ancrage_47-1"><small><sup><span id="lien_47-1">&#160;(1)</span></sup></small></a>&#160;; sans regarder par ma fenêtre, je découvre les voies du ciel<a href="#ancrage_47-2"><small><sup><span id="lien_47-2">&#160;(2)</span></sup></small></a>.</p><p>Plus l’on s’éloigne et moins l’on apprend<a href="#ancrage_47-3"><small><sup><span id="lien_47-3">&#160;(3)</span></sup></small></a>.</p><p>C’est pourquoi le sage<a href="#ancrage_47-4"><small><sup><span id="lien_47-4">&#160;(4)</span></sup></small></a> arrive (où il veut) sans marcher&#160;;il nomme les objets sans les voir&#160;; sans agir, il accomplit de grandes choses. </p><br><div style="text-align:center;clear:both;">NOTES.</div><br><p><a href="#lien_47-1"><span id="ancrage_47-1">(1)</span></a> E&#160;: Tous les hommes de l’univers tendent au même but,quoique par des voies diverses. Leurs sentiments ne différent pas des miens. C’est pourquoi, sans sortir de ma maison (littéral. «&#160;de ma porte&#160;» ), je peux connaître l’univers&#160;; sans regarder par ma fenêtre,je peux connaître les voies du ciel. <i>Ibidem&#160;: </i>Ce qu’il y a de plus important pour l’homme réside dans son intérieur, et par conséquent très-près de lui. S’il le cherche au dehors, il s’en éloigne de plus en plus. </p><p><i>Sou-tseu-yeou&#160;: </i>Telle est l’essence de la nature humaine, qu’elle embrasse et parcourt tout l’univers&#160;; elle ne connaît pas l’éloignement ni la proximité du temps ou de l’espace. Le Saint connaît tout sans sortir de sa porte et sans ouvrir sa fenêtre, parce que sa nature est d’une perfection absolue&#160;; mais les hommes du siècle sont aveuglés par les choses matérielles, leur nature est bornée par les limites des sens&#160;; ils sont troublés par leur corps et leur cœur. Extérieurement ils sont arrêtés par les montagnes et les eaux, ils ne voient pas au delà de la portée des yeux, ils n’entendent pas au delà de la portée de leurs oreilles. La plus faible clôture peut paralyser l’exercice de ces deux facultés. </p><p><i>Liu-kie-fou&#160;: </i>L’univers est immense. Il est nécessaire de sortir pour le connaître. Mais l’espace que nous pouvons en parcourir par la force de nos pieds est infiniment peu de chose&#160;; ce que nous pouvons en connaître est très-borné. </p><p>Les voies du ciel ont une étendue incommensurable&#160;; il faut absolument le regarder pour les juger&#160;; mais l’éloignement que nous pouvons atteindre par la force de notre vue est bien limité&#160;; ce que nous pouvons apercevoir est bien exigu. Le Saint connaît la nature de l’univers&#160;; il comprend les voies du ciel, parce qu’il possède tout au dedans de lui-même. </p><br><p><a href="#lien_47-2"><span id="ancrage_47-2">(2)</span></a> Un seul commentateur (C) entend par <i>thien-tao</i> <span class="lang-zh" style="font-size: 150%;">天道</span>(les voies du ciel) les opérations des deux principes <i>In</i> et <i>Yang</i> (femelle et mâle), et les mouvements du soleil et de la lune. </p><br><p><a href="#lien_47-3"><span id="ancrage_47-3">(3)</span></a> H&#160;: Les hommes du monde sont aveuglés par l’intérêt et les passions. Ils s’élancent au dehors pour les satisfaire. L’amour du lucre trouble leur prudence. C’est pourquoi, de jour en jour, ils s’éloignent davantage de leur nature. La poussière des passions s’épaissit davantage de jour en jour, et leur cœur s’obscurcit de plus en plus. C’est pourquoi, plus ils s’éloignent, et plus leurs  connaissances diminuent. Mais le saint homme reste calme et sans désirs&#160;; il ne s’occupe point des choses sensibles, et, en restant en repos, il comprend tous les secrets de l’univers. </p><br><p><a href="#lien_47-4"><span id="ancrage_47-4">(4)</span></a> Les éditions B, E, donnent <i>pou-hing-eul-tchi</i> <span class="lang-zh" style="font-size: 150%;">不行而至</span>(<i>non incedit et pervenit</i>). J’ai préféré ce sens à celui des textes de A et de G, qui portent&#160;: <i>pou-hing-eul-tchi</i> <span class="lang-zh" style="font-size: 150%;">不行而知</span>(<i>non incedit et cognoscit</i>). Suivant A, qui lit <i>tchi</i> <span class="lang-zh" style="font-size: 150%;">知</span> (<i>cognoscit</i>), le Saint n’a pas besoin de monter au ciel ou de descendre dans les abîmes pour connaître le ciel et la terre. Il les connaît par son propre <i>cœur</i>. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 47</b><br><br>Sans franchir sa porte,<br>connaître le monde entier.<br>Sans regarder par la fenêtre,<br>entrevoir le chemin du ciel...<br>Plus on voyage,<br>plus la connaissance s'éloigne.<br>C'est pourquoi<br>le Sage connaît sans se mouvoir,<br>comprend sans examiner<br>et<br>accomplit sans agir. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 47</b><br><br>Sans franchir le seuil<br>Connaître l’univers.<br><br>Sans regarder par la fenêtre<br>Entrevoir la voie du ciel.<br><br>Le plus loin on se rend<br>Moins on connaît.<br><br>Ainsi le sage<br>Connaît<br>Sans avoir besoin de bouger<br>Comprend<br>Sans avoir besoin de regarder<br>Accomplit<br>Sans avoir besoin d’agir.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 47</b><br><br>Sans franchir sa porte, on connaît l'Univers ; sans regarder par sa fenêtre, on voit le Tao duCiel.<br>Plus on sort et s'éloigne de soi, moins on acquiert la connaissance de soi.<br>C'est pourquoi le Saint-homme arrive sans se mouvoir, nomme sans regarder, et accomplit sans agir.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 47</b><br><br>Sans sortir par la porte, on peut connaître tout le monde ; sans regarder par la fenêtre, on peut se rendre compte des voies du ciel (principes qui régissent toutes choses). — Plus on va loin, moins on apprend.<br>Le Sage arrive au but, sans avoir fait un pas pour l’atteindre. Il connaît, avant d’avoir vu, par les principes supérieurs. Il achève, sans avoir agi, par son influence transcendante.<blockquote><span class="KapKom">Commentaires : La connaissance supérieure globale, est celle du Sage. La connaissance des détails, est indigne de lui.</span></blockquote></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 47</b><br><br><p>Connaître le monde,</p><p>sans sortir par la porte.</p><p>Voir la voie du ciel,</p><p>sans l'épier par la fenêtre.</p><p>Sa sortie pénètre loin.</p><p>Sa connaissance pénètre peu de personnes.</p><p>C'est pourquoi l'homme sacré connaît sans se déplacer,</p><p>décrit sans avoir vu,</p><p>accomplit sans agir.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 47</b></p><br><p>Sans sortir de la porte, connaître le monde !</p><p>Sans regarder par la fenêtre, voir la Voie du ciel !</p><p>Plus on sort loin, moins on connaît.</p><p>C’est pourquoi le Saint connaît sans voyager ; il nomme les choses</p><p>sans les voir ; il accomplit sans action.</p><p>***</p><p>La vraie connaissance est acquise par le wou wei, le Non agir. Elle est</p><p>d’une tout autre espèce que la connaissance par l’expérience.</p><p>Il me semble inutile de suivre Ma Siu louen et de changer le caractère</p><p>tche (169) « savoir connaître » en tche (170) « arriver » et de lire :</p><p>« Le Saint arrive sans voyager » au lieu de : « Le Saint connaît sans</p><p>voyager ». « Il nomme les choses » veut dire que le Saint comprend</p><p>la bonne place de toute chose dans l’ordre de l’univers ; il en sait les</p><p>catégories, les « termes ». Han Fei-tseu lit, pour ming (9) « nommer</p><p>», ming (171) « comprendre », ce qui est possible mais plus vague.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

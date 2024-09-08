@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html"><b><font color="red">CH76</font></b></a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/76.html"> https://www.daodejing.org/76.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11667">https://ctext.org/dictionary.pl?if=en&id=11667</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/76.htm"> https://www.tao-te-king.org/76.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC76.pdf">http://www.daoisopen.com/downloads/CC76.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#76">https://laozirecited.com/#76</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">人之生也柔弱，其死也堅強。萬物草木之生也柔脆，其死也枯槁。故堅強者死之徒，柔弱者生之徒。是以兵強則不勝，木強則共。強大處下，柔弱處上。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11667" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">人</span><span class="pinyin">rén</span><span class="fr">humain</span><span class="subinfo1"> personnes</span><span class="subinfo2"> humanité, homme; quelqu'un d'autre ; tout le monde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=人">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/人">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=人">#C</a> <a target="_blank" href="https://www.zdic.net/hans/人">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng1.mp3').play()" class="zh">生</span><span class="pinyin">shēng</span><span class="fr">la vie</span><span class="subinfo1"> la vie, la vie</span><span class="subinfo2"> naissance</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=生">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/生">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=生">#C</a> <a target="_blank" href="https://www.zdic.net/hans/生">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ye3.mp3').play()" class="zh">也</span><span class="pinyin">yě</span><span class="fr">aussi</span><span class="subinfo1"> particule finale classique d'affirmation ou d'identité forte</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=也">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/也">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=也">#C</a> <a target="_blank" href="https://www.zdic.net/hans/也">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/rou2.mp3').play()" class="zh">柔</span><span class="pinyin">róu</span><span class="fr">doux</span><span class="subinfo1"> doux, souple</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=柔">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/柔">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=柔">#C</a> <a target="_blank" href="https://www.zdic.net/hans/柔">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ruo4.mp3').play()" class="zh">弱</span><span class="pinyin">ruò</span><span class="fr">faible</span><span class="subinfo1"> fragile, délicat</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=弱">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/弱">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=弱">#C</a> <a target="_blank" href="https://www.zdic.net/hans/弱">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/si3.mp3').play()" class="zh">死</span><span class="pinyin">sǐ</span><span class="fr">mourir</span><span class="subinfo1"> mort</span><span class="subinfo2"> la mort</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=死">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/死">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=死">#C</a> <a target="_blank" href="https://www.zdic.net/hans/死">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ye3.mp3').play()" class="zh">也</span><span class="pinyin">yě</span><span class="fr">aussi</span><span class="subinfo1"> particule finale classique d'affirmation ou d'identité forte</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=也">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/也">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=也">#C</a> <a target="_blank" href="https://www.zdic.net/hans/也">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jian1.mp3').play()" class="zh">堅</span><span class="pinyin">jiān</span><span class="fr">dur</span><span class="subinfo1"> fort, ferme</span><span class="subinfo2"> résolu</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=堅">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/堅">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=堅">#C</a> <a target="_blank" href="https://www.zdic.net/hans/堅">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qiang2.mp3').play()" class="zh">強</span><span class="pinyin">qiáng</span><span class="fr">fort</span><span class="subinfo1"> puissant, énergique</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=強">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/強">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=強">#C</a> <a target="_blank" href="https://www.zdic.net/hans/強">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wan4.mp3').play()" class="zh">萬</span><span class="pinyin">wàn</span><span class="fr">dix mille</span><span class="subinfo1"> innombrable</span><span class="subinfo2"> myriades</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=萬">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/萬">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=萬">#C</a> <a target="_blank" href="https://www.zdic.net/hans/萬">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu4.mp3').play()" class="zh">物</span><span class="pinyin">wù</span><span class="fr">chose</span><span class="subinfo1"> substance, créature</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=物">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/物">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=物">#C</a> <a target="_blank" href="https://www.zdic.net/hans/物">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/cao3.mp3').play()" class="zh">草</span><span class="pinyin">cǎo</span><span class="fr">herbe</span><span class="subinfo1"> paille, chaume, herbes</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=草">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/草">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=草">#C</a> <a target="_blank" href="https://www.zdic.net/hans/草">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/mu4.mp3').play()" class="zh">木</span><span class="pinyin">mù</span><span class="fr">arbre</span><span class="subinfo1"> bois, charpente</span><span class="subinfo2"> en bois</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=木">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/木">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=木">#C</a> <a target="_blank" href="https://www.zdic.net/hans/木">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng1.mp3').play()" class="zh">生</span><span class="pinyin">shēng</span><span class="fr">la vie</span><span class="subinfo1"> la vie, la vie</span><span class="subinfo2"> naissance</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=生">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/生">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=生">#C</a> <a target="_blank" href="https://www.zdic.net/hans/生">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ye3.mp3').play()" class="zh">也</span><span class="pinyin">yě</span><span class="fr">aussi</span><span class="subinfo1"> particule finale classique d'affirmation ou d'identité forte</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=也">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/也">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=也">#C</a> <a target="_blank" href="https://www.zdic.net/hans/也">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/rou2.mp3').play()" class="zh">柔</span><span class="pinyin">róu</span><span class="fr">doux</span><span class="subinfo1"> doux, souple</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=柔">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/柔">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=柔">#C</a> <a target="_blank" href="https://www.zdic.net/hans/柔">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/cui4.mp3').play()" class="zh">脆</span><span class="pinyin">cuì</span><span class="fr">croustillant</span><span class="subinfo1"> fragile, fragile</span><span class="subinfo2"> fragile</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=脆">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/脆">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=脆">#C</a> <a target="_blank" href="https://www.zdic.net/hans/脆">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/si3.mp3').play()" class="zh">死</span><span class="pinyin">sǐ</span><span class="fr">mourir</span><span class="subinfo1"> mort</span><span class="subinfo2"> la mort</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=死">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/死">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=死">#C</a> <a target="_blank" href="https://www.zdic.net/hans/死">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ye3.mp3').play()" class="zh">也</span><span class="pinyin">yě</span><span class="fr">aussi</span><span class="subinfo1"> particule finale classique d'affirmation ou d'identité forte</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=也">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/也">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=也">#C</a> <a target="_blank" href="https://www.zdic.net/hans/也">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ku1.mp3').play()" class="zh">枯</span><span class="pinyin">kū</span><span class="fr">desséché</span><span class="subinfo1"> flétri, pourri</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=枯">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/枯">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=枯">#C</a> <a target="_blank" href="https://www.zdic.net/hans/枯">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gao3.mp3').play()" class="zh">槁</span><span class="pinyin">gǎo</span><span class="fr">flétrir</span><span class="subinfo1"> flétri, pourri, mort</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=槁">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/槁">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=槁">#C</a> <a target="_blank" href="https://www.zdic.net/hans/槁">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">故</span><span class="pinyin">gù</span><span class="fr">ancien</span><span class="subinfo1"> vieux</span><span class="subinfo2"> raison, parce que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=故">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/故">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=故">#C</a> <a target="_blank" href="https://www.zdic.net/hans/故">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jian1.mp3').play()" class="zh">堅</span><span class="pinyin">jiān</span><span class="fr">dur</span><span class="subinfo1"> fort, ferme</span><span class="subinfo2"> résolu</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=堅">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/堅">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=堅">#C</a> <a target="_blank" href="https://www.zdic.net/hans/堅">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qiang2.mp3').play()" class="zh">強</span><span class="pinyin">qiáng</span><span class="fr">fort</span><span class="subinfo1"> puissant, énergique</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=強">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/強">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=強">#C</a> <a target="_blank" href="https://www.zdic.net/hans/強">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/si3.mp3').play()" class="zh">死</span><span class="pinyin">sǐ</span><span class="fr">mourir</span><span class="subinfo1"> mort</span><span class="subinfo2"> la mort</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=死">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/死">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=死">#C</a> <a target="_blank" href="https://www.zdic.net/hans/死">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tu2.mp3').play()" class="zh">徒</span><span class="pinyin">tú</span><span class="fr">disciple</span><span class="subinfo1"> aller à pied</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=徒">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/徒">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=徒">#C</a> <a target="_blank" href="https://www.zdic.net/hans/徒">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/rou2.mp3').play()" class="zh">柔</span><span class="pinyin">róu</span><span class="fr">doux</span><span class="subinfo1"> doux, souple</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=柔">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/柔">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=柔">#C</a> <a target="_blank" href="https://www.zdic.net/hans/柔">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ruo4.mp3').play()" class="zh">弱</span><span class="pinyin">ruò</span><span class="fr">faible</span><span class="subinfo1"> fragile, délicat</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=弱">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/弱">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=弱">#C</a> <a target="_blank" href="https://www.zdic.net/hans/弱">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng1.mp3').play()" class="zh">生</span><span class="pinyin">shēng</span><span class="fr">la vie</span><span class="subinfo1"> la vie, la vie</span><span class="subinfo2"> naissance</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=生">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/生">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=生">#C</a> <a target="_blank" href="https://www.zdic.net/hans/生">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tu2.mp3').play()" class="zh">徒</span><span class="pinyin">tú</span><span class="fr">disciple</span><span class="subinfo1"> aller à pied</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=徒">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/徒">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=徒">#C</a> <a target="_blank" href="https://www.zdic.net/hans/徒">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bing1.mp3').play()" class="zh">兵</span><span class="pinyin">bīng</span><span class="fr">soldat</span><span class="subinfo1"> troupes</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=兵">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/兵">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=兵">#C</a> <a target="_blank" href="https://www.zdic.net/hans/兵">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qiang2.mp3').play()" class="zh">強</span><span class="pinyin">qiáng</span><span class="fr">fort</span><span class="subinfo1"> puissant, énergique</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=強">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/強">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=強">#C</a> <a target="_blank" href="https://www.zdic.net/hans/強">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ze2.mp3').play()" class="zh">則</span><span class="pinyin">zé</span><span class="fr">règle</span><span class="subinfo1"> loi, réglementation </span><span class="subinfo2"> notes</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=則">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/則">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=則">#C</a> <a target="_blank" href="https://www.zdic.net/hans/則">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng4.mp3').play()" class="zh">勝</span><span class="pinyin">shèng</span><span class="fr">victoire</span><span class="subinfo1"> exceller, être meilleur que</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=勝">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/勝">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=勝">#C</a> <a target="_blank" href="https://www.zdic.net/hans/勝">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/mu4.mp3').play()" class="zh">木</span><span class="pinyin">mù</span><span class="fr">arbre</span><span class="subinfo1"> bois, charpente</span><span class="subinfo2"> en bois</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=木">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/木">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=木">#C</a> <a target="_blank" href="https://www.zdic.net/hans/木">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qiang2.mp3').play()" class="zh">強</span><span class="pinyin">qiáng</span><span class="fr">fort</span><span class="subinfo1"> puissant, énergique</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=強">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/強">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=強">#C</a> <a target="_blank" href="https://www.zdic.net/hans/強">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ze2.mp3').play()" class="zh">則</span><span class="pinyin">zé</span><span class="fr">règle</span><span class="subinfo1"> loi, réglementation </span><span class="subinfo2"> notes</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=則">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/則">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=則">#C</a> <a target="_blank" href="https://www.zdic.net/hans/則">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gong4.mp3').play()" class="zh">共</span><span class="pinyin">gòng</span><span class="fr">avec tout</span><span class="subinfo1"> total </span><span class="subinfo2"> partager</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=共">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/共">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=共">#C</a> <a target="_blank" href="https://www.zdic.net/hans/共">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/qiang2.mp3').play()" class="zh">強</span><span class="pinyin">qiáng</span><span class="fr">fort</span><span class="subinfo1"> puissant, énergique</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=強">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/強">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=強">#C</a> <a target="_blank" href="https://www.zdic.net/hans/強">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/da4.mp3').play()" class="zh">大</span><span class="pinyin">dà</span><span class="fr">grand</span><span class="subinfo1"> grand, vaste, grand, haut</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=大">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/大">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=大">#C</a> <a target="_blank" href="https://www.zdic.net/hans/大">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chu3.mp3').play()" class="zh">處</span><span class="pinyin">chǔ</span><span class="fr">lieu</span><span class="subinfo1"> place, département</span><span class="subinfo2"> prendre place, résider, rester, habiter, traiter avec</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=處">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/處">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=處">#C</a> <a target="_blank" href="https://www.zdic.net/hans/處">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/rou2.mp3').play()" class="zh">柔</span><span class="pinyin">róu</span><span class="fr">doux</span><span class="subinfo1"> doux, souple</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=柔">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/柔">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=柔">#C</a> <a target="_blank" href="https://www.zdic.net/hans/柔">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ruo4.mp3').play()" class="zh">弱</span><span class="pinyin">ruò</span><span class="fr">faible</span><span class="subinfo1"> fragile, délicat</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=弱">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/弱">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=弱">#C</a> <a target="_blank" href="https://www.zdic.net/hans/弱">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chu3.mp3').play()" class="zh">處</span><span class="pinyin">chǔ</span><span class="fr">lieu</span><span class="subinfo1"> place, département</span><span class="subinfo2"> prendre place, résider, rester, habiter, traiter avec</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=處">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/處">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=處">#C</a> <a target="_blank" href="https://www.zdic.net/hans/處">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shang4.mp3').play()" class="zh">上</span><span class="pinyin">shàng</span><span class="fr">haut</span><span class="subinfo1"> supérieur, le plus élevé</span><span class="subinfo2"> monter, envoyer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=上">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/上">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=上">#C</a> <a target="_blank" href="https://www.zdic.net/hans/上">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('76');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="76" class="trs" style="">humain de la vie aussi doux faible ， le sien mourir aussi dur fort 。 dix mille chose herbe arbre de la vie aussi doux croustillant ， le sien mourir aussi desséché flétrir 。 ancien dur fort ce qui mourir de disciple ， doux faible ce qui la vie de disciple 。 en effet au moyen de soldat fort règle ne-pas victoire ， arbre fort règle avec tout 。 fort grand lieu dessous ， doux faible lieu haut 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap76" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 76</b></p><br><p>Les hommes naissent mous et souples ;</p><p>morts, ils sont raides et durs.</p><p>Les plantes naissent tendres et malléables ;</p><p>mortes, elles sont cassantes et sèches.</p><p>Ainsi, quiconque est raide et inflexible</p><p>est un disciple de la mort.</p><p>Quiconque est mou et souple</p><p>est un disciple de la vie.</p><p>Ce qui est dur et rigide sera brisé,</p><p>ce qui est doux et souple l'emportera.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_76" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE LXXVI</b><br><br><p>Quand l’homme vient au monde<a href="#ancrage_76-1"><small><sup><span id="lien_76-1">&#160;(1)</span></sup></small></a>, il est souple et faible&#160;; quand il meurt, il est roide et fort.</p><p>Quand les arbres et les plantes naissent, ils sont souples et tendres&#160;; quand ils meurent, ils sont secs et arides.</p><p>La roideur et la force sont les compagnes de la mort<a href="#ancrage_76-2"><small><sup><span id="lien_76-2">&#160;(2)</span></sup></small></a>&#160;; la souplesse et la faiblesse sont les compagnes de la vie.</p><p>C’est pourquoi, lorsqu’une armée est forte<a href="#ancrage_76-3"><small><sup><span id="lien_76-3">&#160;(3)</span></sup></small></a>, elle ne remporte pas la victoire.</p><p>Lorsqu’un arbre est devenu fort, on l’abat<a href="#ancrage_76-4"><small><sup><span id="lien_76-4">&#160;(4)</span></sup></small></a>.</p><p>Ce qui est fort et grand occupe le rang inférieur&#160;; ce qui est souple et faible occupe le rang supérieur<a href="#ancrage_76-5"><small><sup><span id="lien_76-5">&#160;(5)</span></sup></small></a>. </p><br><div style="text-align:center;clear:both;">NOTES.</div><br><p><a href="#lien_76-1"><span id="ancrage_76-1">(1)</span></a> B&#160;: Quand l’homme vient au monde, le sang circule dans tout son corps, l’harmonie des esprits vitaux est dans sa plénitude. C’est pourquoi ses nerfs sont souples et sa chair est molle. Quand il meurt, son sang se tarit (littéralement «&#160;se dessèche&#160;»), ses veines s’oblitèrent, et l’harmonie des esprits vitaux abandonne son corps. C’est pourquoi ses membres sont roides et forts.</p><p>Quand un arbre naît, sa vitalité est complète, sa séve est abondante.C’est pourquoi il est souple et tendre. Mais quand il dépérit,sa vitalité se dissipe et sa séve se tarit.</p><br><p><a href="#lien_76-2"><span id="ancrage_76-2">(2)</span></a> Plusieurs commentaires m’autorisent à rendre le mot <i>tou</i> <span class="lang-zh" style="font-size: 150%;">徒</span> (<i>vulgo</i> «&#160;piéton, disciple&#160;»), par «&#160;compagne.&#160;» E l’explique par <i>louï</i> <span class="lang-zh" style="font-size: 150%;">類</span>, «&#160;sorte, espèce.&#160;» Selon lui, on traduirait&#160;: «&#160;sont une sorte de mort........ sont une sorte de vie.&#160;» (Cf. <i>supra</i>, chap. <span class="sc">L</span>, note 2, où <i>Yen-kiun-ping</i> l’explique par «&#160;cause,&#160;» sens qu’on pourrait aussi admettre dans ce passage.)</p><p><i>Li-si-tchaï</i>&#160;: Tout ce chapitre a un sens figuré. <i>Lao-tseu</i> veut dire que celui qui se rapproche du Tao par sa souplesse et sa faiblesse est assuré de vivre, et que celui qui s’éloigne du Tao, en recherchant la force et la puissance, en luttant contre les obstacles au lieu de leur céder, périra infailliblement.</p><br><p><a href="#lien_76-3"><span id="ancrage_76-3">(3)</span></a> A&#160;: Une armée forte tente le combat à la légère&#160;; elle aime à tuer les hommes, à répandre des désastres qui lui attirent de nombreuxennemis. Alors tous ceux qui étaient faibles s’associent ensemblecontre elle, et deviennent puissants par leur union. C’est pourquoi celui qui est fort ne remporte pas la victoire.</p><p><i>Liu-kie-fou</i> explique les mots <i>p’ingkhiang</i> <span class="lang-zh" style="font-size: 150%;">兵強</span> par «&#160;celui qui est puissant <i>par les armes</i>.&#160;» Les mots suivants, <i>mou-khiang</i> <span class="lang-zh" style="font-size: 150%;">木強</span>, «&#160;l’arbre est fort,&#160;» sont exactement parallèles et montrent que le mot <i>p’ing</i> <span class="lang-zh" style="font-size: 150%;">兵</span>, «&#160;armes, armée,&#160;» doit être traduit au nominatif (quando <i>exercitus</i> fortis est), et non au cas instrumental (quando quis <i>exercitu</i> fortis est).</p><br><p><a href="#lien_77-4"><span id="ancrage_77-4">(4)</span></a> Le mot <i>kong</i> <span class="lang-zh" style="font-size: 150%;">共</span> (<i>vulgo</i> «&#160;simul&#160;») a beaucoup embarrassé les commentateurs. G conseille de le prendre pour <i>ho-kong</i> <span class="lang-zh" style="font-size: 150%;">拱合</span>dans le sens de «&#160;entourer.&#160;» <i>Tsiao-hong</i>&#160;: On <i>entoure</i> l’arbre pour l’abattre,on l’abat. C’est aussi le sens de B, de C et de <i>Liu-kie-fou</i>.</p><br><p><a href="#lien_77-5"><span id="ancrage_77-5">(5)</span></a> B&#160;: Les êtres vivants qui sont durs et forts perdent leur harmonie vitale et meurent. Il est juste qu’ils occupent le rang inférieur. Ceux qui sont souples et faibles possèdent toute la plénitude de l’harmonie et ils vivent. C’est pourquoi ils occupent le premier rang. On voit par là que la roideur et la force sont l’origine, la cause de notre mort&#160;; et que la souplesse et la faiblesse sont ce qu’il y a de plus important pour entretenir notre vie.</p><p>Le commentateur D donne un autre sens&#160;: par ce qui est <i>dur et fort</i>, il entend ici la partie inférieure du tronc de l’arbre&#160;; par ce qui est <i>souple et faible</i>, il entend les branches minces qui s’élèvent à son sommet. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 76</b><br><br>En naissant,<br>l'homme est fragile et souple.<br>Lorsqu'il meurt,<br>il est dur et raide.<br>En naissant de la terre,<br>les arbres sont tendres et flexibles.<br>Morts, ils deviennent secs et rigides.<br>Rigidité et dureté sont le propre de la mort.<br>Souplesse et fragilité sont le propre de la vie.<br>C'est pourquoi une armée lourde et forte<br>sera défaite, et<br>l'arbre puissant et dur s'abattra tout à coup.<br>Ce qui est grand et fort est en réalité faible,<br>et sera couché au sol.<br>Ce qui est faible et souple est véritablement sublime<br>et s'élèvera au ciel. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 76</b><br><br>Un être humain en vie<br>Est souple et tendre.<br>Mort, il est dur et raide.<br><br>Les herbes et les arbres en vie<br>Sont flexibles et fragiles.<br>Morts, ils sont secs et recroquevillés.<br><br>Ainsi dureté et rigidité<br>Sont compagnons de la mort.<br>Fragilité et souplesse<br>Sont compagnons de la vie.<br><br>Une arme puissante ne vaincra pas.<br>Un arbre solide sera coupé par la hache.<br><br>Il grand et le fort sera abaissé.<br>Le souple et le fargile sera élevé.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 76</b><br><br>Nouveau-né, l'homme est souple et frêle; mort, il est rigide et dur. A leur naissance, les plantes et les arbres sont tendres et flexibles morts, ils sont rigides et durs.<br>Solidité et rigidité sont les compagnes de 1a mort; souplesse et faiblesse sont les compagne de la vie.<br>C'est pourquoi une armée devenue forte ne vaincra pas, un arbre devenu grand sera abattu<br>Ce qui est fort et grand est dans une position inférieure; ce qui est souple et faible est dans une position élevée.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 76</b><br><br>Quand l’homme vient de naître, il est souple et faible (mais plein de vie) ; quand il est devenu fort et puissant, alors il meurt.<br>Il en est de même des végétaux, délicats (her­bacés) à leur naissance, ligneux à leur mort.<br>Celui qui est fort et puissant, est marqué pour la mort ; celui qui est flexible et faible, est marqué pour la vie.<br>L’armée nombreuse sera défaite. Le grand arbre sera abattu.<br>Tout ce qui est fort et grand, est en moins bonne situation. L’avantage est toujours au souple et au faible.<blockquote><span class="KapKom">Chêne et roseau du bon La Fontaine.</span></blockquote></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 76</b><br><br><p>L'homme qui croît est également souple et faible,</p><p>sa mort est également dure et forte.</p><p>Des milliers d'êtres, herbes et arbres qui croissent, sont également souples et fragiles.</p><p>leur mort est également flétrie et sèche.</p><p>Ainsi une personne dure et forte meure en y allant à pied,</p><p>une personne souple et faible croît en y allant à pied,</p><p>C'est pourquoi le soldat fort détruit les règles,</p><p>et l'arbre fort courbe les règles.</p><p>Ce qui est dur et fort reste inférieur,</p><p>ce qui est souple et faible reste supérieur.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 76</b></p><br><p>A sa naissance, l’homme est doux et faible ; à sa mort, il est dur et</p><p>raide (fort).</p><p>Les dix mille êtres, plantes et arbres, pendant leur vie, sont doux et</p><p>fragiles ; à leur mort, ils sont secs et flétris. Car ce qui est dur et raide</p><p>(fort) est un serviteur de la mort ; ce qui est doux et faible est un serviteur</p><p>de la vie.</p><p>Ainsi donc : si une arme est trop raide (forte) elle est détruite ; si un</p><p>arbre est trop raide (fort), il se brise.</p><p>Ce qui est dur et raide est placé en bas ; ce qui est doux et faible est</p><p>placé en haut.</p><p>***</p><p>Ce chapitre contient toute une série de jeux de mots. Le mot cheng</p><p>(35) signifie aussi bien « naissance » « que « vie », et j’ai été obligé</p><p>d’employer ces deux mots différents. Le mot k’iang ou kiang (187)</p><p>signifie « raide » et « fort » et, afin de faire ressortir le jeu de mots, j’ai</p><p>donné la double traduction. La phrase : « Si une arme est trop raide</p><p>(forte), elle est détruite », pourrait tout aussi bien se traduire « Si une</p><p>armée est trop forte », etc. Dans « briser » tchö (236), il y a aussi un</p><p>double sens ; ce mot est un terme technique, « flétrir et mourir », qui</p><p>se dit des plantes.</p><p>J’accepte quelques corrections textuelles. Au lieu de pou cheng (23) «</p><p>ne vainc pas », je lis mie (233) « est détruit » avec Houai-nan¬ tseu et</p><p>Lie tseu, et pour ping (239) « arme » ou kong (240) « ensemble », je</p><p>lis, avec les mêmes auteurs, tchö (236) « briser ». Pour kiang ta (241)</p><p>« raide et grand », j’adopte, avec certains textes, la leçon kien kiang</p><p>(242). Pour les expressions « serviteur de la mort » et « serviteur de</p><p>la vie », voir L.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

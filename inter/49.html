@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html"><b><font color="red">CH49</font></b></a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/49.html"> https://www.daodejing.org/49.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11640">https://ctext.org/dictionary.pl?if=en&id=11640</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/49.htm"> https://www.tao-te-king.org/49.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC49.pdf">http://www.daoisopen.com/downloads/CC49.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#49">https://laozirecited.com/#49</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">聖人無常心，以百姓心為心。善者，吾善之；不善者，吾亦善之；德善。信者，吾信之；不信者，吾亦信之；德信。聖人在天下，歙歙為天下渾其心，百姓皆注其耳目，聖人皆孩之。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11640" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/sheng4.mp3').play()" class="zh">聖</span><span class="pinyin">shèng</span><span class="fr">saint</span><span class="subinfo1"> sacré</span><span class="subinfo2"> sage</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=聖">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/聖">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=聖">#C</a> <a target="_blank" href="https://www.zdic.net/hans/聖">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">人</span><span class="pinyin">rén</span><span class="fr">humain</span><span class="subinfo1"> personnes</span><span class="subinfo2"> humanité, homme; quelqu'un d'autre ; tout le monde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=人">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/人">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=人">#C</a> <a target="_blank" href="https://www.zdic.net/hans/人">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chang2.mp3').play()" class="zh">常</span><span class="pinyin">cháng</span><span class="fr">constant</span><span class="subinfo1"> normal, fréquent, commun, régulier</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=常">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/常">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=常">#C</a> <a target="_blank" href="https://www.zdic.net/hans/常">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin1.mp3').play()" class="zh">心</span><span class="pinyin">xīn</span><span class="fr">cœur</span><span class="subinfo1"> esprit, intelligence</span><span class="subinfo2"> âme</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=心">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/心">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=心">#C</a> <a target="_blank" href="https://www.zdic.net/hans/心">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bai3.mp3').play()" class="zh">百</span><span class="pinyin">bǎi</span><span class="fr">cent</span><span class="subinfo1"> nombreux, beaucoup</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=百">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/百">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=百">#C</a> <a target="_blank" href="https://www.zdic.net/hans/百">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xing4.mp3').play()" class="zh">姓</span><span class="pinyin">xìng</span><span class="fr">son nom de famille </span><span class="subinfo1"> clan, gens</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=姓">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/姓">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=姓">#C</a> <a target="_blank" href="https://www.zdic.net/hans/姓">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin1.mp3').play()" class="zh">心</span><span class="pinyin">xīn</span><span class="fr">cœur</span><span class="subinfo1"> esprit, intelligence</span><span class="subinfo2"> âme</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=心">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/心">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=心">#C</a> <a target="_blank" href="https://www.zdic.net/hans/心">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin1.mp3').play()" class="zh">心</span><span class="pinyin">xīn</span><span class="fr">cœur</span><span class="subinfo1"> esprit, intelligence</span><span class="subinfo2"> âme</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=心">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/心">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=心">#C</a> <a target="_blank" href="https://www.zdic.net/hans/心">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">吾</span><span class="pinyin">wú</span><span class="fr">je</span><span class="subinfo1"> mon, notre</span><span class="subinfo2"> résister, empêcher</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=吾">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/吾">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=吾">#C</a> <a target="_blank" href="https://www.zdic.net/hans/吾">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">吾</span><span class="pinyin">wú</span><span class="fr">je</span><span class="subinfo1"> mon, notre</span><span class="subinfo2"> résister, empêcher</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=吾">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/吾">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=吾">#C</a> <a target="_blank" href="https://www.zdic.net/hans/吾">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi4.mp3').play()" class="zh">亦</span><span class="pinyin">yì</span><span class="fr">aussi aussi</span><span class="subinfo1"> de même</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=亦">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/亦">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=亦">#C</a> <a target="_blank" href="https://www.zdic.net/hans/亦">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/de2.mp3').play()" class="zh">德</span><span class="pinyin">dé</span><span class="fr">éthique</span><span class="subinfo1"> moralité, vertu</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=德">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/德">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=德">#C</a> <a target="_blank" href="https://www.zdic.net/hans/德">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/xin4.mp3').play()" class="zh">信</span><span class="pinyin">xìn</span><span class="fr">faire confiance</span><span class="subinfo1"> croire</span><span class="subinfo2"> lettre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=信">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/信">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=信">#C</a> <a target="_blank" href="https://www.zdic.net/hans/信">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">吾</span><span class="pinyin">wú</span><span class="fr">je</span><span class="subinfo1"> mon, notre</span><span class="subinfo2"> résister, empêcher</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=吾">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/吾">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=吾">#C</a> <a target="_blank" href="https://www.zdic.net/hans/吾">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin4.mp3').play()" class="zh">信</span><span class="pinyin">xìn</span><span class="fr">faire confiance</span><span class="subinfo1"> croire</span><span class="subinfo2"> lettre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=信">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/信">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=信">#C</a> <a target="_blank" href="https://www.zdic.net/hans/信">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin4.mp3').play()" class="zh">信</span><span class="pinyin">xìn</span><span class="fr">faire confiance</span><span class="subinfo1"> croire</span><span class="subinfo2"> lettre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=信">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/信">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=信">#C</a> <a target="_blank" href="https://www.zdic.net/hans/信">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">吾</span><span class="pinyin">wú</span><span class="fr">je</span><span class="subinfo1"> mon, notre</span><span class="subinfo2"> résister, empêcher</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=吾">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/吾">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=吾">#C</a> <a target="_blank" href="https://www.zdic.net/hans/吾">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi4.mp3').play()" class="zh">亦</span><span class="pinyin">yì</span><span class="fr">aussi aussi</span><span class="subinfo1"> de même</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=亦">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/亦">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=亦">#C</a> <a target="_blank" href="https://www.zdic.net/hans/亦">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin4.mp3').play()" class="zh">信</span><span class="pinyin">xìn</span><span class="fr">faire confiance</span><span class="subinfo1"> croire</span><span class="subinfo2"> lettre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=信">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/信">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=信">#C</a> <a target="_blank" href="https://www.zdic.net/hans/信">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/de2.mp3').play()" class="zh">德</span><span class="pinyin">dé</span><span class="fr">éthique</span><span class="subinfo1"> moralité, vertu</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=德">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/德">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=德">#C</a> <a target="_blank" href="https://www.zdic.net/hans/德">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin4.mp3').play()" class="zh">信</span><span class="pinyin">xìn</span><span class="fr">faire confiance</span><span class="subinfo1"> croire</span><span class="subinfo2"> lettre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=信">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/信">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=信">#C</a> <a target="_blank" href="https://www.zdic.net/hans/信">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/sheng4.mp3').play()" class="zh">聖</span><span class="pinyin">shèng</span><span class="fr">saint</span><span class="subinfo1"> sacré</span><span class="subinfo2"> sage</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=聖">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/聖">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=聖">#C</a> <a target="_blank" href="https://www.zdic.net/hans/聖">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">人</span><span class="pinyin">rén</span><span class="fr">humain</span><span class="subinfo1"> personnes</span><span class="subinfo2"> humanité, homme; quelqu'un d'autre ; tout le monde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=人">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/人">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=人">#C</a> <a target="_blank" href="https://www.zdic.net/hans/人">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zai4.mp3').play()" class="zh">在</span><span class="pinyin">zài</span><span class="fr">être à</span><span class="subinfo1"> dans, sur</span><span class="subinfo2"> consister en, repos</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=在">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/在">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=在">#C</a> <a target="_blank" href="https://www.zdic.net/hans/在">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/xi1.mp3').play()" class="zh">歙</span><span class="pinyin">xī</span><span class="fr">sucer</span><span class="subinfo1"> le nom d'un comté dans l'anhui</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=歙">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/歙">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=歙">#C</a> <a target="_blank" href="https://www.zdic.net/hans/歙">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xi1.mp3').play()" class="zh">歙</span><span class="pinyin">xī</span><span class="fr">sucer</span><span class="subinfo1"> le nom d'un comté dans l'anhui</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=歙">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/歙">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=歙">#C</a> <a target="_blank" href="https://www.zdic.net/hans/歙">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/hun2.mp3').play()" class="zh">渾</span><span class="pinyin">hún</span><span class="fr">boueux</span><span class="subinfo1"> trouble</span><span class="subinfo2"> mélanger, fusionner, mélanger</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=渾">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/渾">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=渾">#C</a> <a target="_blank" href="https://www.zdic.net/hans/渾">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin1.mp3').play()" class="zh">心</span><span class="pinyin">xīn</span><span class="fr">cœur</span><span class="subinfo1"> esprit, intelligence</span><span class="subinfo2"> âme</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=心">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/心">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=心">#C</a> <a target="_blank" href="https://www.zdic.net/hans/心">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bai3.mp3').play()" class="zh">百</span><span class="pinyin">bǎi</span><span class="fr">cent</span><span class="subinfo1"> nombreux, beaucoup</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=百">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/百">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=百">#C</a> <a target="_blank" href="https://www.zdic.net/hans/百">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xing4.mp3').play()" class="zh">姓</span><span class="pinyin">xìng</span><span class="fr">son nom de famille </span><span class="subinfo1"> clan, gens</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=姓">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/姓">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=姓">#C</a> <a target="_blank" href="https://www.zdic.net/hans/姓">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jie1.mp3').play()" class="zh">皆</span><span class="pinyin">jiē</span><span class="fr">tout</span><span class="subinfo1"> tout, tout le monde</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=皆">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/皆">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=皆">#C</a> <a target="_blank" href="https://www.zdic.net/hans/皆">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhu4.mp3').play()" class="zh">注</span><span class="pinyin">zhù</span><span class="fr">concentrer</span><span class="subinfo1"> focaliser, diriger</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=注">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/注">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=注">#C</a> <a target="_blank" href="https://www.zdic.net/hans/注">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/er3.mp3').play()" class="zh">耳</span><span class="pinyin">ěr</span><span class="fr">oreille</span><span class="subinfo1"> simplement, seulement</span><span class="subinfo2"> poignée</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=耳">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/耳">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=耳">#C</a> <a target="_blank" href="https://www.zdic.net/hans/耳">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/mu4.mp3').play()" class="zh">目</span><span class="pinyin">mù</span><span class="fr">œil</span><span class="subinfo1"> regarde, vois </span><span class="subinfo2"> division, sujet</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=目">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/目">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=目">#C</a> <a target="_blank" href="https://www.zdic.net/hans/目">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/sheng4.mp3').play()" class="zh">聖</span><span class="pinyin">shèng</span><span class="fr">saint</span><span class="subinfo1"> sacré</span><span class="subinfo2"> sage</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=聖">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/聖">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=聖">#C</a> <a target="_blank" href="https://www.zdic.net/hans/聖">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">人</span><span class="pinyin">rén</span><span class="fr">humain</span><span class="subinfo1"> personnes</span><span class="subinfo2"> humanité, homme; quelqu'un d'autre ; tout le monde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=人">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/人">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=人">#C</a> <a target="_blank" href="https://www.zdic.net/hans/人">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jie1.mp3').play()" class="zh">皆</span><span class="pinyin">jiē</span><span class="fr">tout</span><span class="subinfo1"> tout, tout le monde</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=皆">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/皆">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=皆">#C</a> <a target="_blank" href="https://www.zdic.net/hans/皆">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/hai2.mp3').play()" class="zh">孩</span><span class="pinyin">hái</span><span class="fr">bébé</span><span class="subinfo1"> enfant</span><span class="subinfo2"> enfants</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=孩">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/孩">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=孩">#C</a> <a target="_blank" href="https://www.zdic.net/hans/孩">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('49');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="49" class="trs" style="">saint humain négatif constant cœur ， au moyen de cent son nom de famille  cœur faire cœur 。 bon ce qui ， je bon de ； ne-pas bon ce qui ， je aussi aussi bon de ； éthique bon 。 faire confiance ce qui ， je faire confiance de ； ne-pas faire confiance ce qui ， je aussi aussi faire confiance de ； éthique faire confiance 。 saint humain être à ciel dessous ， sucer sucer faire ciel dessous boueux le sien cœur ， cent son nom de famille  tout concentrer le sien oreille œil ， saint humain tout bébé de 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap49" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 49</b></p><br><p>Le Maître n’a pas d’esprit propre.</p><p>Il travaille avec l’esprit des gens.</p><p>Elle est bonne envers les gens qui sont bons.</p><p>Elle est également bonne envers les gens qui ne sont pas bons.</p><p>C'est ça la vraie bonté.</p><p>Elle fait confiance aux personnes qui lui sont dignes de confiance.</p><p>Elle fait également confiance à celles qui ne le sont pas.</p><p>C'est ça la véritable confiance.</p><p>L'esprit du Maître est comme l'espace.</p><p>Les gens ne la comprennent pas.</p><p>Ils la regardent et attendent.</p><p>Elle les traite comme ses propres enfants.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_49" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XLIX</b><br><br><p>Le Saint n’a point de sentiments immuables. Il adopte les sentiments du peuple<a href="#ancrage_49-1"><small><sup><span id="lien_49-1">&#160;(1)</span></sup></small></a></p><p>Celui qui est vertueux, il<a href="#ancrage_49-2"><small><sup><span id="lien_49-2">&#160;(2)</span></sup></small></a> le traite comme un homme vertueux&#160;; celui qui n’est pas vertueux, il le traite aussi comme un homme vertueux. C’est là le comble de la vertu<a href="#ancrage_49-3"><small><sup><span id="lien_49-3">&#160;(3)</span></sup></small></a>.</p><p>Celui qui est sincère, il le traite comme un homme sincère&#160;; celui qui n’est pas sincère, il le traite aussi comme un homme sincère. C’est là le comble de la sincérité. </p><p>Le Saint vivant dans le monde reste calme et tranquille,et conserve<a href="#ancrage_49-4"><small><sup><span id="lien_49-4">&#160;(4)</span></sup></small></a> les mêmes sentiments pour tous.</p><p>Les cent familles attachent sur lui leurs oreilles et leurs yeux. </p><p>Le Saint regarde le peuple comme un enfant<a href="#ancrage_49-5"><small><sup><span id="lien_49-5">&#160;(5)</span></sup></small></a>.</p><br><div style="text-align:center;clear:both;">NOTES.</div> <br><p><a href="#lien_49-1"><span id="ancrage_49-1">(1)</span></a> B&#160;: Il gouverne en se conformant aux mœurs du peuple&#160;; il ne froisse point ses affections et règle ses sentiments sur les siens.</p><br><p><a href="#lien_49-2"><span id="ancrage_49-2">(2)</span></a> <i>Sou-tseu&#160;: </i>Il n’a point de sentiments déterminés&#160;; il base ses sentiments sur ceux du peuple. Que les hommes soient vertueux ou dénués de vertu, il les traite tous comme des gens vertueux&#160;;qu’ils soient sincères ou hypocrites, il les traite tous comme des gens sincères (E&#160;: Il ne met aucune différence entre eux). Il sait que la vertu ou le vice, la sincérité ou l’hypocrisie résident en eux&#160;;c’est pourquoi ses sentiments ne changent point. S’il en était autrement,s’il traitait les hommes vertueux comme tels, et rejetait les hommes dénués de vertu&#160;; s’il traitait les hommes sincères comme tels, et repoussait les hypocrites, pourrait-on dire qu’il sait constamment sauver les hommes&#160;? C’est pourquoi il ne repousse personne. Dans le monde, les bons et les méchants, les gens sincères et les hypocrites s’approuvent eux-mêmes, tandis qu’ils se calomnient et se déchirent les uns les autres. Le Saint les traite tous de la même manière. Il ne se réjouit point à la vue des bons&#160;; il ne témoigne point de déplaisir à la vue des méchants. De cette manière, les uns (les bons) ne s’enorgueillissent point, les autres (les méchants) ne s’irritent point. Alors tous se convertissent, et le monde commence à goûter la paix. </p><p>Littéralement «&#160;je le traite, etc.&#160;» <i>Lao-tseu</i> emploie quatre fois le pronom <span class="lang-zh" style="font-size: 150%;">吾</span> <i>ou</i>, «&#160;je&#160;» avant les verbes <i>regarder comme vertueux</i>,<i>regarder comme sincère</i>. La première phrase m’a engagé à mettre ces verbes à la troisième personne du singulier de l’indicatif. Ce passage a reçu une autre interprétation. B&#160;: Si quelqu’un est vertueux, j’imite sa vertu&#160;; si quelqu’un n’est pas vertueux, je l’accueille avec un sentiment de vertu, afin qu’il revienne à la vertu. Si quelqu’un est sincère, j’imite sa sincérité. Si quelqu’un n’est pas sincère, je le traite avec sincérité, afin qu’il revienne à la sincérité.</p><br><p><a href="#lien_49-3"><span id="ancrage_49-3">(3)</span></a> J’ai suivi E&#160;: Tel est son mérite (<i>te</i> <span class="lang-zh" style="font-size: 150%;">徳</span>), qu’on peut l’appeler extrêmement vertueux (<i>tchi-chen</i> <span class="lang-zh" style="font-size: 150%;">至善</span>), extrêmement sincère (<i>tchi-sin</i> <span class="lang-zh" style="font-size: 150%;">至信</span>).</p><p>L’édition B offre la leçon <i>te</i> <span class="lang-zh" style="font-size: 150%;">得</span> «&#160;posséder,&#160;» au lieu de <i>te</i> <span class="lang-zh" style="font-size: 150%;">徳</span> «&#160;mérite&#160;»&#160;: «&#160;Il <i>possède</i> la vertu, il <i>possède</i> la sincérité.&#160;»</p><br><p><a href="#lien_49-4"><span id="ancrage_49-4">(4)</span></a> E&#160;: Cette expression veut dire qu’il traite les hommes pervers et hypocrites comme s’ils étaient vertueux et sincères, et ne met aucune différence entre eux. </p><br><p><a href="#lien_49-5"><span id="ancrage_49-5">(5)</span></a> E&#160;: Le peuple voyant que le Saint semble ne pas distinguer les bons des méchants, n’en peut sonder le motif et le regarde avec étonnement&#160;; c’est pourquoi il attache sur lui ses oreilles et ses yeux. De son côté le Saint regarde le peuple comme un enfant. Il sait qu’il est dépourvu de connaissance comme un enfant. En effet, un enfant a des vues trop bornées pour comprendre la conduite d’un grand homme. De même le peuple ne saurait sonder et comprendre les voies du Saint. </p><p><i>Aliter</i> B&#160;: Le peuple admire les exemples du Saint, il écoute avidement ses paroles, il le contemple avec respect, il a confiance en lui, il l’aime comme un père et une mère. De son côté, le Saint craint de blesser le peuple, il le conserve avec sollicitude et le chérit comme un enfant qui vient de naître. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 49</b><br><br>Le Sage<br>n'a pas de conscience propre,<br>il est la conscience de l'univers.<br>Il est bon avec le juste,<br>mais bon aussi<br>avec celui qui ne l'est pas,<br>car la plus grande vertu<br>est la bonté.<br>Il est loyal avec le fidèle,<br>loyal aussi<br>avec celui qui ne l'est pas,<br>car la plus grande vertu<br>est la loyauté.<br>Le Sage est humble et modeste<br>aux yeux du plus grand nombre.<br>Il paraît faible et désarmé.<br>Mais le peuple retient son souffle<br>et<br>se fait attentif<br>devant cet homme<br>semblable à un petit enfant.<br>Car son coeur<br>peut contenir<br>le monde entier. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 49</b><br><br>Le sage n’a pas de conscience personnelle<br>Il fait sienne la conscience d’autrui.<br><br>Bon avec les bons,<br>Bon avec les malintentionnés,<br>Car la vertu est bonté.<br><br>Loyal face à la fidélité,<br>Loyal face à l’infidélité,<br>Car la vertu est loyauté.<br><br>L’existence du sage<br>Bouleverse l’esprit du peuple<br>Et l’unifie.<br>Le peuple tourne ainsi vers lui<br>Yeux et oreilles<br>Et le sage<br>Le traite comme son enfant.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 49</b><br><br>Le Saint-Homme n'a pas un coeur immuable, parce qu'il est le coeur des coeurs des Cent familles.<br>Je suis bon pour qui est bon et je suis bon avec qui ne l'est pas. C'est la bonté de la Vertu, certes! Je suis sincère avec celui qui est sincère et sincère avec celui qui ne l'est pas.C'est la véracité de la Vertu, certes !<br>Le Saint-Homme vivant dans le monde est craintif 1 craintif! parce que son coeur est celui du monde entier : dans les Cent familles tous le regardent et l'écoutent Tous sont ses enfants.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 49</b><br><br>Le Sage n’a pas de volonté déterminée ; il s’ac­commode à la volonté du peuple. Il traite également bien les bons et les mauvais, ce qui est la vraie bonté pratique. Il a également confiance dans les sincères et les non-sincères ; ce qui est la vraie con­fiance pratique.<br>Dans ce monde mélangé, le Sage est sans émo­tion aucune, et a les mêmes sentiments pour tous. Tous les hommes fixent sur lui leurs yeux et leurs oreilles. Il les traite tous comme des enfants, (bien­veillance taoïste, quelque peu méprisante).<br></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 49</b><br><br><p>L'homme sacré n'a pas d'esprit permanent,</p><p>pour que l'esprit soit formé par l'esprit d'une multitude de personnes.</p><p>-"Je suis bon à l'égard des bons,</p><p>je suis bon également envers ceux qui ne le sont pas.</p><p>La vertu, c'est la bonté."</p><p>-"Je fais confiance aux personnes de confiance,</p><p>je fais confiance également aux personnes qui ne le sont pas.</p><p>La vertu, c'est la confiance."</p><p>L'homme sacré se tient sous le ciel,</p><p>se serrer, se resserrer rend son esprit boueux¹ sous le ciel.</p><p>Une multitude de personnes se déversent entièrement dans ses oreilles et ses yeux.</p><p>L'homme sacré est entièrement enfant.</p><p>1. Hun signifie également stupide, simple.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 49</b></p><br><p>Le Saint n’a pas le coeur constant. Du coeur du peuple il fait son coeur,</p><p>(disant) : « L’homme bon, je le traite avec bonté, et celui qui n’est pas</p><p>bon, je le traite aussi avec bonté ; ainsi j’obtiens bonté. L’homme de</p><p>bonne foi, je le traite avec bonne foi, et celui qui manque de bonne foi,</p><p>je le traite aussi avec bonne foi ; ainsi j’obtiens bonne foi ».</p><p>Le Saint se conduit dans l’empire de telle sorte que, sans faire de différence,</p><p>il rend son coeur impartial pour l’empire. Le peuple tourne</p><p>ses yeux et ses oreilles vers lui, et il le traite comme un nourrisson.</p><p>***</p><p>Pour la pensée, comparer le chapitre XXVII. « Le Saint n’a pas le coeur</p><p>constant » veut dire qu’il n’a pas de préjugés. Le Saint est moralement</p><p>indifférent. Il attache la même valeur au bien et au mal et maintient</p><p>la même conduite envers tous les hommes, soient ils bons ou</p><p>mauvais.</p><p>Dans : « Ainsi j’obtiens que (tous) soient bons (sincères) », je lis avec</p><p>les commentaires tö (93) « obtenir » pour tö (46) « vertu ». Les deux</p><p>sont souvent confondus ; voir aussi XXIII. Pour le sens de chan (155)</p><p>avec un objet personnel : « traiter avec bonté, être bien avec », comparer</p><p>également LXXIX. Sin (65) « bonne foi » avec un objet personnel,</p><p>a le sens de « traiter avec bonne foi ».</p><p>« Il rend son coeur impartial », littéralement : « chaotique » : c’est à</p><p>dire de nouveau libre de préjugés. Kao Heng croit que ceci s’applique</p><p>au peuple, mais je n’y vois pas d’avantage. Le peuple qui dépend entièrement</p><p>de lui est maintenu par le Saint, par le sage souverain, dans</p><p>un état d’ignorance, comme un nourrisson. Voir aussi III.</p><p>La phrase : « Le peuple tourne ses yeux et ses oreilles vers lui », ne se</p><p>trouve pas dans le texte de Wang Pi, elle est tirée de celui de Ho chang</p><p>kong, et rend la phrase beaucoup plus compréhensible.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

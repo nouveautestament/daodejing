@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html"><b><font color="red">CH08</font></b></a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/8.html"> https://www.daodejing.org/8.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11599">https://ctext.org/dictionary.pl?if=en&id=11599</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/8.htm"> https://www.tao-te-king.org/8.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC8.pdf">http://www.daoisopen.com/downloads/CC8.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#8">https://laozirecited.com/#8</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">上善若水。水善利萬物而不爭，處衆人之所惡，故幾於道。居善地，心善淵，與善仁，言善信，正善治，事善能，動善時。夫唯不爭，故無尤。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11599" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/shang4.mp3').play()" class="zh">上</span><span class="pinyin">shàng</span><span class="fr">haut</span><span class="subinfo1"> supérieur, le plus élevé</span><span class="subinfo2"> monter, envoyer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=上">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/上">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=上">#C</a> <a target="_blank" href="https://www.zdic.net/hans/上">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ruo4.mp3').play()" class="zh">若</span><span class="pinyin">ruò</span><span class="fr">semble</span><span class="subinfo1"> si, en supposant</span><span class="subinfo2"> similaire</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=若">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/若">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=若">#C</a> <a target="_blank" href="https://www.zdic.net/hans/若">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shui3.mp3').play()" class="zh">水</span><span class="pinyin">shuǐ</span><span class="fr">eau</span><span class="subinfo1"> liquide, lotion, jus</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=水">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/水">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=水">#C</a> <a target="_blank" href="https://www.zdic.net/hans/水">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shui3.mp3').play()" class="zh">水</span><span class="pinyin">shuǐ</span><span class="fr">eau</span><span class="subinfo1"> liquide, lotion, jus</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=水">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/水">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=水">#C</a> <a target="_blank" href="https://www.zdic.net/hans/水">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/li4.mp3').play()" class="zh">利</span><span class="pinyin">lì</span><span class="fr">gains</span><span class="subinfo1"> avantage, profit, mérite</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=利">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/利">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=利">#C</a> <a target="_blank" href="https://www.zdic.net/hans/利">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wan4.mp3').play()" class="zh">萬</span><span class="pinyin">wàn</span><span class="fr">dix mille</span><span class="subinfo1"> innombrable</span><span class="subinfo2"> myriades</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=萬">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/萬">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=萬">#C</a> <a target="_blank" href="https://www.zdic.net/hans/萬">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu4.mp3').play()" class="zh">物</span><span class="pinyin">wù</span><span class="fr">chose</span><span class="subinfo1"> substance, créature</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=物">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/物">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=物">#C</a> <a target="_blank" href="https://www.zdic.net/hans/物">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/er2.mp3').play()" class="zh">而</span><span class="pinyin">ér</span><span class="fr">et</span><span class="subinfo1"> et puis</span><span class="subinfo2"> et pourtant ; mais</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=而">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/而">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=而">#C</a> <a target="_blank" href="https://www.zdic.net/hans/而">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zheng1.mp3').play()" class="zh">爭</span><span class="pinyin">zhēng</span><span class="fr">disputer</span><span class="subinfo1"> se battre, rivaliser, s'efforcer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=爭">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/爭">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=爭">#C</a> <a target="_blank" href="https://www.zdic.net/hans/爭">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/chu3.mp3').play()" class="zh">處</span><span class="pinyin">chǔ</span><span class="fr">lieu</span><span class="subinfo1"> place, département</span><span class="subinfo2"> prendre place, résider, rester, habiter, traiter avec</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=處">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/處">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=處">#C</a> <a target="_blank" href="https://www.zdic.net/hans/處">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhong4.mp3').play()" class="zh">衆</span><span class="pinyin">zhòng</span><span class="fr">multitude</span><span class="subinfo1"> foule</span><span class="subinfo2"> messes, public</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=衆">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/衆">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=衆">#C</a> <a target="_blank" href="https://www.zdic.net/hans/衆">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">人</span><span class="pinyin">rén</span><span class="fr">humain</span><span class="subinfo1"> personnes</span><span class="subinfo2"> humanité, homme; quelqu'un d'autre ; tout le monde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=人">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/人">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=人">#C</a> <a target="_blank" href="https://www.zdic.net/hans/人">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/suo3.mp3').play()" class="zh">所</span><span class="pinyin">suǒ</span><span class="fr">lieu</span><span class="subinfo1"> emplacement</span><span class="subinfo2"> complément numérique</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=所">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/所">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=所">#C</a> <a target="_blank" href="https://www.zdic.net/hans/所">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/e4.mp3').play()" class="zh">惡</span><span class="pinyin">è</span><span class="fr">mal</span><span class="subinfo1"> méchant, mauvais</span><span class="subinfo2"> moche, immonde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=惡">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/惡">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=惡">#C</a> <a target="_blank" href="https://www.zdic.net/hans/惡">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">故</span><span class="pinyin">gù</span><span class="fr">ancien</span><span class="subinfo1"> vieux</span><span class="subinfo2"> raison, parce que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=故">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/故">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=故">#C</a> <a target="_blank" href="https://www.zdic.net/hans/故">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ji3.mp3').play()" class="zh">幾</span><span class="pinyin">jǐ</span><span class="fr">combien? combien?</span><span class="subinfo1"> quelques-uns, certains</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=幾">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/幾">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=幾">#C</a> <a target="_blank" href="https://www.zdic.net/hans/幾">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu2.mp3').play()" class="zh">於</span><span class="pinyin">yú</span><span class="fr">dans</span><span class="subinfo1"> à, sur</span><span class="subinfo2"> interjection hélas !</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=於">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/於">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=於">#C</a> <a target="_blank" href="https://www.zdic.net/hans/於">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dao4.mp3').play()" class="zh">道</span><span class="pinyin">dào</span><span class="fr">Voie</span><span class="subinfo1"> chemin, route, rue </span><span class="subinfo2"> méthode, manière ; raconter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=道">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/道">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=道">#C</a> <a target="_blank" href="https://www.zdic.net/hans/道">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/ju1.mp3').play()" class="zh">居</span><span class="pinyin">jū</span><span class="fr">vivre</span><span class="subinfo1"> habiter, résider, s'asseoir</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=居">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/居">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=居">#C</a> <a target="_blank" href="https://www.zdic.net/hans/居">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/di4.mp3').play()" class="zh">地</span><span class="pinyin">dì</span><span class="fr">Terre</span><span class="subinfo1"> sol, sol</span><span class="subinfo2"> région</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=地">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/地">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=地">#C</a> <a target="_blank" href="https://www.zdic.net/hans/地">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/xin1.mp3').play()" class="zh">心</span><span class="pinyin">xīn</span><span class="fr">cœur</span><span class="subinfo1"> esprit, intelligence</span><span class="subinfo2"> âme</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=心">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/心">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=心">#C</a> <a target="_blank" href="https://www.zdic.net/hans/心">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yuan1.mp3').play()" class="zh">淵</span><span class="pinyin">yuān</span><span class="fr">golfe</span><span class="subinfo1"> abîme, profond</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=淵">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/淵">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=淵">#C</a> <a target="_blank" href="https://www.zdic.net/hans/淵">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yu3.mp3').play()" class="zh">與</span><span class="pinyin">yǔ</span><span class="fr">et</span><span class="subinfo1"> avec</span><span class="subinfo2"> à; pour; donner, accorder</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=與">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/與">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=與">#C</a> <a target="_blank" href="https://www.zdic.net/hans/與">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">仁</span><span class="pinyin">rén</span><span class="fr">humanité</span><span class="subinfo1"> bienveillance, gentillesse</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=仁">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/仁">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=仁">#C</a> <a target="_blank" href="https://www.zdic.net/hans/仁">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yan2.mp3').play()" class="zh">言</span><span class="pinyin">yán</span><span class="fr">parole</span><span class="subinfo1"> mot</span><span class="subinfo2"> parler, dire</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=言">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/言">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=言">#C</a> <a target="_blank" href="https://www.zdic.net/hans/言">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xin4.mp3').play()" class="zh">信</span><span class="pinyin">xìn</span><span class="fr">faire confiance</span><span class="subinfo1"> croire</span><span class="subinfo2"> lettre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=信">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/信">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=信">#C</a> <a target="_blank" href="https://www.zdic.net/hans/信">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/zheng4.mp3').play()" class="zh">正</span><span class="pinyin">zhèng</span><span class="fr">vrai</span><span class="subinfo1"> correct, correct</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=正">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/正">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=正">#C</a> <a target="_blank" href="https://www.zdic.net/hans/正">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi4.mp3').play()" class="zh">治</span><span class="pinyin">zhì</span><span class="fr">gouverner</span><span class="subinfo1"> réglementer, administrer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=治">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/治">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=治">#C</a> <a target="_blank" href="https://www.zdic.net/hans/治">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">事</span><span class="pinyin">shì</span><span class="fr">affaire</span><span class="subinfo1"> faire, servir</span><span class="subinfo2"> accident, incident</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=事">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/事">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=事">#C</a> <a target="_blank" href="https://www.zdic.net/hans/事">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/neng2.mp3').play()" class="zh">能</span><span class="pinyin">néng</span><span class="fr">pouvoir</span><span class="subinfo1"> peut, autorisé à</span><span class="subinfo2"> capacité</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=能">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/能">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=能">#C</a> <a target="_blank" href="https://www.zdic.net/hans/能">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/dong4.mp3').play()" class="zh">動</span><span class="pinyin">dòng</span><span class="fr">bouger</span><span class="subinfo1"> arriver</span><span class="subinfo2"> mouvement, action</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=動">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/動">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=動">#C</a> <a target="_blank" href="https://www.zdic.net/hans/動">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shan4.mp3').play()" class="zh">善</span><span class="pinyin">shàn</span><span class="fr">bon</span><span class="subinfo1"> vertueux, charitable, gentil</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=善">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/善">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=善">#C</a> <a target="_blank" href="https://www.zdic.net/hans/善">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi2.mp3').play()" class="zh">時</span><span class="pinyin">shí</span><span class="fr">heure</span><span class="subinfo1"> saison</span><span class="subinfo2"> époque, âge, période</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=時">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/時">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=時">#C</a> <a target="_blank" href="https://www.zdic.net/hans/時">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/fu2.mp3').play()" class="zh">夫</span><span class="pinyin">fú</span><span class="fr">homme</span><span class="subinfo1"> adulte de sexe masculin, mari </span><span class="subinfo2"> ceci, celui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=夫">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/夫">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=夫">#C</a> <a target="_blank" href="https://www.zdic.net/hans/夫">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">唯</span><span class="pinyin">wéi</span><span class="fr">seulement</span><span class="subinfo1"> Oui</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=唯">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/唯">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=唯">#C</a> <a target="_blank" href="https://www.zdic.net/hans/唯">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zheng1.mp3').play()" class="zh">爭</span><span class="pinyin">zhēng</span><span class="fr">disputer</span><span class="subinfo1"> se battre, rivaliser, s'efforcer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=爭">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/爭">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=爭">#C</a> <a target="_blank" href="https://www.zdic.net/hans/爭">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">故</span><span class="pinyin">gù</span><span class="fr">ancien</span><span class="subinfo1"> vieux</span><span class="subinfo2"> raison, parce que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=故">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/故">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=故">#C</a> <a target="_blank" href="https://www.zdic.net/hans/故">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/you2.mp3').play()" class="zh">尤</span><span class="pinyin">yóu</span><span class="fr">surtout</span><span class="subinfo1"> particulièrement</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=尤">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/尤">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=尤">#C</a> <a target="_blank" href="https://www.zdic.net/hans/尤">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('8');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="8" class="trs" style="">haut bon semble eau 。 eau bon gains dix mille chose et ne-pas disputer ， lieu multitude humain de lieu mal ， ancien combien? combien? dans Voie 。 vivre bon Terre ， cœur bon golfe ， et bon humanité ， parole bon faire confiance ， vrai bon gouverner ， affaire bon pouvoir ， bouger bon heure 。 homme seulement ne-pas disputer ， ancien négatif surtout 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap08" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 8</b></p><br><p>Le bien suprême est comme l'eau</p><p>qui nourrit toutes choses sans effort.</p><p>Il se contente des lieux bas que les hommes dédaignent.</p><p>Il est donc comme le Tao.</p><p>Dans votre logement, vivez près du sol.</p><p>Dans vos pensées, restez simple.</p><p>Dans les conflits, soyez juste et généreux.</p><p>Dans votre gouvernement, n'essayez pas de contrôler.</p><p>Dans votre travail, faites ce qui vous plaît.</p><p>Dans votre vie de famille, soyez pleinement présent.</p><p>Lorsque vous vous contentez d'être simplement vous-même</p><p>et que vous ne comparez ni ne rivalisez,</p><p>tout le monde vous respectera.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_08" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE VIII</b><br><br><p>L’homme d’une vertu supérieure est comme l’eau<a href="#ancrage_08-1"><small><sup><span id="lien_08-1">&#160;(1)</span></sup></small></a>.</p><p>L’eau excelle à faire du bien aux êtres et ne lutte point.</p><p>Elle habite les lieux que déteste la foule<a href="#ancrage_08-2"><small><sup><span id="lien_08-2">&#160;(2)</span></sup></small></a>. </p><p>C’est pourquoi (le sage) approche du Tao<a href="#ancrage_08-3"><small><sup><span id="lien_08-3">&#160;(3)</span></sup></small></a>. </p><p>Il<a href="#ancrage_08-4"><small><sup><span id="lien_08-4">&#160;(4)</span></sup></small></a> se plaît dans la situation la plus humble. </p><p>Son cœur aime à être profond comme un abîme<a href="#ancrage_08-5"><small><sup><span id="lien_08-5">&#160;(5)</span></sup></small></a>. S’il fait des largesses, il excelle à montrer de l’humanité<a href="#ancrage_08-6"><small><sup><span id="lien_08-6">&#160;(6)</span></sup></small></a>.</p><p>S’il parle, il excelle à pratiquer la vérité<a href="#ancrage_08-7"><small><sup><span id="lien_08-7">&#160;(7)</span></sup></small></a>. </p><p>S’il gouverne<a href="#ancrage_08-8"><small><sup><span id="lien_08-8">&#160;(8)</span></sup></small></a>, il excelle à procurer la paix. </p><p>S’il agit<a href="#ancrage_08-9"><small><sup><span id="lien_08-9">&#160;(9)</span></sup></small></a>, il excelle à montrer de la capacité. </p><p>S’il se meut<a href="#ancrage_08-10"><small><sup><span id="lien_08-10">&#160;(10)</span></sup></small></a>, il excelle à se conformer aux temps. </p><p>Il ne lutte contre personne&#160;; c’est pourquoi il ne reçoit aucune marque de blâme<a href="#ancrage_08-11"><small><sup><span id="lien_08-11">&#160; (11)</span></sup></small></a>. </p><br><div style="text-align:center;clear:both;">NOTES.</div> <br><p><a href="#lien_08-1"><span id="ancrage_08-1">(1)</span></a> B&#160;: Telle est la nature de l’eau. Elle est molle et faible&#160;; elle se rend dans les lieux vides et fuit les lieux pleins&#160;; elle remplit les vallées et coule ensuite jusqu’à la mer. Elle ne s’arrête ni le jour ni la nuit. Si elle circule en haut, elle forme la pluie et la rosée&#160;;si elle coule en bas, elle forme les rivières et les fleuves. Les plantes ont besoin d’elle pour vivre, <i>sordidœ res ut mundœ fiant.</i> C’est ainsi que l’eau <i>excelle</i> (<i>chen</i> <span class="lang-zh" style="font-size: 150%;">善</span>) à faire du bien, à se rendre utile à tous les êtres. Si on lui oppose une digue, elle s’arrête&#160;; si on lui ouvre un passage, elle coule. Elle se prête à remplir un vase circulaire ou un vase carré, etc. Voilà pourquoi l’on dit qu’elle ne lutte point. </p><p>Le mot <i>chen</i> <span class="lang-zh" style="font-size: 150%;">善</span> (<i>vulgo</i> bon) a ici le sens de <i>bonus</i> dans <i>bonus dicere versus</i> «&#160;habile à réciter des vers&#160;» de Virgile (<i>Egl.</i> v, 1). Il est parfaitement expliqué par le commentateur <i>Te-thsing&#160;: chouî-tchi-miaotsaî-li-wan-we</i> <span class="lang-zh" style="font-size: 150%;">木之妙在利萬物</span> «&#160;l’<i>excellence</i> de l’eau consiste en ce qu’elle est utile à tous les êtres.&#160;»</p><br><p><a href="#lien_08-2"><span id="ancrage_08-2">(2)</span></a> B&#160;: Les hommes aiment la gloire et abhorrent le déshonneur&#160;;ils aiment l’élévation et détestent l’abaissement. Mais l’eau se précipite vers les lieux bas et se plaît à y habiter&#160;; elle se trouve à son aise dans les lieux que la foule déteste. </p><br><p><a href="#lien_08-3"><span id="ancrage_08-3">(3)</span></a> E&#160;: On peut dire que celui qui est comme l’eau (c’est-à-dire l’homme d’une vertu supérieure) approche presque du Tao.</p><p>B&#160;: Si l’homme peut l’imiter (imiter l’eau), il pourra entrer dans le Tao. </p><p>Plusieurs commentateurs (<i>Sou-tseu-yeou, Liu-kie-fou</i>) me paraissent avoir commis une erreur grave en rapportant à l’eau ce passage et tous les suivants. J’ai suivi F, H, G et <i>Hong-fou</i>. </p><br><p><a href="#lien_08-4"><span id="ancrage_08-4">(4)</span></a> E&#160;: Il fuit l’élévation et aime l’abaissement. Le mot <i>chen</i> <span class="lang-zh" style="font-size: 150%;">善</span> (vulg. <i>bonus</i>) signifie ici «&#160;aimer, être content de&#160;» (<i>sic</i> A <span class="lang-zh" style="font-size: 150%;">喜</span> <i>hi</i>, lætatur). Littéralement, «&#160;pour habitation, il aime la terre.&#160;» </p><br><p><a href="#lien_08-5"><span id="ancrage_08-5">(5)</span></a> E&#160;: Il cache les replis les plus déliés de son cœur&#160;; il est tellement profond qu’on ne pourrait le sonder. C&#160;: Il est vide, pur, tranquille et silencieux. </p><br><p><a href="#lien_08-6"><span id="ancrage_08-6">(6)</span></a> E&#160;: Lorsqu’il répand ses bienfaits, il montre de la tendresse à tous les hommes et n’a d’affection particulière pour personne. </p><br><p><a href="#lien_08-7"><span id="ancrage_08-7">(7)</span></a> Littér. La fidélité dans les paroles. E&#160;: Ses paroles se réalisent et ne sont jamais en défaut. </p><br><p><a href="#lien_08-8"><span id="ancrage_08-8">(8)</span></a> S’il gouverne un royaume, les hommes deviennent purs, tranquilles, et se rectifient d’eux-mêmes. </p><br><p><a href="#lien_08-9"><span id="ancrage_08-9">(9)</span></a> E&#160;: Quand il rencontre une affaire , il s’y prête et s’en acquitte d’une manière convenable, sans faire acception de personne. </p><br><p><a href="#lien_08-10"><span id="ancrage_08-10">(10)</span></a> E&#160;: Soit qu’il faille s’avancer (pour obtenir un emploi) ou se retirer (d’une charge), conserver sa vie ou la sacrifier, il se conforme à la voie du ciel. </p><br><p><a href="#lien_08-11"><span id="ancrage_08-11">(11)</span></a> E&#160;: Telle est en général la cause des luttes entre les hommes&#160;; ils s’estiment sages et cherchent à l’emporter sur les autres. Si quelqu’un veut l’emporter sur (littér. «&#160;vaincre&#160;») les autres, ceux-ci voudront aussi l’emporter sur lui. Pourra-t-il ne pas être blâmé par les autres hommes&#160;? Mais lorsqu’un homme ne songe qu’à être humble et soumis et ne lutte contre personne, la multitude aime à le servir et ne se lasse pas de l’avoir pour roi. Voilà pourquoi il n’est point blâmé. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 8</b><br><br>La grande perfection<br>est comme l'eau.<br>Comme elle,<br>elle dispense ses bienfaits<br>aux dix mille êtres<br>et ignore les luttes.<br>Comme elle,<br>elle se détourne des obstacles<br>et les évite,<br>descend vers la vallée<br>et demeure là<br>où les hommes<br>ne peuvent pas habiter.<br>C'est pourquoi<br>elle est proche du Tao.<br>Dans tout et pour tout,<br>la perfection commande l'humilité.<br>Elle demande au coeur<br>d'être profond comme un puits.<br>Dans les rapports avec les autres<br>elle réclame des trésors de patience.<br>De la parole,<br>elle attend la vérité.<br>Quand il faut gouverner,<br>elle impose la loyauté et l'ordre.<br>Quand il faut agir<br>elle exige la compétence.<br>Elle s'exerce<br>au moment opportun<br>et ne lutte jamais.<br>Ainsi,<br>elle ne peut s'égarer. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 8</b><br><br>L’eau est bienfaisante<br>Elle sert à tous sans différence<br>Coule où personne ne séjourne<br>Et se trouve tout proche du tao.<br><br>Pour une maison l’emplacement est essentiel.<br>Pour la conscience importe la profondeur.<br>Envers un allié importe la bienveillance.<br>Par la parole l’authenticité se révèle.<br>Dans l’art de gouverner se manifeste l’ordre.<br>Dans les affaires compte la capacité.<br>Et l’action juste résulte du choix du moment.<br><br>Ne rivalisant avec personne<br>On reste irréprochable.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 8</b><br><br>La suprême Vertu est comme l'eau. L'eau et la Vertu sont bienfaisantes pour les dix mille êtres et ne luttent pas. Elles occupent les places que les hommes détestent. C'est pourquoi elles sont comparables au Tao.<br>Dans toute situation, la Vertu est humilité; dans le coeur elle est profondeur insondable; dans l'assistance elle est Amour; dans la parole sincérité. Dans le gouvernement, elle est ordre et droiture; dans l'action elle est capacité, et elle se meut avec opportunité.<br>mais elle ne lutte pas; c'est pourquoi elle est irréprochable.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 8</b><br><br>La bonté transcendante est comme l’eau.<br>L’eau aime faire du bien à tous les êtres ; elle ne lutte pour aucune forme ou position définie, mais se met dans les lieux bas dont personne ne veut.<br>En ce faisant, elle est l’image du Principe.<br>A son exemple, ceux qui imitent le Principe, s’abaissent, se creusent ; sont bienfaisants, sincères, réglés, efficaces, et se conforment aux temps. Ils ne luttent pas pour leur intérêt propre, mais cèdent. Aussi n’éprouvent-ils aucune contradiction.<blockquote><span class="KapKom">Ce chapitre continue le précédent. Après l’al­truisme du ciel et de la terre, l’altruisme de l’eau est proposé en exemple. Ko-tchangkeng résume ainsi :  Fuyant les hauteurs, l’eau recherche les profondeurs. Elle n’est oisive, ni le jour, ni la nuit. En haut elle forme la pluie et la rosée, en bas les fleuves et les rivières. Partout elle arrose, elle purifie. Elle fait du bien et est utile à tous. Elle obéit toujours et ne résiste jamais. Si on lui oppose un barrage, elle s’arrête ; si on lui ouvre une écluse, elle s’écoule. Elle s’adapte également à tout récipient, rond, carré, ou autre. — La pente des hommes est toute contraire. Ils aiment naturellement leur profit. Il leur faudrait imiter l’eau. Quiconque s’abaissant servira les autres, sera aimé de tous et n’aura pas de contradicteurs.</span></blockquote></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 8</b><br><br><p>La bonté supérieure est comme l'eau.</p><p>L'eau est bonne et favorable envers des milliers d'êtres, sans rivaliser.</p><p>Elle s'accommode avec de nombreuses personnes d'endroits douteux.</p><p>Ainsi elle est presque sur la voie.</p><p>Réside sur un bon terrain,</p><p>l'esprit dans un bon abîme.</p><p>Donne de bonne grâce</p><p>les mots de bonne confiance.</p><p>La droiture est un bon gouvernement,</p><p>une profession de bon niveau.</p><p>Bouge au bon moment.</p><p>L'époux qui est seul ne rivalise pas,</p><p>ainsi il est irréprochable.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 8</b></p><br><p>La plus haute « bonté » est comme l’eau. La « bonté » de</p><p>l’eau consiste en ce qu’elle porte avantage aux dix mille</p><p>êtres sans lutter. Elle reste à la place (la plus basse) que</p><p>tout homme déteste.</p><p>Voilà pourquoi elle est toute proche de la Voie.</p><p>On considère</p><p>bon pour la demeure, le lieu (favorable) ;</p><p>bonne pour le coeur, la profondeur ;</p><p>bonne pour les rapports sociaux, l’humanité ;</p><p>bonne pour la parole, la bonne foi ;</p><p>bon pour le gouvernement, l’ordre ;</p><p>bonne pour le service, la capacité ;</p><p>bon pour l’action, de saisir le moment favorable.</p><p>En vérité, c’est précisément parce qu’on ne lutte pas qu’on</p><p>peut éviter le blâme.</p><p>***</p><p>Lao tseu se sert ici de son image favorite de l’eau qui, parce qu’elle</p><p>cherche la place la plus basse et porte avantage à toutes choses éga</p><p>lement, est l’image de la Voie. Qu’on compare le commencement de</p><p>LXXVIII, transposé par moi à XLIII, et aussi l’avant dernière ligne de</p><p>LXXVII : « La Voie du ciel porte avantage, mais ne porte pas dommage</p><p>».</p><p>Le mot « bonté » ne doit pas être pris en premier lieu dans un sens</p><p>moral actif ; il indique les bonnes qualités, l’excellence de quelque</p><p>chose, les conditions qui permettent à chaque être de suivre complètement</p><p>sa propre nature.</p><p>La plus haute « bonté » cherche la place la plus basse ; avec des</p><p>exemples pris dans la vie quotidienne on démontre, aussi par rapport</p><p>à la « bonté » de choses ordinaires, qu’il vaut mieux ne pas « s’efforcer</p><p>», c’est à dire lutter, pousser en avant ; la place la plus basse, la</p><p>plus discrète est ici encore la meilleure.</p><p>« En vérité, c’est précisément parce que » est ma traduction de fou</p><p>wei (38), tournure qui est fréquente dans le Tao tö-king.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

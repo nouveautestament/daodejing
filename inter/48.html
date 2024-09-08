@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html"><b><font color="red">CH48</font></b></a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/48.html"> https://www.daodejing.org/48.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11639">https://ctext.org/dictionary.pl?if=en&id=11639</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/48.htm"> https://www.tao-te-king.org/48.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC48.pdf">http://www.daoisopen.com/downloads/CC48.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#48">https://laozirecited.com/#48</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">為學日益，為道日損。損之又損，以至於無為。無為而無不為。取天下常以無事，及其有事，不足以取天下。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11639" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xue2.mp3').play()" class="zh">學</span><span class="pinyin">xué</span><span class="fr">apprentissage</span><span class="subinfo1"> connaissance</span><span class="subinfo2"> école</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=學">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/學">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=學">#C</a> <a target="_blank" href="https://www.zdic.net/hans/學">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ri4.mp3').play()" class="zh">日</span><span class="pinyin">rì</span><span class="fr">soleil</span><span class="subinfo1"> jour</span><span class="subinfo2"> jour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=日">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/日">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=日">#C</a> <a target="_blank" href="https://www.zdic.net/hans/日">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi4.mp3').play()" class="zh">益</span><span class="pinyin">yì</span><span class="fr">profit</span><span class="subinfo1"> avantage</span><span class="subinfo2"> avantage</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=益">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/益">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=益">#C</a> <a target="_blank" href="https://www.zdic.net/hans/益">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dao4.mp3').play()" class="zh">道</span><span class="pinyin">dào</span><span class="fr">Voie</span><span class="subinfo1"> chemin, route, rue </span><span class="subinfo2"> méthode, manière ; raconter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=道">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/道">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=道">#C</a> <a target="_blank" href="https://www.zdic.net/hans/道">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ri4.mp3').play()" class="zh">日</span><span class="pinyin">rì</span><span class="fr">soleil</span><span class="subinfo1"> jour</span><span class="subinfo2"> jour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=日">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/日">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=日">#C</a> <a target="_blank" href="https://www.zdic.net/hans/日">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sun3.mp3').play()" class="zh">損</span><span class="pinyin">sǔn</span><span class="fr">diminuer</span><span class="subinfo1"> porter atteinte</span><span class="subinfo2"> blesser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=損">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/損">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=損">#C</a> <a target="_blank" href="https://www.zdic.net/hans/損">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/sun3.mp3').play()" class="zh">損</span><span class="pinyin">sǔn</span><span class="fr">diminuer</span><span class="subinfo1"> porter atteinte</span><span class="subinfo2"> blesser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=損">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/損">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=損">#C</a> <a target="_blank" href="https://www.zdic.net/hans/損">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/you4.mp3').play()" class="zh">又</span><span class="pinyin">yòu</span><span class="fr">et aussi</span><span class="subinfo1"> encore une fois, en plus</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=又">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/又">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=又">#C</a> <a target="_blank" href="https://www.zdic.net/hans/又">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sun3.mp3').play()" class="zh">損</span><span class="pinyin">sǔn</span><span class="fr">diminuer</span><span class="subinfo1"> porter atteinte</span><span class="subinfo2"> blesser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=損">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/損">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=損">#C</a> <a target="_blank" href="https://www.zdic.net/hans/損">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi4.mp3').play()" class="zh">至</span><span class="pinyin">zhì</span><span class="fr">atteindre</span><span class="subinfo1"> arriver</span><span class="subinfo2"> extrêmement, très</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=至">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/至">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=至">#C</a> <a target="_blank" href="https://www.zdic.net/hans/至">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu2.mp3').play()" class="zh">於</span><span class="pinyin">yú</span><span class="fr">dans</span><span class="subinfo1"> à, sur</span><span class="subinfo2"> interjection hélas !</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=於">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/於">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=於">#C</a> <a target="_blank" href="https://www.zdic.net/hans/於">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/er2.mp3').play()" class="zh">而</span><span class="pinyin">ér</span><span class="fr">et</span><span class="subinfo1"> et puis</span><span class="subinfo2"> et pourtant ; mais</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=而">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/而">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=而">#C</a> <a target="_blank" href="https://www.zdic.net/hans/而">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/qu3.mp3').play()" class="zh">取</span><span class="pinyin">qǔ</span><span class="fr">prendre</span><span class="subinfo1"> recevoir, obtenir</span><span class="subinfo2"> sélectionner</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=取">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/取">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=取">#C</a> <a target="_blank" href="https://www.zdic.net/hans/取">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chang2.mp3').play()" class="zh">常</span><span class="pinyin">cháng</span><span class="fr">constant</span><span class="subinfo1"> normal, fréquent, commun, régulier</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=常">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/常">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=常">#C</a> <a target="_blank" href="https://www.zdic.net/hans/常">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">事</span><span class="pinyin">shì</span><span class="fr">affaire</span><span class="subinfo1"> faire, servir</span><span class="subinfo2"> accident, incident</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=事">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/事">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=事">#C</a> <a target="_blank" href="https://www.zdic.net/hans/事">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/ji2.mp3').play()" class="zh">及</span><span class="pinyin">jí</span><span class="fr">étendre</span><span class="subinfo1"> atteindre</span><span class="subinfo2"> venir à; et</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=及">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/及">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=及">#C</a> <a target="_blank" href="https://www.zdic.net/hans/及">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/you3.mp3').play()" class="zh">有</span><span class="pinyin">yǒu</span><span class="fr">avoir</span><span class="subinfo1"> posséder, posséder</span><span class="subinfo2"> exister</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=有">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/有">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=有">#C</a> <a target="_blank" href="https://www.zdic.net/hans/有">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">事</span><span class="pinyin">shì</span><span class="fr">affaire</span><span class="subinfo1"> faire, servir</span><span class="subinfo2"> accident, incident</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=事">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/事">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=事">#C</a> <a target="_blank" href="https://www.zdic.net/hans/事">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zu2.mp3').play()" class="zh">足</span><span class="pinyin">zú</span><span class="fr">pied</span><span class="subinfo1"> atteindre, satisfaire, assez</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=足">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/足">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=足">#C</a> <a target="_blank" href="https://www.zdic.net/hans/足">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qu3.mp3').play()" class="zh">取</span><span class="pinyin">qǔ</span><span class="fr">prendre</span><span class="subinfo1"> recevoir, obtenir</span><span class="subinfo2"> sélectionner</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=取">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/取">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=取">#C</a> <a target="_blank" href="https://www.zdic.net/hans/取">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('48');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="48" class="trs" style="">faire apprentissage soleil profit ， faire Voie soleil diminuer 。 diminuer de et aussi diminuer ， au moyen de atteindre dans négatif faire 。 négatif faire et négatif ne-pas faire 。 prendre ciel dessous constant au moyen de négatif affaire ， étendre le sien avoir affaire ， ne-pas pied au moyen de prendre ciel dessous 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap48" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 48</b></p><br><p>Dans la quête de la connaissance,</p><p>on ajoute chaque jour quelque chose.</p><p>Dans la pratique du Tao,</p><p>on abandonne chaque jour quelque chose.</p><p>On a de moins en moins besoin de forcer les choses,</p><p>jusqu'à ce qu'on arrive finalement à la non-action.</p><p>Quand on ne fait rien,</p><p>on ne laisse rien de côté.</p><p>La véritable maîtrise s'acquiert</p><p>en laissant les choses suivre leur cours.</p><p>Elle ne s'acquiert pas en intervenant.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_48" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XLVIII</b><br><br><p>Celui qui se livre à l’étude augmente<a href="#ancrage_48-1"><small><sup><span id="lien_48-1">&#160;(1)</span></sup></small></a> chaque jour (ses connaissances).</p><p>Celui qui se livre au Tao diminue chaque jour (ses passions).</p><p>Il les diminue et les diminue<a href="#ancrage_48-2"><small><sup><span id="lien_48-2">&#160;(2)</span></sup></small></a> sans cesse jusqu’à ce qu’il soit arrivé au <i>non-agir</i>.</p><p>Dès qu’il pratique le <i>non-agir</i><a href="#ancrage_48-3"><small><sup><span id="lien_48-3">&#160;(3)</span></sup></small></a> il n’y a rien qui lui soit impossible.</p><p>C’est toujours par le <i>non-agir</i> que l’on devient le maître de l’empire.</p><p>Celui qui aime à <i>agir</i> est incapable de devenir le maître de l’empire<a href="#ancrage_48-4"><small><sup><span id="lien_48-4">&#160;(4)</span></sup></small></a>. </p><br><div style="text-align:center;clear:both;">NOTES.</div> <br><p><a href="#lien_48-1"><span id="ancrage_48-1">(1)</span></a> B&#160;: Celui qui étudie craint toujours que ses connaissances ne soient incomplètes&#160;; c’est pourquoi il travaille sans relâche pour faire des progrès. Celui qui pratique le Tao craint toujours de ne pouvoir se dégager de ses passions&#160;; c’est pourquoi il s’applique sans relâche à déraciner ses désirs. </p><p><a href="#lien_48-2"><span id="ancrage_48-2">(2)</span></a> E&#160;: Le mot <i>sun</i> <span class="lang-zh" style="font-size: 150%;">損</span> veut dire «&#160;diminuer ses passions et revenir au non-agir.&#160;» Les désirs de l’homme sont très-nombreux. Quoiqu’il les diminue chaque jour, il ne peut les détruire promptement&#160;;c’est pourquoi il faut qu’il les diminue sans relâche. Ensuite ses désirs s’épuisent peu à peu, et il parvient au <i>non-agir</i>. Dès qu’il est parvenu au <i>non-agir</i>, il est semblable au Tao. Intérieurement il devient un saint, extérieurement il devient le maître de tout l’empire. </p><br><p><a href="#lien_48-3"><span id="ancrage_48-3">(3)</span></a> E&#160;: L’expression <i>wou-sse</i> <span class="lang-zh" style="font-size: 150%;">無事</span> veut dire ici <i>wou-weî</i> <span class="lang-zh" style="font-size: 150%;">無為</span> «&#160;pratiquer le <i>non-agir</i>.&#160;»</p><p>H&#160;: Celui qui pratique le <i>non-agir</i> est exempt de désirs, Si le roi est exempt de désirs, le peuple se rectifie de lui-même. Lorsque le peuple s’est rectifié de lui-même, l’affection de tout l’empire est acquise au roi. Alors il lui est aussi aisé de bien gouverner l’empire que de regarder dans sa main. On voit par là qu’il suffit de pratiquer le <i>non-agir</i> pour se rendre maître de l’empire.</p><br><p><a href="#lien_48-4"><span id="ancrage_48-4">(4)</span></a> B&#160;: Les hommes de l’empire aiment le repos et la quiétude&#160;;ils abhorrent le trouble et le désordre. Ils se soumettent aux princes justes et humains&#160;; ils abandonnent ceux qui sont violents et cruels. Lorsque le roi se dégage de toute occupation (E&#160;: c’est-à-dire lorsqu’il pratique le <i>non-agir</i>), le peuple goûte la paix, et l’empire se soumet à lui. Lorsqu’il se livre à l’<i>action</i> (A), il fatigue et  tourmente ses sujets par une foule de règlements, et tout l’empire l’abandonne. </p><p>H&#160;: Si le roi se livre à l’<i>action</i>, il a des désirs&#160;; s’il a des désirs, le peuple se trouble et s’agite&#160;; si le peuple se trouble et se livre au désordre, le roi perd l’affection du peuple. Cette affection une fois perdue, la multitude l’abandonne et ses parents le fuient. On voit par là qu’en se livrant à l’<i>action</i> on est incapable de devenir le maître de l’empire. <i>Lao tseu</i> a raison de dire (chap. <span class="sc">xliii</span>) que peu d’hommes sont en état de comprendre l’utilité du <i>non-agir</i>.</p><p>Suivant <i>Ho-chang-kong</i>, le mot <i>thsin</i> <span class="lang-zh" style="font-size: 150%;">取</span> (<i>vulgo</i> prendre) signifie ici <i>tchhi</i> <span class="lang-zh" style="font-size: 150%;">治</span> «&#160;bien gouverner (l’empire).&#160;» </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 48</b><br><br>En s'adonnant à l'étude,<br>on s'accroît chaque jour.<br>En se consacrant à la voie,<br>on diminue chaque jour.<br>Et l'on continue de diminuer<br>jusqu'au jour où l'on cesse d'agir.<br>N'agissant plus,<br>il n'est rien,<br>désormais,<br>qu'on ne puisse accomplir.<br>La conduite du royaume<br>revient<br>à qui demeure au-dessus de l'action.<br>Celui qui lutte<br>pour gagner le royaume<br>ne l'obtient jamais. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 48</b><br><br>Dans l’étude poursuivie<br>On apprend de plus en plus<br>Chaque jour.<br><br>A la poursuite de la voie,<br>On s’appauvrit chaque jour<br><br>De plus en plus,<br>Jusqu’à ce que rien<br>Ne demeure inachevé.<br><br>L’empire se donne toujours<br>A celui qui est au-dessus de l’agitation.<br>Celui qui s’affaire dans l’agitation<br>Demeure incapable de l’obtenir.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 48</b><br><br>En s'adonnant à l'étude, on augmente chaque jour; en se consacrant au TAO, on diminue chaque jour; on ne cesse de diminuer, jusqu'à ce qu'on atteigne le non-agir. Par le non-agir il n'est rien que l'on ne puisse faire, certes !<br>Pour recevoir l'Empire, l'unique moyen est de ne rien faire pour cela. Tant que l'on agit pour y parvenir, on ne peut gagner l'Empire.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 48</b><br><br>Par l’étude, on multiplie chaque jour (dans sa mémoire les notions particulières inutiles et nuisi­bles) ; par la concentration sur le Principe, on les diminue chaque jour. Poussée jusqu’au bout, cette diminution aboutit au non-agir, (suite de l’absence de notions particulières).<br>Or il n’est rien, dont le non-agir (le laisser aller), ne vienne à bout. C’est en n’agissant pas, qu’on gagne l’empire. Agir pour le gagner, fait qu’on ne l’obtient pas.<br></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 48</b><br><br><p>Réaliser une étude, on dit que c'est profitable.</p><p>Réaliser la voie, on dit que c'est décroître,</p><p>décroître et décroître encore,</p><p>pour en arriver au non-agir.</p><p>Sans agir, mais également sans inaction.</p><p>Prendre la permanence du monde, pour être sans affaires.</p><p>S'étendre pour avoir une affaire</p><p>ne suffit pas pour cueillir le monde.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 48</b></p><br><p>Celui qui poursuit l’étude augmente chaque jour.</p><p>Celui qui pratique la Voie diminue chaque jour.</p><p>En diminuant de plus en plus, on arrive au Non agir.</p><p>En n’agissant pas, il n’y a rien qui ne se fasse.</p><p>***</p><p>Ce chapitre est un exposé très clair du principe du Non agir ; voir</p><p>aussi XXXVIL</p><p>Le texte se termine par un paragraphe : « On gagne l’empire » jusqu’à</p><p>« de gagner l’empire », que j’ai transféré, suivant en cela Ma Siu louen,</p><p>au chapitre LVII où il s’accorde beaucoup mieux avec le contexte et,</p><p>d’après sa phraséologie, est parfaitement à sa place ; c’est un cas</p><p>idéal de correction textuelle.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

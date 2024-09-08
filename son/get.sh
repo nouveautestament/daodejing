@@ -1,0 +1,1 @@
+ while read -r line; do wget -q --show-progress "http://www.purpleculture.net/mp3/${line}.mp3"; if [ $? -ne 0 ]; then  echo "---> Échec : $line" ; fi; done < son.txt

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html"><b><font color="red">CH26</font></b></a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/26.html"> https://www.daodejing.org/26.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11617">https://ctext.org/dictionary.pl?if=en&id=11617</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/26.htm"> https://www.tao-te-king.org/26.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC26.pdf">http://www.daoisopen.com/downloads/CC26.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#26">https://laozirecited.com/#26</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">重為輕根，靜為躁君。是以聖人終日行不離輜重。雖有榮觀，燕處超然。奈何萬乘之主，而以身輕天下？輕則失本，躁則失君。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11617" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/zhong4.mp3').play()" class="zh">重</span><span class="pinyin">zhòng</span><span class="fr">lourd</span><span class="subinfo1"> pesant</span><span class="subinfo2"> double</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=重">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/重">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=重">#C</a> <a target="_blank" href="https://www.zdic.net/hans/重">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qing1.mp3').play()" class="zh">輕</span><span class="pinyin">qīng</span><span class="fr">lumière</span><span class="subinfo1"> facile, simple</span><span class="subinfo2"> doux</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=輕">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/輕">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=輕">#C</a> <a target="_blank" href="https://www.zdic.net/hans/輕">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gen1.mp3').play()" class="zh">根</span><span class="pinyin">gēn</span><span class="fr">racine</span><span class="subinfo1"> base(d sur)</span><span class="subinfo2"> fondation</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=根">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/根">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=根">#C</a> <a target="_blank" href="https://www.zdic.net/hans/根">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/jing4.mp3').play()" class="zh">靜</span><span class="pinyin">jìng</span><span class="fr">calme</span><span class="subinfo1"> immobile, immobile </span><span class="subinfo2"> doux</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=靜">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/靜">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=靜">#C</a> <a target="_blank" href="https://www.zdic.net/hans/靜">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zao4.mp3').play()" class="zh">躁</span><span class="pinyin">zào</span><span class="fr">tendu</span><span class="subinfo1"> excité, irritable</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=躁">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/躁">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=躁">#C</a> <a target="_blank" href="https://www.zdic.net/hans/躁">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jun1.mp3').play()" class="zh">君</span><span class="pinyin">jūn</span><span class="fr">souverain</span><span class="subinfo1"> monarque, dirigeant, chef, prince</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=君">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/君">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=君">#C</a> <a target="_blank" href="https://www.zdic.net/hans/君">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng4.mp3').play()" class="zh">聖</span><span class="pinyin">shèng</span><span class="fr">saint</span><span class="subinfo1"> sacré</span><span class="subinfo2"> sage</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=聖">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/聖">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=聖">#C</a> <a target="_blank" href="https://www.zdic.net/hans/聖">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">人</span><span class="pinyin">rén</span><span class="fr">humain</span><span class="subinfo1"> personnes</span><span class="subinfo2"> humanité, homme; quelqu'un d'autre ; tout le monde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=人">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/人">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=人">#C</a> <a target="_blank" href="https://www.zdic.net/hans/人">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhong1.mp3').play()" class="zh">終</span><span class="pinyin">zhōng</span><span class="fr">fin</span><span class="subinfo1"> enfin, à la fin</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=終">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/終">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=終">#C</a> <a target="_blank" href="https://www.zdic.net/hans/終">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ri4.mp3').play()" class="zh">日</span><span class="pinyin">rì</span><span class="fr">soleil</span><span class="subinfo1"> jour</span><span class="subinfo2"> jour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=日">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/日">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=日">#C</a> <a target="_blank" href="https://www.zdic.net/hans/日">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xing2.mp3').play()" class="zh">行</span><span class="pinyin">xíng</span><span class="fr">aller</span><span class="subinfo1"> marcher</span><span class="subinfo2"> déménager, voyager; circuler</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=行">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/行">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=行">#C</a> <a target="_blank" href="https://www.zdic.net/hans/行">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/li2.mp3').play()" class="zh">離</span><span class="pinyin">lí</span><span class="fr">partir</span><span class="subinfo1"> partir</span><span class="subinfo2"> s'en aller; séparé</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=離">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/離">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=離">#C</a> <a target="_blank" href="https://www.zdic.net/hans/離">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zi1.mp3').play()" class="zh">輜</span><span class="pinyin">zī</span><span class="fr">un chariot de ravitaillement</span><span class="subinfo1"> un wagon couvert, un chariot</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=輜">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/輜">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=輜">#C</a> <a target="_blank" href="https://www.zdic.net/hans/輜">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhong4.mp3').play()" class="zh">重</span><span class="pinyin">zhòng</span><span class="fr">lourd</span><span class="subinfo1"> pesant</span><span class="subinfo2"> double</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=重">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/重">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=重">#C</a> <a target="_blank" href="https://www.zdic.net/hans/重">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/sui1.mp3').play()" class="zh">雖</span><span class="pinyin">suī</span><span class="fr">même si</span><span class="subinfo1"> même si</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=雖">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/雖">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=雖">#C</a> <a target="_blank" href="https://www.zdic.net/hans/雖">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/you3.mp3').play()" class="zh">有</span><span class="pinyin">yǒu</span><span class="fr">avoir</span><span class="subinfo1"> posséder, posséder</span><span class="subinfo2"> exister</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=有">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/有">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=有">#C</a> <a target="_blank" href="https://www.zdic.net/hans/有">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/rong2.mp3').play()" class="zh">榮</span><span class="pinyin">róng</span><span class="fr">gloire</span><span class="subinfo1"> honneur</span><span class="subinfo2"> s'épanouir, prospérer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=榮">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/榮">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=榮">#C</a> <a target="_blank" href="https://www.zdic.net/hans/榮">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/guan1.mp3').play()" class="zh">觀</span><span class="pinyin">guān</span><span class="fr">voir</span><span class="subinfo1"> observer</span><span class="subinfo2"> apparence</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=觀">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/觀">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=觀">#C</a> <a target="_blank" href="https://www.zdic.net/hans/觀">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yan4.mp3').play()" class="zh">燕</span><span class="pinyin">yàn</span><span class="fr">hirondelle (oiseau)</span><span class="subinfo1"> confort, profitez</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=燕">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/燕">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=燕">#C</a> <a target="_blank" href="https://www.zdic.net/hans/燕">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chu3.mp3').play()" class="zh">處</span><span class="pinyin">chǔ</span><span class="fr">lieu</span><span class="subinfo1"> place, département</span><span class="subinfo2"> prendre place, résider, rester, habiter, traiter avec</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=處">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/處">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=處">#C</a> <a target="_blank" href="https://www.zdic.net/hans/處">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chao1.mp3').play()" class="zh">超</span><span class="pinyin">chāo</span><span class="fr">sauter par-dessus</span><span class="subinfo1"> sauter par-dessus </span><span class="subinfo2"> dépasser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=超">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/超">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=超">#C</a> <a target="_blank" href="https://www.zdic.net/hans/超">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ran2.mp3').play()" class="zh">然</span><span class="pinyin">rán</span><span class="fr">oui</span><span class="subinfo1"> certainement </span><span class="subinfo2"> gage, promesse</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=然">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/然">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=然">#C</a> <a target="_blank" href="https://www.zdic.net/hans/然">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/nai4.mp3').play()" class="zh">奈</span><span class="pinyin">nài</span><span class="fr">mais comment ? supporter</span><span class="subinfo1"> se tenir debout, endurer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=奈">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/奈">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=奈">#C</a> <a target="_blank" href="https://www.zdic.net/hans/奈">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/he2.mp3').play()" class="zh">何</span><span class="pinyin">hé</span><span class="fr">quoi</span><span class="subinfo1"> pourquoi, où, quoi, comment</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=何">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/何">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=何">#C</a> <a target="_blank" href="https://www.zdic.net/hans/何">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wan4.mp3').play()" class="zh">萬</span><span class="pinyin">wàn</span><span class="fr">dix mille</span><span class="subinfo1"> innombrable</span><span class="subinfo2"> myriades</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=萬">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/萬">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=萬">#C</a> <a target="_blank" href="https://www.zdic.net/hans/萬">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/cheng2.mp3').play()" class="zh">乘</span><span class="pinyin">chéng</span><span class="fr">rouler</span><span class="subinfo1"> monter</span><span class="subinfo2"> profiter de; complément numérique pour véhicules</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=乘">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/乘">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=乘">#C</a> <a target="_blank" href="https://www.zdic.net/hans/乘">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhu3.mp3').play()" class="zh">主</span><span class="pinyin">zhǔ</span><span class="fr">maître</span><span class="subinfo1"> propriétaire en chef </span><span class="subinfo2"> hôte; seigneur</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=主">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/主">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=主">#C</a> <a target="_blank" href="https://www.zdic.net/hans/主">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/er2.mp3').play()" class="zh">而</span><span class="pinyin">ér</span><span class="fr">et</span><span class="subinfo1"> et puis</span><span class="subinfo2"> et pourtant ; mais</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=而">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/而">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=而">#C</a> <a target="_blank" href="https://www.zdic.net/hans/而">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shen1.mp3').play()" class="zh">身</span><span class="pinyin">shēn</span><span class="fr">corps</span><span class="subinfo1"> coffre, coque</span><span class="subinfo2"> rad. Non. 158</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=身">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/身">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=身">#C</a> <a target="_blank" href="https://www.zdic.net/hans/身">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qing1.mp3').play()" class="zh">輕</span><span class="pinyin">qīng</span><span class="fr">lumière</span><span class="subinfo1"> facile, simple</span><span class="subinfo2"> doux</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=輕">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/輕">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=輕">#C</a> <a target="_blank" href="https://www.zdic.net/hans/輕">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span class="zh">？</span><span class="pinyin">&emsp;</span><span class="fr">？</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/qing1.mp3').play()" class="zh">輕</span><span class="pinyin">qīng</span><span class="fr">lumière</span><span class="subinfo1"> facile, simple</span><span class="subinfo2"> doux</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=輕">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/輕">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=輕">#C</a> <a target="_blank" href="https://www.zdic.net/hans/輕">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ze2.mp3').play()" class="zh">則</span><span class="pinyin">zé</span><span class="fr">règle</span><span class="subinfo1"> loi, réglementation </span><span class="subinfo2"> notes</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=則">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/則">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=則">#C</a> <a target="_blank" href="https://www.zdic.net/hans/則">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi1.mp3').play()" class="zh">失</span><span class="pinyin">shī</span><span class="fr">perdre</span><span class="subinfo1"> faire des erreurs, négliger</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=失">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/失">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=失">#C</a> <a target="_blank" href="https://www.zdic.net/hans/失">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ben3.mp3').play()" class="zh">本</span><span class="pinyin">běn</span><span class="fr">racine</span><span class="subinfo1"> origine, source </span><span class="subinfo2"> base</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=本">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/本">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=本">#C</a> <a target="_blank" href="https://www.zdic.net/hans/本">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/zao4.mp3').play()" class="zh">躁</span><span class="pinyin">zào</span><span class="fr">tendu</span><span class="subinfo1"> excité, irritable</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=躁">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/躁">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=躁">#C</a> <a target="_blank" href="https://www.zdic.net/hans/躁">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ze2.mp3').play()" class="zh">則</span><span class="pinyin">zé</span><span class="fr">règle</span><span class="subinfo1"> loi, réglementation </span><span class="subinfo2"> notes</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=則">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/則">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=則">#C</a> <a target="_blank" href="https://www.zdic.net/hans/則">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi1.mp3').play()" class="zh">失</span><span class="pinyin">shī</span><span class="fr">perdre</span><span class="subinfo1"> faire des erreurs, négliger</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=失">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/失">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=失">#C</a> <a target="_blank" href="https://www.zdic.net/hans/失">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jun1.mp3').play()" class="zh">君</span><span class="pinyin">jūn</span><span class="fr">souverain</span><span class="subinfo1"> monarque, dirigeant, chef, prince</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=君">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/君">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=君">#C</a> <a target="_blank" href="https://www.zdic.net/hans/君">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('26');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="26" class="trs" style="">lourd faire lumière racine ， calme faire tendu souverain 。 en effet au moyen de saint humain fin soleil aller ne-pas partir un chariot de ravitaillement lourd 。 même si avoir gloire voir ， hirondelle (oiseau) lieu sauter par-dessus oui 。 mais comment ? supporter quoi dix mille rouler de maître ， et au moyen de corps lumière ciel dessous ？ lumière règle perdre racine ， tendu règle perdre souverain 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap26" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 26</b></p><br><p>Le lourd est la racine de la lumière.</p><p>L'immobile est la source de tout mouvement.</p><p>Ainsi le Maître voyage toute la journée</p><p>sans quitter sa maison.</p><p>Aussi splendides que soient les panoramas,</p><p>elle reste sereine en elle-même.</p><p>Pourquoi le maître du pays devrait-il</p><p>voltiger comme un fou ?</p><p>Si vous vous laissez emporter par le vent,</p><p>vous perdez le contact avec vos racines.</p><p>Si vous vous laissez emporter par l'agitation,</p><p>vous perdez le contact avec qui vous êtes.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_26" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XXVI</b><br><br><p>Le grave est la racine du léger<a href="#ancrage_26-1"><small><sup><span id="lien_26-1">&#160;(1)</span></sup></small></a>&#160;; le calme est le maître du mouvement<a href="#ancrage_26-2"><small><sup><span id="lien_26-2">&#160;(2)</span></sup></small></a>.</p><p>De là vient que le saint homme marche tout le jour (dans le Tao) et ne s’écarte point de la quiétude et de la gravité<a href="#ancrage_26-3"><small><sup><span id="lien_26-3">&#160;(3)</span></sup></small></a>.</p><p>Quoiqu’il possède des palais magnifiques, il reste calme et les fuit<a href="#ancrage_26-4"><small><sup><span id="lien_26-4">&#160;(4)</span></sup></small></a>.</p><p>Mais hélas&#160;! les maîtres de<a href="#ancrage_26-5"><small><sup><span id="lien_26-5">&#160;(5)</span></sup></small></a> dix mille chars se conduisent légèrement<a href="#ancrage_26-6"><small><sup><span id="lien_26-6">&#160;(6)</span></sup></small></a> dans l’empire&#160;!</p><p>Par une conduite légère, on perd ses ministres<a href="#ancrage_26-7"><small><sup><span id="lien_26-7">&#160;(7)</span></sup></small></a>&#160;; par l’emportement des passions, on perd son trône<a href="#ancrage_26-8"><small><sup><span id="lien_26-8">&#160;(8)</span></sup></small></a>.</p><p><br /> </p><div style="text-align:center;clear:both;">NOTES.</div><br><p><a href="#lien_26-1"><span id="ancrage_26-1">(1)</span></a> Les commentateurs ne sont pas d’accord sur le sens de <i>tchong</i> <span class="lang-zh" style="font-size: 150%;">重</span>et de <i>king</i> <span class="lang-zh" style="font-size: 150%;">輕</span>, Les uns (E, B) rendent le premier par «&#160;grave,&#160;» et le second par «&#160;léger,&#160;» au figuré&#160;; les autres (A, <i>Sou-tseu</i>), par «&#160;lourd&#160;» et «&#160;léger.&#160;» E&#160;: <i>Lao-tseu</i> ne veut pas seulement montrer la différence qui existe entre le principal et l’accessoire, entre ce qui est noble et ce qui est vil&#160;; il veut surtout montrer la différence qui existe entre les causes de la paix et du danger, du salut et de la mort. B&#160;: <i>Lao-tseu</i> veut que l’homme maîtrise ses passions à l'aide du calme et de la gravité. Celui qui est intérieurement grave est exempt de la légèreté des passions&#160;; celui qui a le cœur calme n’est point sujet à l’emportement de la colère. <i>Han-feï</i> dit&#160;: Celui qui sait se contenir est grave, celui qui garde son assiette est en repos. L’homme grave peut soumettre l’homme léger, l’homme qui est en repos peut soumettre l’homme emporté. </p><p>Aliter <i>Sou-tseu-yeou&#160;: </i>Ce qui est léger ne peut porter ce qui est lourd, les petits ne peuvent subjuguer les grands, celui qui ne marche pas commande à celui qui marche, ce qui est immobile arrête ce qui est en mouvement&#160;; c’est pourquoi le lourd est la racine du léger, le repos est le maître du (c’est-à-dire, maîtrise le) mouvement. A&#160;: Les fleurs des plantes et des arbres se dispersent parce qu’elles sont légères, leurs racines durent longtemps parce qu’elles sont pesantes. </p><p>H pense, contre l’opinion de tous les autres interprètes, que le mot <i>tchong</i> <span class="lang-zh" style="font-size: 150%;">重</span> désigne notre personne, <i>chin</i> <span class="lang-zh" style="font-size: 150%;">身</span>, et que le mot <i>king</i> <span class="lang-zh" style="font-size: 150%;">輕</span> désigne les objets qui sont en dehors de nous, <span class="lang-zh" style="font-size: 150%;">身外之物</span>. E, que je préfère suivre ici, regarde la gravité et le calme (dans la conduite) comme le principal, <i>pen</i> <span class="lang-zh" style="font-size: 150%;">本</span>, comme des choses estimables, <i>kouei</i> <span class="lang-zh" style="font-size: 150%;">貴</span>, et la légèreté, les mouvements désordonnés,comme l’accessoire, <i>mo</i> <span class="lang-zh" style="font-size: 150%;">末</span>, comme des choses dignes de mépris,<i>tsien</i> <span class="lang-zh" style="font-size: 150%;">賤</span>. Dans quelque situation que se trouve le sage, il ne pêche jamais par légèreté ni par emportement, <span class="lang-zh" style="font-size: 150%;">未當失於輕躁也</span>.</p><br><p><a href="#lien_26-2"><span id="ancrage_26-2">(2)</span></a> C’est-à-dire&#160;: Ce qui est calme maîtrise ce qui est impétueux. A&#160;: Si le prince des hommes n’est pas calme, il perd de son autorité imposante&#160;; s’il ne gouverne pas son corps avec calme, son corps est en butte aux dangers. Le dragon peut se transformer parce qu’il est calme (<i>sic</i>)&#160;; le tigre périt de bonne heure, parce qu’il s’abandonne à son impétuosité. </p><br><p><a href="#lien_26-3"><span id="ancrage_26-3">(3)</span></a> A&#160;: Le mot <i>tse</i> <span class="lang-zh" style="font-size: 150%;">輜</span> (<i>vulgo</i> char de bagages) veut dire ici <i>tsing</i> <span class="lang-zh" style="font-size: 150%;">靜</span>«&#160;calme.&#160;»</p><p>A&#160;: Le saint homme marche toujours dans la Voie (le Tao) et ne s’écarte point du calme et de la gravité.</p><br><p><a href="#lien_26-4"><span id="ancrage_26-4">(4)</span></a> H&#160;: <i>Yen-tchu</i> <span class="lang-zh" style="font-size: 150%;">燕處</span>, c’est-à-dire <i>thien-than</i> <span class="lang-zh" style="font-size: 150%;">恬澹</span> «&#160;être calme.&#160;» A explique l’expression <i>tchao-jen</i> <span class="lang-zh" style="font-size: 150%;">超然</span> par «&#160;Il fuit au loin et n’y habite pas.&#160;» </p><br><p><a href="#lien_26-5"><span id="ancrage_26-5">(5)</span></a> A&#160;: Les mots <i>naï-ho</i> <span class="lang-zh" style="font-size: 150%;">奈何</span> sont une expression de douleur,née de la haine que <i>Lao-tseu</i> portait aux princes de son temps.</p><p>H&#160;: Les mots «&#160;maître de dix mille chars&#160;» désignent l’empereur. </p><br><p><a href="#lien_26-6"><span id="ancrage_26-6">(6)</span></a> Je suis la construction et le sens de E, qui ajoute <i>iu</i> <span class="lang-zh" style="font-size: 150%;">於</span> «&#160;dans&#160;» avant les mots <i>thien-hia</i> <span class="lang-zh" style="font-size: 150%;">天下</span> «&#160;empire.&#160;» <i>Ibidem&#160;:</i> Si le maître des hommes se conduit légèrement dans l’empire (c’est-à-dire,A&#160;: s’abandonne au luxe, à la volupté), des calamités et des malheurs ne manqueront pas de fondre sur lui. </p><br><p><a href="#lien_26-7"><span id="ancrage_26-7">(7)</span></a> E&#160;: Si le maître des hommes agit avec légèreté et négligence,ceux de ses ministres qui le savent, s’affligent en voyant qu’il est indigne de leur assistance et de leurs conseils, et ils forment le projet de le quitter. Alors il ne peut garder ses ministres.</p><br><p><a href="#lien_26-8"><span id="ancrage_26-8">(8)</span></a> E&#160;: S’il se laisse entraîner et agiter sans relâche par une multitude de désirs, les inférieurs abandonnent sa cause (ou se révoltent contre lui), et alors il est exposé à de graves dangers et même à la mort. Ainsi il ne peut garder la possession de ses états. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 26</b><br><br>Le lourd est la racine du léger.<br>L'immobilité<br>est mère du mouvement.<br>C'est pourquoi<br>le Sage se déplace<br>avec un seul bagage :<br>le Tao.<br>Partout où il va,<br>il reste détaché et serein.<br>Spectateur des merveilles.<br>Spectateur de la vie.<br>Ainsi<br>le Maître des milles choses<br>doit préférer son peuple<br>à lui-même.<br>Car<br>agir avec légèreté,<br>c'est perdre sa racine,<br>s'agiter,<br>c'est perdre<br>la maîtrise de soi. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 26</b><br><br>Le lourd est la racine du léger<br>Le calme est maître de l’agitation.<br><br>Ainsi le sage voyage tout le jour<br>Il chemine avec son bagage<br><br>Serein et détaché<br>Spectateur des merveilles qu’il contemple.<br><br>Comment le seigneur de dix mille choses<br>Pourrait-il se préférer<br>Aux yeux de l’empire ?<br><br>Trop léger il perd la racine<br>Trop agité il perd la maîtrise<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 26</b><br><br>Le lourd est la racine du léger; le repos est le maître du mouvement. C'est pourquoi le prince sage va de l'aube au soir, sans se départir d'une sereine gravité. Bien qu'il possède gloire et honneur, il s'applique à s'en détacher.<br>Pourquoi, hélas! les maîtres aux dix mille chars attachent-ils plus d'importance à leur personne qu'à l'Empire? Insouciants, ils perdent leurs conseillers; violents, ils perdent leur trône.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 26</b><br><br>Le lourd est la base (racine) du léger, le repos est le soutien (prince) du mouvement. (Ces choses doivent toujours être unies dans un juste tem­pérament.)<br>Aussi un prince sage, quand il voyage (dans son char léger), ne se sépare-t-il jamais des lourds fourgons qui portent ses bagages. Par quelques beaux paysages qu’il passe, il ne prend son gîte que dans les localités paisibles.<br>Hélas, comment un empereur a-t-il pu donner à l’empire le spectacle d’une folle conduite, perdant à force de légèreté toute autorité, et à force de liber­tinage tout repos ?<blockquote><span class="KapKom">Allusion historique à l’empereur You-wang, ou à un autre, on ne sait pas au juste. Les commentateurs sont d’avis que ce chapitre est seulement une exhortation à une conduite réglée.</span></blockquote></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 26</b><br><br><p>Actions lourdes, racine légère,</p><p>actions immobiles, monarque imprudent¹.</p><p>C'est pourquoi: </p><p>L'accomplissement de l'homme sacré, on dit que c'est un voyage.</p><p>Il ne part pas avec un lourd chariot,</p><p>mais il possède l'honneur que l'on peut contempler.</p><p>D'excellente façon il fait face au festin,</p><p>ce moyen par lequel le maître attelle la multitude,</p><p>mais, pour un corps léger sous le ciel:</p><p>règles légères, perte de la racine,</p><p>règles imprudentes, perte du monarque.</p><p>1. Tsao signifie également impétueux.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 26</b></p><br><p>Le lourd est la racine du léger ; le repos est le maître de</p><p>l’agitation.</p><p>Tel le noble : il voyage une journée entière sans s’éloigner</p><p>de sa (lourde) voiture de bagages. Quoiqu’il y ait un camp</p><p>militaire et des tours d’observation (autour de lui), il reste</p><p>lui-même tranquille et au dessus des choses. Comment un</p><p>maître de dix mille chars de combat se conduirait il avec</p><p>légèreté vis à vis de l’empire ? S’il se conduit avec légèreté,</p><p>alors il perd la racine ; avec agitation, il perd la domination.</p><p>***</p><p>Pour l’opposition tranquillité agitation, voir aussi XLV, où les mêmes</p><p>caractères seront traduits par : « tranquillité trépignement ». Pour</p><p>cheng jen (99) « saint » du texte traditionnel, je suis une ancienne</p><p>leçon kiun tseu (100) « noble, homme noble ».</p><p>Le texte donne jong kouan (101), généralement compris comme : «</p><p>(quoiqu’il ait) de belles perspectives », ce qui n’a pour moi aucun</p><p>sens compréhensible. L’idée est évidemment que le noble, en voyage,</p><p>si léger soit il lui-même, ne s’éloigne pas de ses bagages, c’est à dire</p><p>du lourd, et que lorsqu’il s’arrête, il reste tranquille, quoique... Je</p><p>complète : « Quoiqu’il y ait de l’agitation autour de lui. » Mais com</p><p>ment cette idée est elle exprimée ? Ma Siu louen propose, au lieu de</p><p>jong kouan, de lire ying wei (102) « garde du corps », un terme qui se</p><p>trouve dans le Che ki (± 100 av. J.C.). J’accepte ying pour jong : il n’y</p><p>a qu’une différence d’un élément entre jong et ying. Quant à la leçon</p><p>wei, elle ne se justifie ni par la parenté de prononciation, ni par la</p><p>ressemblance des caractères. La leçon kouan, littéralement « regarder</p><p>», en rapport avec ying « camp militaire », est cependant facile à</p><p>maintenir. Le mot kouan signifie aussi, en effet, « tour d’observation</p><p>», cf. Mém. hist. II, p. 178. Le noble prend des mesures nécessitant</p><p>l’activité, mais lui-même reste calme au milieu de toute cette agitation,</p><p>dominant tout.</p><p>Tch’ao jan (103) veut dire qu’il est « au delà » de tout ce mouvement.</p><p>Un maître de dix mille chars de combat est le roi de Tout sous le ciel,</p><p>de l’empire.</p><p>Les mots « léger » et « lourd » (ou « grave ») ne doivent pas s’entendre</p><p>qu’en leur sens littéral ; ils sont, naturellement, pris aussi en</p><p>leur sens figuré. « Il perd la domination » a aussi un double sens : «</p><p>Il perd la domination de l’agitation », et : « Il perd le pouvoir ». Pour</p><p>d’autres jeux de mots, voir VI, XXVIII, XLI, LXI, LXXI, LXXII, LXXVI.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

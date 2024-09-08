@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html"><b><font color="red">CH75</font></b></a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/75.html"> https://www.daodejing.org/75.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11666">https://ctext.org/dictionary.pl?if=en&id=11666</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/75.htm"> https://www.tao-te-king.org/75.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC75.pdf">http://www.daoisopen.com/downloads/CC75.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#75">https://laozirecited.com/#75</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">民之飢，以其上食稅之多，是以飢。民之難治，以其上之有為，是以難治。民之輕死，以其求生之厚，是以輕死。夫唯無以生為者，是賢於貴生。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11666" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/min2.mp3').play()" class="zh">民</span><span class="pinyin">mín</span><span class="fr">personnes</span><span class="subinfo1"> sujets</span><span class="subinfo2"> citoyens, peuple</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=民">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/民">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=民">#C</a> <a target="_blank" href="https://www.zdic.net/hans/民">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ji1.mp3').play()" class="zh">飢</span><span class="pinyin">jī</span><span class="fr">faim</span><span class="subinfo1"> mourir de faim</span><span class="subinfo2"> affamé; une famine</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=飢">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/飢">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=飢">#C</a> <a target="_blank" href="https://www.zdic.net/hans/飢">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shang4.mp3').play()" class="zh">上</span><span class="pinyin">shàng</span><span class="fr">haut</span><span class="subinfo1"> supérieur, le plus élevé</span><span class="subinfo2"> monter, envoyer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=上">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/上">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=上">#C</a> <a target="_blank" href="https://www.zdic.net/hans/上">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi2.mp3').play()" class="zh">食</span><span class="pinyin">shí</span><span class="fr">manger</span><span class="subinfo1"> repas</span><span class="subinfo2"> nourriture</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=食">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/食">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=食">#C</a> <a target="_blank" href="https://www.zdic.net/hans/食">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shui4.mp3').play()" class="zh">稅</span><span class="pinyin">shuì</span><span class="fr">impôts</span><span class="subinfo1"> revenus, droits </span><span class="subinfo2"> impôt</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=稅">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/稅">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=稅">#C</a> <a target="_blank" href="https://www.zdic.net/hans/稅">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/duo1.mp3').play()" class="zh">多</span><span class="pinyin">duō</span><span class="fr">beaucoup</span><span class="subinfo1"> beaucoup</span><span class="subinfo2"> plus que, fini</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=多">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/多">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=多">#C</a> <a target="_blank" href="https://www.zdic.net/hans/多">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ji1.mp3').play()" class="zh">飢</span><span class="pinyin">jī</span><span class="fr">faim</span><span class="subinfo1"> mourir de faim</span><span class="subinfo2"> affamé; une famine</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=飢">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/飢">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=飢">#C</a> <a target="_blank" href="https://www.zdic.net/hans/飢">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/min2.mp3').play()" class="zh">民</span><span class="pinyin">mín</span><span class="fr">personnes</span><span class="subinfo1"> sujets</span><span class="subinfo2"> citoyens, peuple</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=民">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/民">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=民">#C</a> <a target="_blank" href="https://www.zdic.net/hans/民">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/nan2.mp3').play()" class="zh">難</span><span class="pinyin">nán</span><span class="fr">difficile</span><span class="subinfo1"> ardu, dur</span><span class="subinfo2"> incapable</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=難">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/難">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=難">#C</a> <a target="_blank" href="https://www.zdic.net/hans/難">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi4.mp3').play()" class="zh">治</span><span class="pinyin">zhì</span><span class="fr">gouverner</span><span class="subinfo1"> réglementer, administrer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=治">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/治">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=治">#C</a> <a target="_blank" href="https://www.zdic.net/hans/治">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shang4.mp3').play()" class="zh">上</span><span class="pinyin">shàng</span><span class="fr">haut</span><span class="subinfo1"> supérieur, le plus élevé</span><span class="subinfo2"> monter, envoyer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=上">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/上">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=上">#C</a> <a target="_blank" href="https://www.zdic.net/hans/上">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/you3.mp3').play()" class="zh">有</span><span class="pinyin">yǒu</span><span class="fr">avoir</span><span class="subinfo1"> posséder, posséder</span><span class="subinfo2"> exister</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=有">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/有">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=有">#C</a> <a target="_blank" href="https://www.zdic.net/hans/有">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/nan2.mp3').play()" class="zh">難</span><span class="pinyin">nán</span><span class="fr">difficile</span><span class="subinfo1"> ardu, dur</span><span class="subinfo2"> incapable</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=難">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/難">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=難">#C</a> <a target="_blank" href="https://www.zdic.net/hans/難">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi4.mp3').play()" class="zh">治</span><span class="pinyin">zhì</span><span class="fr">gouverner</span><span class="subinfo1"> réglementer, administrer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=治">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/治">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=治">#C</a> <a target="_blank" href="https://www.zdic.net/hans/治">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/min2.mp3').play()" class="zh">民</span><span class="pinyin">mín</span><span class="fr">personnes</span><span class="subinfo1"> sujets</span><span class="subinfo2"> citoyens, peuple</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=民">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/民">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=民">#C</a> <a target="_blank" href="https://www.zdic.net/hans/民">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qing1.mp3').play()" class="zh">輕</span><span class="pinyin">qīng</span><span class="fr">lumière</span><span class="subinfo1"> facile, simple</span><span class="subinfo2"> doux</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=輕">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/輕">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=輕">#C</a> <a target="_blank" href="https://www.zdic.net/hans/輕">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/si3.mp3').play()" class="zh">死</span><span class="pinyin">sǐ</span><span class="fr">mourir</span><span class="subinfo1"> mort</span><span class="subinfo2"> la mort</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=死">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/死">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=死">#C</a> <a target="_blank" href="https://www.zdic.net/hans/死">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qiu2.mp3').play()" class="zh">求</span><span class="pinyin">qiú</span><span class="fr">chercher</span><span class="subinfo1"> demande, demande</span><span class="subinfo2"> supplier</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=求">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/求">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=求">#C</a> <a target="_blank" href="https://www.zdic.net/hans/求">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng1.mp3').play()" class="zh">生</span><span class="pinyin">shēng</span><span class="fr">la vie</span><span class="subinfo1"> la vie, la vie</span><span class="subinfo2"> naissance</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=生">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/生">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=生">#C</a> <a target="_blank" href="https://www.zdic.net/hans/生">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/hou4.mp3').play()" class="zh">厚</span><span class="pinyin">hòu</span><span class="fr">épais</span><span class="subinfo1"> substantiel</span><span class="subinfo2"> considérablement</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=厚">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/厚">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=厚">#C</a> <a target="_blank" href="https://www.zdic.net/hans/厚">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qing1.mp3').play()" class="zh">輕</span><span class="pinyin">qīng</span><span class="fr">lumière</span><span class="subinfo1"> facile, simple</span><span class="subinfo2"> doux</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=輕">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/輕">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=輕">#C</a> <a target="_blank" href="https://www.zdic.net/hans/輕">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/si3.mp3').play()" class="zh">死</span><span class="pinyin">sǐ</span><span class="fr">mourir</span><span class="subinfo1"> mort</span><span class="subinfo2"> la mort</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=死">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/死">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=死">#C</a> <a target="_blank" href="https://www.zdic.net/hans/死">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/fu2.mp3').play()" class="zh">夫</span><span class="pinyin">fú</span><span class="fr">homme</span><span class="subinfo1"> adulte de sexe masculin, mari </span><span class="subinfo2"> ceci, celui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=夫">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/夫">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=夫">#C</a> <a target="_blank" href="https://www.zdic.net/hans/夫">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">唯</span><span class="pinyin">wéi</span><span class="fr">seulement</span><span class="subinfo1"> Oui</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=唯">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/唯">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=唯">#C</a> <a target="_blank" href="https://www.zdic.net/hans/唯">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng1.mp3').play()" class="zh">生</span><span class="pinyin">shēng</span><span class="fr">la vie</span><span class="subinfo1"> la vie, la vie</span><span class="subinfo2"> naissance</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=生">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/生">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=生">#C</a> <a target="_blank" href="https://www.zdic.net/hans/生">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei2.mp3').play()" class="zh">為</span><span class="pinyin">wéi</span><span class="fr">faire</span><span class="subinfo1"> gérer, gouverner, agir </span><span class="subinfo2"> être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=為">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/為">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=為">#C</a> <a target="_blank" href="https://www.zdic.net/hans/為">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xian2.mp3').play()" class="zh">賢</span><span class="pinyin">xián</span><span class="fr">vertueux</span><span class="subinfo1"> digne, bon </span><span class="subinfo2"> capable</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=賢">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/賢">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=賢">#C</a> <a target="_blank" href="https://www.zdic.net/hans/賢">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu2.mp3').play()" class="zh">於</span><span class="pinyin">yú</span><span class="fr">dans</span><span class="subinfo1"> à, sur</span><span class="subinfo2"> interjection hélas !</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=於">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/於">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=於">#C</a> <a target="_blank" href="https://www.zdic.net/hans/於">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gui4.mp3').play()" class="zh">貴</span><span class="pinyin">guì</span><span class="fr">cher</span><span class="subinfo1"> chérir</span><span class="subinfo2"> coûteux, précieux</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=貴">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/貴">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=貴">#C</a> <a target="_blank" href="https://www.zdic.net/hans/貴">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng1.mp3').play()" class="zh">生</span><span class="pinyin">shēng</span><span class="fr">la vie</span><span class="subinfo1"> la vie, la vie</span><span class="subinfo2"> naissance</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=生">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/生">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=生">#C</a> <a target="_blank" href="https://www.zdic.net/hans/生">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('75');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="75" class="trs" style="">personnes de faim ， au moyen de le sien haut manger impôts de beaucoup ， en effet au moyen de faim 。 personnes de difficile gouverner ， au moyen de le sien haut de avoir faire ， en effet au moyen de difficile gouverner 。 personnes de lumière mourir ， au moyen de le sien chercher la vie de épais ， en effet au moyen de lumière mourir 。 homme seulement négatif au moyen de la vie faire ce qui ， en effet vertueux dans cher la vie 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap75" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 75</b></p><br><p>Quand les impôts sont trop élevés,</p><p>les gens ont faim.</p><p>Quand le gouvernement est trop intrusif,</p><p>les gens perdent courage.</p><p>Agissez pour le bien du peuple.</p><p>Faites-leur confiance et laissez-les tranquilles.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_75" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE LXXV</b><br><br><p>Le peuple a faim<a href="#ancrage_75-1"><small><sup><span id="lien_75-1">&#160;(1)</span></sup></small></a> parce que le prince dévore une quantité d’impôts.</p><p>Voilà pourquoi il a faim.</p><p>Le peuple est difficile à gouverner parce que le prince<a href="#ancrage_75-2"><small><sup><span id="lien_75-2">&#160;(2)</span></sup></small></a> aime à agir.</p><p>Voilà pourquoi il est difficile à gouverner.</p><p>Le peuple méprise la mort<a href="#ancrage_75-3"><small><sup><span id="lien_75-3">&#160;(3)</span></sup></small></a> parce qu’il cherche avec trop d’ardeur les moyens de vivre.</p><p>Voilà pourquoi il méprise la mort.</p><p>Mais celui qui ne s’occupe pas de vivre<a href="#ancrage_75-4"><small><sup><span id="lien_75-4">&#160;(4)</span></sup></small></a> est plus sage que celui qui estime la vie. </p><br><div style="text-align:center;clear:both;">NOTES.</div><br><p><a href="#lien_75-1"><span id="ancrage_75-1">(1)</span></a> <i>Liu-kie-fou</i>&#160;: Le travail d’un seul laboureur suffit pour nourrir plusieurs personnes. Comment se fait-il que le peuple éprouve la disette et la faim&#160;? N’est-ce pas parce que le prince ( A ) lève de trop lourds impôts&#160;?</p><br><p><a href="#lien_75-2"><span id="ancrage_75-2">(2)</span></a> C&#160;: Lorsque le gouvernement est tyrannique, lorsque les lois sont d’une rigueur excessive et que le prince déploie toutes les ressources de la prudence pour mieux opprimer ses sujets, ceux-ci ont recours à la ruse et à la fraude pour éluder les rigueurs de l’administration, et alors ils sont difficiles à gouverner.</p><br><p><a href="#lien_75-3"><span id="ancrage_75-3">(3)</span></a> J’ai suivi le commentateur A&#160;: <i>I-khi-khieou-sing-houo-tchi-tao-thaï-heou</i> <span class="lang-zh" style="font-size: 150%;">以其求生活之道太厚</span>. E&#160;: Celui qui cherche avec trop d’ardeur les moyens de vivre est l’esclave de mille projets&#160;; il fatigue sa vie et détruit la paix de son âme. Il fait de folles dépenses, et, en songeant au lucre, il oublie le malheur et les échecs. Voilà pourquoi il méprise la mort.</p><p><i>Liu-kie-fou</i>&#160;: Si le peuple est content de sa nourriture, de ses vêtements,de son habitation, il ne méprise point la mort. Quand il méprise la mort, c’est qu’il y est poussé par le besoin de conserver sa vie. C’est pourquoi le Saint n’établit point des règlements importunset le peuple s’enrichit. Il n’a point de désirs, et le peuple, qui l’imite, revient à sa pureté primitive. Alors le prince ne consume pas une quantité d’impôts et personne ne souffre la faim.</p><br><p><a href="#lien_75-4"><span id="ancrage_75-4">(4)</span></a> A&#160;: Les mots <i>wou-i-sing-weï-tche</i> <span class="lang-zh" style="font-size: 150%;">無以生爲者</span> signifient, «&#160;celui qui ne fait pas de la vie son occupation, qui ne s’occupe pas de vivre,&#160;» <span class="lang-zh" style="font-size: 150%;">無以生爲務者</span>.</p><p>E&#160;: Celui qui ne s’occupe pas de vivre est celui dont <i>Lao-tseu</i> a dit (chapitre <span class="sc">vii</span>)&#160;: «&#160;il se dégage de son corps (littéralement «&#160;il met son corps en dehors de lui) et son corps se conserve.&#160;» Un tel homme est infiniment plus <i>sage</i> que (sic A&#160;; E&#160;: <i>l’emporte sur</i>) celui qui estime la vie.</p><p><i>Liu-kie-fou</i>&#160;: Le Saint ne se met pas en lumière parce qu’il s’est dépouillé de son corps&#160;; il ne se prise point lui-même parce qu’il a renoncé à la vie. On voit par là qu’il ne prend aucun souci de la vie.</p><p>A&#160;: Le Saint ne s’occupe point de la vie&#160;; les hauts emplois, les riches émoluments n’entrent point dans sa pensée&#160;; les richesses et le lucre n’effleurent point son âme&#160;; l’empereur ne pourrait l’assujettir, tous les vassaux ne pourraient le soumettre à leur puissance. On voit par là qu’il est plus sage que ceux qui estiment la vie. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 75</b><br><br>Le peuple est affamé parce que les gouvernants<br>le chargent d'impôts.<br>C'est pourquoi il a faim.<br>Le peuple murmure et s'agite<br>parce que ses gouvernants le harcèlent<br>C'est pourquoi il s'agite.<br>Le peuple regarde la mort avec indifférence<br>quand sa vie est pénible.<br>Et c'est ça qui le rend indocile.<br>Voilà pourquoi il méprise la mort.<br>Seul celui qui n'est pas réduit à lutter pour vivre<br>peut apprécier sagement la vie.<br>Le Sage ne vit pas que pour vivre<br>Ainsi il peut en apprécier la valeur. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 75</b><br><br>Les gens ont-ils faim ?<br>Les gouvernements s’engraissent d’impots<br>Et le peuple reste affamé.<br><br>Les gens sont difficiles à gouverner<br>Or, les gouvernements les poussent à bout<br>Et le peuple se dirige d’autant plus mal.<br><br>Les gens méprisent la mort<br>Car ils veulent rester en vie :<br>Aussi ne craignent-ils pas la mort.<br><br>Seul celui qui n’use pas la vie<br>S’avère plus sage<br>Que celui qui la prise.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 75</b><br><br>Le peuple a faim lorsque ses maîtres dévorent le produit de lourds impôts; voilà la cause de la disette. Le peuple est difficile à gouverner lorsque ses maîtres sont agissants; voilà d'où vient la difficulté de gouverner. Le peuple envisage la mort avec légèreté, parce qu'il peine trop pour vivre; voilà pourquoi il attache peu d'importance à a mort. Car, seul celui qui n'est pas exclusivement accaparé par la lutte pour l'existence, peut sagement apprécier la vie.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 75</b><br><br>Si le peuple a faim, c’est parce que le prince dévore des sommes excessives (qu’il lui extorque).<br>Si le peuple est rétif, c’est parce que le prince agit trop, (l’indispose par ses innovations).<br>Si le peuple s’expose légèrement à la mort (dans des entreprises hasardeuses), c’est parce qu’il aime trop la vie (amour du bien-être, de la jouissance, de la gloire).<br>Celui qui ne fait rien pour vivre, est plus sage que celui qui se donne du mal pour vivre.<blockquote><span class="KapKom">Que le prince et le peuple cultivent la simpli­cité, et tout ira bien. Ce chapitre continue le cha­pitre 67. Le sens de D est : celui qui ne se soucie pas de la richesse et de la gloire, est plus sage que celui qui se fatigue et se met en péril, pour la richesse et la gloire.</span></blockquote></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 75</b><br><br><p>Le peuple est affamé,</p><p>parce que sa partie supérieure taxe trop la nourriture,</p><p>c'est pourquoi il est affamé.</p><p>Le peuple est difficile à diriger,</p><p>parce que sa partie supérieure possède et agit,</p><p>c'est pourquoi il est difficile à diriger.</p><p>Le peuple léger meure,</p><p>parce que sa partie supérieure désire une croissance épaisse,</p><p>c'est pourquoi les légers meurent.</p><p>Un époux seul, ça n'existe pas,</p><p>pour que s'engendre une personne active.</p><p>Il est effectivement vertueux par sa croissance coûteuse.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 75</b></p><br><p>Si le peuple a faim, c’est à cause de la quantité d’impôts qui sont</p><p>consommés par ses supérieurs : voilà pourquoi il a faim.</p><p>Si le peuple est difficile à gouverner, c’est à cause de l’activité de ses</p><p>supérieurs : voilà pourquoi il est difficile à gouverner.</p><p>Si le peuple prend la mort à la légère, c’est à cause de l’excès de ses</p><p>efforts pour vivre : voilà pourquoi il prend la mort à la légère.</p><p>En effet, c’est précisément en n’agissant pas pour vivre, qu’on est</p><p>plus sage que si on prise la vie.</p><p>***</p><p>Pour l’expression « à cause de l’excès de ses efforts pour vivre », comparer</p><p>le chapitre L. La pensée de ce paragraphe est étroitement liée à</p><p>celle de la première phrase du chapitre LXXIV.</p><p>Le tort fondamental, d’après ces trois paragraphes, c’est l’activité.</p><p>C’est pourquoi le paragraphe final arrive à la conclusion qu’il vaut</p><p>mieux ne pas être actif par amour de la vie, que d’y attacher trop</p><p>de prix et d’agir. Ma Siu louen propose de reporter ce dernier paragraphe</p><p>au chapitre L, mais le ne vois aucune raison de le suivre.</p><p>L’expression fou wei (38), « c’est précisément parce que », est généralement</p><p>suivie de che yi (234) « c’est pourquoi » ; ici il y a seulement</p><p>che (239) « ceci », ce qui modifie un peu la v aleur de la formule.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

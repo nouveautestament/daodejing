@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html"><b><font color="red">CH36</font></b></a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/36.html"> https://www.daodejing.org/36.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11627">https://ctext.org/dictionary.pl?if=en&id=11627</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/36.htm"> https://www.tao-te-king.org/36.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC36.pdf">http://www.daoisopen.com/downloads/CC36.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#36">https://laozirecited.com/#36</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">將欲歙之，必固張之；將欲弱之，必固強之；將欲廢之，必固興之；將欲奪之，必固與之。是謂微明。柔弱勝剛強。魚不可脫於淵，國之利器不可以示人。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11627" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/jiang1.mp3').play()" class="zh">將</span><span class="pinyin">jiāng</span><span class="fr">volonté</span><span class="subinfo1"> aller, futur</span><span class="subinfo2"> général</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=將">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/將">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=將">#C</a> <a target="_blank" href="https://www.zdic.net/hans/將">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu4.mp3').play()" class="zh">欲</span><span class="pinyin">yù</span><span class="fr">désirer</span><span class="subinfo1"> vouloir, désirer</span><span class="subinfo2"> avoir l'intention</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=欲">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/欲">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=欲">#C</a> <a target="_blank" href="https://www.zdic.net/hans/欲">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xi1.mp3').play()" class="zh">歙</span><span class="pinyin">xī</span><span class="fr">sucer</span><span class="subinfo1"> le nom d'un comté dans l'anhui</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=歙">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/歙">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=歙">#C</a> <a target="_blank" href="https://www.zdic.net/hans/歙">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bi4.mp3').play()" class="zh">必</span><span class="pinyin">bì</span><span class="fr">sûrement</span><span class="subinfo1"> très certainement </span><span class="subinfo2"> doit</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=必">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/必">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=必">#C</a> <a target="_blank" href="https://www.zdic.net/hans/必">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">固</span><span class="pinyin">gù</span><span class="fr">devenir solide</span><span class="subinfo1"> se solidifier</span><span class="subinfo2"> force</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=固">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/固">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=固">#C</a> <a target="_blank" href="https://www.zdic.net/hans/固">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhang1.mp3').play()" class="zh">張</span><span class="pinyin">zhāng</span><span class="fr">étirer</span><span class="subinfo1"> étendre, développer</span><span class="subinfo2"> feuille</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=張">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/張">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=張">#C</a> <a target="_blank" href="https://www.zdic.net/hans/張">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/jiang1.mp3').play()" class="zh">將</span><span class="pinyin">jiāng</span><span class="fr">volonté</span><span class="subinfo1"> aller, futur</span><span class="subinfo2"> général</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=將">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/將">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=將">#C</a> <a target="_blank" href="https://www.zdic.net/hans/將">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu4.mp3').play()" class="zh">欲</span><span class="pinyin">yù</span><span class="fr">désirer</span><span class="subinfo1"> vouloir, désirer</span><span class="subinfo2"> avoir l'intention</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=欲">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/欲">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=欲">#C</a> <a target="_blank" href="https://www.zdic.net/hans/欲">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ruo4.mp3').play()" class="zh">弱</span><span class="pinyin">ruò</span><span class="fr">faible</span><span class="subinfo1"> fragile, délicat</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=弱">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/弱">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=弱">#C</a> <a target="_blank" href="https://www.zdic.net/hans/弱">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bi4.mp3').play()" class="zh">必</span><span class="pinyin">bì</span><span class="fr">sûrement</span><span class="subinfo1"> très certainement </span><span class="subinfo2"> doit</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=必">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/必">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=必">#C</a> <a target="_blank" href="https://www.zdic.net/hans/必">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">固</span><span class="pinyin">gù</span><span class="fr">devenir solide</span><span class="subinfo1"> se solidifier</span><span class="subinfo2"> force</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=固">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/固">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=固">#C</a> <a target="_blank" href="https://www.zdic.net/hans/固">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qiang2.mp3').play()" class="zh">強</span><span class="pinyin">qiáng</span><span class="fr">fort</span><span class="subinfo1"> puissant, énergique</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=強">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/強">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=強">#C</a> <a target="_blank" href="https://www.zdic.net/hans/強">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/jiang1.mp3').play()" class="zh">將</span><span class="pinyin">jiāng</span><span class="fr">volonté</span><span class="subinfo1"> aller, futur</span><span class="subinfo2"> général</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=將">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/將">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=將">#C</a> <a target="_blank" href="https://www.zdic.net/hans/將">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu4.mp3').play()" class="zh">欲</span><span class="pinyin">yù</span><span class="fr">désirer</span><span class="subinfo1"> vouloir, désirer</span><span class="subinfo2"> avoir l'intention</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=欲">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/欲">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=欲">#C</a> <a target="_blank" href="https://www.zdic.net/hans/欲">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/fei4.mp3').play()" class="zh">廢</span><span class="pinyin">fèi</span><span class="fr">abroger</span><span class="subinfo1"> mettre fin, rejeter</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=廢">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/廢">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=廢">#C</a> <a target="_blank" href="https://www.zdic.net/hans/廢">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bi4.mp3').play()" class="zh">必</span><span class="pinyin">bì</span><span class="fr">sûrement</span><span class="subinfo1"> très certainement </span><span class="subinfo2"> doit</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=必">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/必">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=必">#C</a> <a target="_blank" href="https://www.zdic.net/hans/必">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">固</span><span class="pinyin">gù</span><span class="fr">devenir solide</span><span class="subinfo1"> se solidifier</span><span class="subinfo2"> force</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=固">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/固">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=固">#C</a> <a target="_blank" href="https://www.zdic.net/hans/固">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xing1.mp3').play()" class="zh">興</span><span class="pinyin">xīng</span><span class="fr">prospérer</span><span class="subinfo1"> prospérer, prospérer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=興">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/興">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=興">#C</a> <a target="_blank" href="https://www.zdic.net/hans/興">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/jiang1.mp3').play()" class="zh">將</span><span class="pinyin">jiāng</span><span class="fr">volonté</span><span class="subinfo1"> aller, futur</span><span class="subinfo2"> général</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=將">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/將">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=將">#C</a> <a target="_blank" href="https://www.zdic.net/hans/將">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu4.mp3').play()" class="zh">欲</span><span class="pinyin">yù</span><span class="fr">désirer</span><span class="subinfo1"> vouloir, désirer</span><span class="subinfo2"> avoir l'intention</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=欲">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/欲">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=欲">#C</a> <a target="_blank" href="https://www.zdic.net/hans/欲">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/duo2.mp3').play()" class="zh">奪</span><span class="pinyin">duó</span><span class="fr">prendre de force</span><span class="subinfo1"> voler, arracher</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=奪">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/奪">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=奪">#C</a> <a target="_blank" href="https://www.zdic.net/hans/奪">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/bi4.mp3').play()" class="zh">必</span><span class="pinyin">bì</span><span class="fr">sûrement</span><span class="subinfo1"> très certainement </span><span class="subinfo2"> doit</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=必">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/必">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=必">#C</a> <a target="_blank" href="https://www.zdic.net/hans/必">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">固</span><span class="pinyin">gù</span><span class="fr">devenir solide</span><span class="subinfo1"> se solidifier</span><span class="subinfo2"> force</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=固">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/固">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=固">#C</a> <a target="_blank" href="https://www.zdic.net/hans/固">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu3.mp3').play()" class="zh">與</span><span class="pinyin">yǔ</span><span class="fr">et</span><span class="subinfo1"> avec</span><span class="subinfo2"> à; pour; donner, accorder</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=與">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/與">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=與">#C</a> <a target="_blank" href="https://www.zdic.net/hans/與">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei4.mp3').play()" class="zh">謂</span><span class="pinyin">wèi</span><span class="fr">dit</span><span class="subinfo1"> appeler, nommer</span><span class="subinfo2"> être appelé</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=謂">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/謂">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=謂">#C</a> <a target="_blank" href="https://www.zdic.net/hans/謂">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wei1.mp3').play()" class="zh">微</span><span class="pinyin">wēi</span><span class="fr">petit</span><span class="subinfo1"> préfixe micro-, insignifiant</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=微">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/微">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=微">#C</a> <a target="_blank" href="https://www.zdic.net/hans/微">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ming2.mp3').play()" class="zh">明</span><span class="pinyin">míng</span><span class="fr">brillant</span><span class="subinfo1"> léger, brillant</span><span class="subinfo2"> clair</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=明">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/明">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=明">#C</a> <a target="_blank" href="https://www.zdic.net/hans/明">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/rou2.mp3').play()" class="zh">柔</span><span class="pinyin">róu</span><span class="fr">doux</span><span class="subinfo1"> doux, souple</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=柔">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/柔">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=柔">#C</a> <a target="_blank" href="https://www.zdic.net/hans/柔">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ruo4.mp3').play()" class="zh">弱</span><span class="pinyin">ruò</span><span class="fr">faible</span><span class="subinfo1"> fragile, délicat</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=弱">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/弱">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=弱">#C</a> <a target="_blank" href="https://www.zdic.net/hans/弱">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng4.mp3').play()" class="zh">勝</span><span class="pinyin">shèng</span><span class="fr">victoire</span><span class="subinfo1"> exceller, être meilleur que</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=勝">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/勝">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=勝">#C</a> <a target="_blank" href="https://www.zdic.net/hans/勝">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gang1.mp3').play()" class="zh">剛</span><span class="pinyin">gāng</span><span class="fr">dur</span><span class="subinfo1"> dur, rigide, fort</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=剛">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/剛">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=剛">#C</a> <a target="_blank" href="https://www.zdic.net/hans/剛">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qiang2.mp3').play()" class="zh">強</span><span class="pinyin">qiáng</span><span class="fr">fort</span><span class="subinfo1"> puissant, énergique</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=強">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/強">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=強">#C</a> <a target="_blank" href="https://www.zdic.net/hans/強">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yu2.mp3').play()" class="zh">魚</span><span class="pinyin">yú</span><span class="fr">poisson</span><span class="subinfo1"> nom de famille</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=魚">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/魚">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=魚">#C</a> <a target="_blank" href="https://www.zdic.net/hans/魚">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ke3.mp3').play()" class="zh">可</span><span class="pinyin">kě</span><span class="fr">peut</span><span class="subinfo1"> capable</span><span class="subinfo2"> peut-être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=可">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/可">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=可">#C</a> <a target="_blank" href="https://www.zdic.net/hans/可">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/tuo1.mp3').play()" class="zh">脫</span><span class="pinyin">tuō</span><span class="fr">enlever</span><span class="subinfo1"> décoller, dépouiller</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=脫">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/脫">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=脫">#C</a> <a target="_blank" href="https://www.zdic.net/hans/脫">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu2.mp3').play()" class="zh">於</span><span class="pinyin">yú</span><span class="fr">dans</span><span class="subinfo1"> à, sur</span><span class="subinfo2"> interjection hélas !</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=於">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/於">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=於">#C</a> <a target="_blank" href="https://www.zdic.net/hans/於">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yuan1.mp3').play()" class="zh">淵</span><span class="pinyin">yuān</span><span class="fr">golfe</span><span class="subinfo1"> abîme, profond</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=淵">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/淵">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=淵">#C</a> <a target="_blank" href="https://www.zdic.net/hans/淵">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/guo2.mp3').play()" class="zh">國</span><span class="pinyin">guó</span><span class="fr">nation</span><span class="subinfo1"> pays, État-nation</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=國">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/國">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=國">#C</a> <a target="_blank" href="https://www.zdic.net/hans/國">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/li4.mp3').play()" class="zh">利</span><span class="pinyin">lì</span><span class="fr">gains</span><span class="subinfo1"> avantage, profit, mérite</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=利">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/利">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=利">#C</a> <a target="_blank" href="https://www.zdic.net/hans/利">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qi4.mp3').play()" class="zh">器</span><span class="pinyin">qì</span><span class="fr">récipient</span><span class="subinfo1"> récipient</span><span class="subinfo2"> instrument</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=器">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/器">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=器">#C</a> <a target="_blank" href="https://www.zdic.net/hans/器">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ke3.mp3').play()" class="zh">可</span><span class="pinyin">kě</span><span class="fr">peut</span><span class="subinfo1"> capable</span><span class="subinfo2"> peut-être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=可">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/可">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=可">#C</a> <a target="_blank" href="https://www.zdic.net/hans/可">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">示</span><span class="pinyin">shì</span><span class="fr">montrer</span><span class="subinfo1"> manifester</span><span class="subinfo2"> démontrer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=示">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/示">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=示">#C</a> <a target="_blank" href="https://www.zdic.net/hans/示">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ren2.mp3').play()" class="zh">人</span><span class="pinyin">rén</span><span class="fr">humain</span><span class="subinfo1"> personnes</span><span class="subinfo2"> humanité, homme; quelqu'un d'autre ; tout le monde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=人">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/人">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=人">#C</a> <a target="_blank" href="https://www.zdic.net/hans/人">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('36');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="36" class="trs" style="">volonté désirer sucer de ， sûrement devenir solide étirer de ； volonté désirer faible de ， sûrement devenir solide fort de ； volonté désirer abroger de ， sûrement devenir solide prospérer de ； volonté désirer prendre de force de ， sûrement devenir solide et de 。 en effet dit petit brillant 。 doux faible victoire dur fort 。 poisson ne-pas peut enlever dans golfe ， nation de gains récipient ne-pas peut au moyen de montrer humain 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap36" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 36</b></p><br><p>Si vous voulez réduire quelque chose,</p><p>vous devez d’abord lui permettre de s’étendre.</p><p>Si vous voulez vous débarrasser de quelque chose,</p><p>vous devez d’abord lui permettre de s’épanouir.</p><p>Si vous voulez prendre quelque chose,</p><p>vous devez d’abord lui permettre d’être donné.</p><p>C’est ce qu’on appelle la perception subtile</p><p>de la façon dont les choses sont.</p><p>Le doux l'emporte sur le dur.</p><p>Le lent l'emporte sur le rapide.</p><p>Laissez votre travail rester un mystère.</p><p>Montrez simplement aux gens les résultats.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_36" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XXXVI</b><br><br><p>Lorsqu’une créature est sur le point de se contracter<a href="#ancrage_36-1"><small><sup><span id="lien_36-1">&#160;(1)</span></sup></small></a>(on reconnaît) avec certitude que dans l’origine<a href="#ancrage_36-1"><small><sup><span id="lien_36-1">&#160;(1)</span></sup></small></a> elle a eu de l’expansion.</p><p>Est-elle sur le point de s’affaiblir, (on reconnaît) avec certitude que dans l’origine elle a eu de la force.</p><p>Est-elle sur le point de dépérir, (on reconnaît) avec certitude que dans l’origine elle a eu de la splendeur.</p><p>Est-elle sur le point d’être dépouillée de tout, (on reconnaît) avec certitude que dans l’origine elle a été comblée de dons. </p><p>Cela s’appelle (une doctrine à la fois) cachée et éclatante<a href="#ancrage_36-3"><small><sup><span id="lien_36-3">&#160;(3)</span></sup></small></a>. </p><p>Ce qui est mou triomphe de ce qui est dur&#160;; ce qui est faible triomphe de ce qui est fort<a href="#ancrage_36-4"><small><sup><span id="lien_36-4">&#160;(4)</span></sup></small></a>.</p><p>Le poisson ne doit point quitter les abîmes&#160;; l’arme acérée du royaume ne doit pas<a href="#ancrage_36-5"><small><sup><span id="lien_36-5">&#160;(5)</span></sup></small></a> être montrée au peuple.</p><p><br /> </p><div style="text-align:center;clear:both;">NOTES.</div> <br><p><a href="#lien_36-1"><span id="ancrage_36-1">(1)</span></a> G&#160;: Le mot <i>hi</i> <span class="lang-zh" style="font-size: 150%;">歙</span> (<i>vulgo</i> aspirer) veut dire ici «&#160;se contracter, se resserrer&#160;;&#160;» <i>tchang</i> <span class="lang-zh" style="font-size: 150%;">張</span> signifie «&#160;se développer, s’agrandir.&#160;»</p><br><p><a href="#lien_36-2"><span id="ancrage_36-2">(2)</span></a> E&#160;: Le mot <i>kou</i> <span class="lang-zh" style="font-size: 150%;">固</span> (<i>vulgo</i> solide ) veut dire ici «&#160;dès l’origine.&#160;» </p><p>— Voyez ma traduction de <i>Meng-tseu</i>, I, 90, 2&#160;; II, 84, 5.</p><p>B&#160;: Si vous voyez une créature extrêmement développée dès sa naissance, vous reconnaissez à ce signe qu’elle se rapetissera. Si vous la voyez montrer sa force, vous reconnaissez qu’elle s’affaiblira. Si vous la voyez, dès sa naissance, dans un état florissant, vous reconnaissez qu’elle dépérira, etc. </p><br><p><a href="#lien_36-3"><span id="ancrage_36-3">(3)</span></a> E&#160;: Quoique ces principes soient évidents (pour le sage), en réalité ils sont abstraits et comme cachés (au vulgaire qui est incapable de tirer de telles conséquences de l’état apparent des choses ou des créatures). </p><br><p><a href="#lien_36-4"><span id="ancrage_36-4">(4)</span></a> E&#160;: Si les choses les plus florissantes dépérissent, etc. il est évident que les choses molles peuvent triompher des choses dures (cf. chap. <span class="sc">lxxviii</span>), et que les choses faibles peuvent triompher des çhoses fortes. <i>Ibidem&#160;: </i>La dureté et la force sont la voie qui conduit au danger et à la mort&#160;; la mollesse et la faiblesse sont la voie de la paix et du salut. Celui qui gouverne un royaume pourrait-il se prévaloir de sa puissance et de sa force&#160;? Si le poisson peut se cacher au fond des eaux, il conserve sa vie. Il ne doit pas se livrer à des  mouvements violents et s’élancer sur la terre&#160;; car il tomberait au pouvoir de l’homme et ne tarderait pas à périr. Mais (A) lorsque le poisson (que le pécheur avait pris) quitte l’élément dur (la terre) et qu’il possède l’élément mou (l’eau), personne ne peut plus se rendre maître de lui. De même, si un royaume peut conserver sa faiblesse (c’est-à-dire se montrer faible quoiqu’il soit puissant), il restera constamment en paix. Il ne doit pas se glorifier de sa puissance et de sa force (suivant E, l’expression «&#160;arme acérée du royaume&#160;» désigne la puissance, l’autorité), ni l’étaler aux yeux de tout l’empire. Autrement sa puissance s’épuiserait, sa force fléchirait, et il ne pourrait conserver ses états. </p><br><p><a href="#lien_36-5"><span id="ancrage_36-5">(5)</span></a> Ordinairement les mots <i>kho-i</i> <span class="lang-zh" style="font-size: 150%;">可以</span> signifient «&#160;il peut,&#160;»et montrent que le verbe suivant est actif&#160;; mais ici (voyez, à la fin de mon édition de <i>Meng-tseu</i>, Tractatus, etc. p. 67 et suiv.) il faut regarder le mot <i>i</i> <span class="lang-zh" style="font-size: 150%;">以</span> (<i>vulgo</i> se servir) comme synonyme du mot <i>tsiang</i> <span class="lang-zh" style="font-size: 150%;">將</span> (capere) en style moderne, lorsqu’il désigne l’accusatif,et construire comme s’il y avait&#160;: <i>pou-kho-tsiang-houe-tchi-li-khi-chi-jin</i> <span class="lang-zh" style="font-size: 150%;">不可將國之利器示人</span> «&#160;Il ne faut pas (littéralement) <i>prenant</i> l’arme acérée du royaume (la) montrer aux hommes,&#160;» c’est-à-dire il ne faut pas montrer aux hommes l’arme acérée du royaume. </p><p>Le commentateur <i>Li-si-tchaï</i> a adopté cette construction&#160;: <i>koue-tchi-li-khi-i-pou-kho-chi-jin</i><span class="lang-zh" style="font-size: 150%;">國之利器不可示人</span> «&#160;L’arme acérée du royaume ne doit pas être montrée aux hommes&#160;;&#160;» <i>i-thseu-chi-jin</i> <span class="lang-zh" style="font-size: 150%;">以此示人</span>, comme s’il y avait <i>tsiang-thseu-chi-jin</i> <span class="lang-zh" style="font-size: 150%;">將此示人</span> (si <i>capiens</i> illud, ostendas hominibus,id est, si <i>illud</i> ostendas hominibus), si vous la montrez aux hommes,alors, etc. Cette construction se retrouve aussi dans B et plusieurs autres commentaires. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 36</b><br><br>On ne peut réduire<br>que ce qui est déployé.<br>On ne peut affaiblir<br>que ce qui est puissant.<br>On ne peut abattre<br>que ce qui est élevé.<br>Ainsi pour recevoir,<br>il faut avoir donné.<br>C'est la loi de la nature.<br>La douceur et la faiblesse<br>triomphent de la dureté<br>et de la force.<br>Que le poisson qui brille<br>demeure au sein des profondeurs !<br>Les secrets du royaume<br>doivent être ainsi<br>maintenus cachés<br>au regard des hommes. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 36</b><br><br>Pour parvenir à rétrécir<br>Il faut d’abord laisser s’étendre.<br><br>Pour parvenir à affaiblir<br>Il faut d’abord renforcer.<br><br>Pour parvenir à éliminer<br>Il faut d’abord exalter.<br><br>Pour parvenir à prendre<br>Il faut d’abord donner.<br><br>Cela est subtile compréhension.<br><br>Car le souple et le faible<br>Triomphent du dur et du fort.<br><br>Le poisson ne peut vivre hors des profondeurs.<br><br>Les moyens d’action d’un gouvernement<br>Ne doivent être révélés à quiconque.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 36</b><br><br>Ce que l'on veut contracter s'était nécessairement déployé. Ce que l'on veut affaiblir s'était nécessairement fortifié. Ce que l'on veut appauvrir avait nécessairement prospéré. Ce que l'on veut ravir avait nécessairement été acquis Cela s'appelle une lumière cachée.<br>La douceur triomphe de la dureté, la faiblesse triomphe de la force.<br>Il ne faut pas que le poisson sorte des profondeurs aquatiques. Les sources de profit du royaume ne doivent pas être révélées aux hommes.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 36</b><br><br>Le commencement de la contraction suit néces­sairement l’apogée de l’expansion. L’affaiblissement suit la force, la décadence suit la prospérité, le dé­pouillement suit l’opulence. Voilà la lumière subtile (que beaucoup ne veulent pas voir). Toute puissance et toute supériorité précédente, s’expie par la débi­lité et l’infériorité subséquente. Le plus appelle le moins, l’excès appelle le déficit.<br>Que le poisson ne sorte pas des profondeurs (où il vit ignoré mais en sécurité, pour se montrer à la surface où il sera harponné). Qu’un État ne fasse pas montre de ses ressources, (s’il ne veut pas qu’aus­sitôt tous se tournent contre lui pour l’écraser).<blockquote><span class="KapKom">Rester petit, humble, caché ; ne pas attirer l’attention ; voilà le secret pour vivre bien et longtemps.</span></blockquote></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 36</b><br><br><p>Incite tes désirs à se contracter,</p><p>ta fermeté certainement s'étendra.</p><p>Incite tes désirs à faiblir,</p><p>ta solidité certainement se renforcera.</p><p>Incite tes désirs à renoncer,</p><p>ta résolution certainement prospérera.</p><p>Incite tes désirs à saisir,</p><p>ta fermeté certainement offriras.</p><p>On dit justement que le minuscule est brillant.</p><p>Le doux, le faible vainc le dur, le fort.</p><p>Le poisson ne peut s'échapper d'un profond étang,</p><p>son pays est le réceptacle des profits.</p><p>Il ne le peut pour montrer l'homme.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 36</b></p><br><p>Si l’on veut rétrécir, il faut (d’abord) étendre.</p><p>Si l’on veut affaiblir, il faut (d’abord) fortifier.</p><p>Si l’on veut faire périr, il faut (d’abord) faire fleurir.</p><p>Si l’on veut saisir, il faut (d’abord) offrir.</p><p>C’est ce qui s’appelle une vision subtile : le mou et le faible</p><p>vainquent le dur et le fort.</p><p>Ne retire pas le poisson de ses profondeurs ; les instruments</p><p>utiles de l’État ne doivent pas être montrés aux</p><p>hommes.</p><p>***</p><p>Pour l’idée principale, il faut comparer les chapitres XLIII et LXXVIII.</p><p>Puisque le développement de choses ne s’arrête jamais, il est certain</p><p>que chaque extension sera suivie d’un rétrécissement ; une extension</p><p>est donc une condition préalable indispensable pour obtenir un rétrécissement.</p><p>De même ce qui est fort, à son heure, deviendra faible ;</p><p>on peut donc dire que le faible vainc le fort. « Faible » et « fort » sont</p><p>d’ailleurs des termes techniques du Livre des Mutations, indiquant</p><p>des lignes brisées — — et entières —— dont les permutations forment</p><p>les 64 hexagrammes. Dans ces combinaisons, placée dans une</p><p>position qui compte pour avantageuse, la ligne « faible » peut sou</p><p>vent « vaincre » la ligne « forte ».</p><p>« Des instruments utiles » li k’i (133) pourrait aussi être traduit par</p><p>« des instruments aigus ». Cependant, dans le chapitre LVII, l’expression</p><p>est aussi employée dans le premier sens. Le peuple doit être</p><p>maintenu dans un état simple et primitif et ne doit pas apprendre</p><p>toutes sortes d’artifices : le poisson doit être laissé dans ses profondeurs.</p><p>Le rapport de cette idée avec ce qui précède est ténu ; je doute</p><p>que ce passage se soit originellement trouvé ici.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html"><b><font color="red">CH44</font></b></a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/44.html"> https://www.daodejing.org/44.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11635">https://ctext.org/dictionary.pl?if=en&id=11635</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/44.htm"> https://www.tao-te-king.org/44.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC44.pdf">http://www.daoisopen.com/downloads/CC44.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#44">https://laozirecited.com/#44</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">名與身孰親？身與貨孰多？得與亡孰病？是故甚愛必大費；多藏必厚亡。知足不辱，知止不殆，可以長久。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11635" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/ming2.mp3').play()" class="zh">名</span><span class="pinyin">míng</span><span class="fr">nom</span><span class="subinfo1"> grade, titre, position</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=名">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/名">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=名">#C</a> <a target="_blank" href="https://www.zdic.net/hans/名">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu3.mp3').play()" class="zh">與</span><span class="pinyin">yǔ</span><span class="fr">et</span><span class="subinfo1"> avec</span><span class="subinfo2"> à; pour; donner, accorder</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=與">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/與">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=與">#C</a> <a target="_blank" href="https://www.zdic.net/hans/與">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shen1.mp3').play()" class="zh">身</span><span class="pinyin">shēn</span><span class="fr">corps</span><span class="subinfo1"> coffre, coque</span><span class="subinfo2"> rad. Non. 158</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=身">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/身">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=身">#C</a> <a target="_blank" href="https://www.zdic.net/hans/身">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shu2.mp3').play()" class="zh">孰</span><span class="pinyin">shú</span><span class="fr">OMS? lequel? quoi ? lequel?</span><span class="subinfo1">-</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=孰">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/孰">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=孰">#C</a> <a target="_blank" href="https://www.zdic.net/hans/孰">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/qin1.mp3').play()" class="zh">親</span><span class="pinyin">qīn</span><span class="fr">proches</span><span class="subinfo1"> parents</span><span class="subinfo2"> intime</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=親">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/親">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=親">#C</a> <a target="_blank" href="https://www.zdic.net/hans/親">#Z</a></span></div><div class="int"><span class="zh">？</span><span class="pinyin">&emsp;</span><span class="fr">？</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shen1.mp3').play()" class="zh">身</span><span class="pinyin">shēn</span><span class="fr">corps</span><span class="subinfo1"> coffre, coque</span><span class="subinfo2"> rad. Non. 158</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=身">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/身">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=身">#C</a> <a target="_blank" href="https://www.zdic.net/hans/身">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu3.mp3').play()" class="zh">與</span><span class="pinyin">yǔ</span><span class="fr">et</span><span class="subinfo1"> avec</span><span class="subinfo2"> à; pour; donner, accorder</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=與">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/與">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=與">#C</a> <a target="_blank" href="https://www.zdic.net/hans/與">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/huo4.mp3').play()" class="zh">貨</span><span class="pinyin">huò</span><span class="fr">marchandises</span><span class="subinfo1"> marchandises, produits</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=貨">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/貨">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=貨">#C</a> <a target="_blank" href="https://www.zdic.net/hans/貨">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shu2.mp3').play()" class="zh">孰</span><span class="pinyin">shú</span><span class="fr">OMS? lequel? quoi ? lequel?</span><span class="subinfo1">-</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=孰">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/孰">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=孰">#C</a> <a target="_blank" href="https://www.zdic.net/hans/孰">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/duo1.mp3').play()" class="zh">多</span><span class="pinyin">duō</span><span class="fr">beaucoup</span><span class="subinfo1"> beaucoup</span><span class="subinfo2"> plus que, fini</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=多">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/多">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=多">#C</a> <a target="_blank" href="https://www.zdic.net/hans/多">#Z</a></span></div><div class="int"><span class="zh">？</span><span class="pinyin">&emsp;</span><span class="fr">？</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/de2.mp3').play()" class="zh">得</span><span class="pinyin">dé</span><span class="fr">obtenir</span><span class="subinfo1"> obtenir, gagner, acquérir</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=得">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/得">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=得">#C</a> <a target="_blank" href="https://www.zdic.net/hans/得">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu3.mp3').play()" class="zh">與</span><span class="pinyin">yǔ</span><span class="fr">et</span><span class="subinfo1"> avec</span><span class="subinfo2"> à; pour; donner, accorder</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=與">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/與">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=與">#C</a> <a target="_blank" href="https://www.zdic.net/hans/與">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wang2.mp3').play()" class="zh">亡</span><span class="pinyin">wáng</span><span class="fr">mort</span><span class="subinfo1"> détruite</span><span class="subinfo2"> perdre, périr</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=亡">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/亡">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=亡">#C</a> <a target="_blank" href="https://www.zdic.net/hans/亡">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shu2.mp3').play()" class="zh">孰</span><span class="pinyin">shú</span><span class="fr">OMS? lequel? quoi ? lequel?</span><span class="subinfo1">-</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=孰">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/孰">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=孰">#C</a> <a target="_blank" href="https://www.zdic.net/hans/孰">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bing4.mp3').play()" class="zh">病</span><span class="pinyin">bìng</span><span class="fr">maladie</span><span class="subinfo1"> maladie, maladie</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=病">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/病">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=病">#C</a> <a target="_blank" href="https://www.zdic.net/hans/病">#Z</a></span></div><div class="int"><span class="zh">？</span><span class="pinyin">&emsp;</span><span class="fr">？</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">故</span><span class="pinyin">gù</span><span class="fr">ancien</span><span class="subinfo1"> vieux</span><span class="subinfo2"> raison, parce que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=故">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/故">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=故">#C</a> <a target="_blank" href="https://www.zdic.net/hans/故">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shen4.mp3').play()" class="zh">甚</span><span class="pinyin">shèn</span><span class="fr">dans une grande mesure</span><span class="subinfo1"> considérablement</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=甚">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/甚">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=甚">#C</a> <a target="_blank" href="https://www.zdic.net/hans/甚">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ai4.mp3').play()" class="zh">愛</span><span class="pinyin">ài</span><span class="fr">aimer</span><span class="subinfo1"> aimer, comme</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=愛">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/愛">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=愛">#C</a> <a target="_blank" href="https://www.zdic.net/hans/愛">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bi4.mp3').play()" class="zh">必</span><span class="pinyin">bì</span><span class="fr">sûrement</span><span class="subinfo1"> très certainement </span><span class="subinfo2"> doit</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=必">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/必">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=必">#C</a> <a target="_blank" href="https://www.zdic.net/hans/必">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/da4.mp3').play()" class="zh">大</span><span class="pinyin">dà</span><span class="fr">grand</span><span class="subinfo1"> grand, vaste, grand, haut</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=大">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/大">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=大">#C</a> <a target="_blank" href="https://www.zdic.net/hans/大">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/fei4.mp3').play()" class="zh">費</span><span class="pinyin">fèi</span><span class="fr">dépenses</span><span class="subinfo1"> dépenses, frais</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=費">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/費">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=費">#C</a> <a target="_blank" href="https://www.zdic.net/hans/費">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/duo1.mp3').play()" class="zh">多</span><span class="pinyin">duō</span><span class="fr">beaucoup</span><span class="subinfo1"> beaucoup</span><span class="subinfo2"> plus que, fini</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=多">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/多">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=多">#C</a> <a target="_blank" href="https://www.zdic.net/hans/多">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/cang2.mp3').play()" class="zh">藏</span><span class="pinyin">cáng</span><span class="fr">cacher</span><span class="subinfo1"> dissimuler</span><span class="subinfo2"> thésauriser, stocker</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=藏">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/藏">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=藏">#C</a> <a target="_blank" href="https://www.zdic.net/hans/藏">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bi4.mp3').play()" class="zh">必</span><span class="pinyin">bì</span><span class="fr">sûrement</span><span class="subinfo1"> très certainement </span><span class="subinfo2"> doit</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=必">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/必">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=必">#C</a> <a target="_blank" href="https://www.zdic.net/hans/必">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/hou4.mp3').play()" class="zh">厚</span><span class="pinyin">hòu</span><span class="fr">épais</span><span class="subinfo1"> substantiel</span><span class="subinfo2"> considérablement</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=厚">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/厚">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=厚">#C</a> <a target="_blank" href="https://www.zdic.net/hans/厚">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wang2.mp3').play()" class="zh">亡</span><span class="pinyin">wáng</span><span class="fr">mort</span><span class="subinfo1"> détruite</span><span class="subinfo2"> perdre, périr</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=亡">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/亡">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=亡">#C</a> <a target="_blank" href="https://www.zdic.net/hans/亡">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">知</span><span class="pinyin">zhī</span><span class="fr">connaître</span><span class="subinfo1"> savoir</span><span class="subinfo2"> percevoir, comprendre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=知">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/知">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=知">#C</a> <a target="_blank" href="https://www.zdic.net/hans/知">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zu2.mp3').play()" class="zh">足</span><span class="pinyin">zú</span><span class="fr">pied</span><span class="subinfo1"> atteindre, satisfaire, assez</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=足">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/足">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=足">#C</a> <a target="_blank" href="https://www.zdic.net/hans/足">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ru3.mp3').play()" class="zh">辱</span><span class="pinyin">rǔ</span><span class="fr">humilier</span><span class="subinfo1"> insulter, abuser</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=辱">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/辱">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=辱">#C</a> <a target="_blank" href="https://www.zdic.net/hans/辱">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">知</span><span class="pinyin">zhī</span><span class="fr">connaître</span><span class="subinfo1"> savoir</span><span class="subinfo2"> percevoir, comprendre</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=知">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/知">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=知">#C</a> <a target="_blank" href="https://www.zdic.net/hans/知">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi3.mp3').play()" class="zh">止</span><span class="pinyin">zhǐ</span><span class="fr">arrêter</span><span class="subinfo1"> arrêter, renoncer</span><span class="subinfo2"> détenir</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=止">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/止">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=止">#C</a> <a target="_blank" href="https://www.zdic.net/hans/止">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dai4.mp3').play()" class="zh">殆</span><span class="pinyin">dài</span><span class="fr">dangereux</span><span class="subinfo1"> périlleux</span><span class="subinfo2"> mettre en danger</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=殆">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/殆">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=殆">#C</a> <a target="_blank" href="https://www.zdic.net/hans/殆">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/ke3.mp3').play()" class="zh">可</span><span class="pinyin">kě</span><span class="fr">peut</span><span class="subinfo1"> capable</span><span class="subinfo2"> peut-être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=可">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/可">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=可">#C</a> <a target="_blank" href="https://www.zdic.net/hans/可">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yi3.mp3').play()" class="zh">以</span><span class="pinyin">yǐ</span><span class="fr">au moyen de</span><span class="subinfo1"> par conséquent, donc </span><span class="subinfo2"> considérer comme; pour</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=以">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/以">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=以">#C</a> <a target="_blank" href="https://www.zdic.net/hans/以">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chang2.mp3').play()" class="zh">長</span><span class="pinyin">cháng</span><span class="fr">long</span><span class="subinfo1"> longueur</span><span class="subinfo2"> exceller dans; chef</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=長">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/長">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=長">#C</a> <a target="_blank" href="https://www.zdic.net/hans/長">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jiu3.mp3').play()" class="zh">久</span><span class="pinyin">jiǔ</span><span class="fr">il y a longtemps (il y a)</span><span class="subinfo1"> le temps passe, je suis en retard</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=久">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/久">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=久">#C</a> <a target="_blank" href="https://www.zdic.net/hans/久">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('44');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="44" class="trs" style="">nom et corps OMS? lequel? quoi ? lequel? proches ？ corps et marchandises OMS? lequel? quoi ? lequel? beaucoup ？ obtenir et mort OMS? lequel? quoi ? lequel? maladie ？ en effet ancien dans une grande mesure aimer sûrement grand dépenses ； beaucoup cacher sûrement épais mort 。 connaître pied ne-pas humilier ， connaître arrêter ne-pas dangereux ， peut au moyen de long il y a longtemps (il y a) 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap44" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 44</b></p><br><p>La célébrité ou l'intégrité : qu'est-ce qui est le plus important ?</p><p>L'argent ou le bonheur : qu'est-ce qui a le plus de valeur ?</p><p>Le succès ou l'échec : qu'est-ce qui est le plus destructeur ?</p><p>Si vous cherchez à vous épanouir chez les autres,</p><p>vous ne serez jamais vraiment épanoui.</p><p>Si votre bonheur dépend de l’argent,</p><p>vous ne serez jamais heureux avec vous-même.</p><p>Contentez-vous de ce que vous avez et</p><p>réjouissez-vous de la situation actuelle.</p><p>Lorsque vous réalisez que vous ne manquez de rien,</p><p>le monde entier vous appartient.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_44" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XLIV</b><br><br><p>Qu’est-ce qui nous touche de plus près, de notre gloire<a href="#ancrage_44-1"><small><sup><span id="lien_44-1">&#160;(1)</span></sup></small></a> ou de notre personne&#160;?</p><p>Qu’est-ce qui nous est le plus précieux, de notre personne ou de nos richesses&#160;?</p><p>Quel est le plus grand malheur, de les acquérir ou de les perdre&#160;?</p><p>C’est pourquoi celui qui a de grandes passions<a href="#ancrage_44-2"><small><sup><span id="lien_44-2">&#160;(2)</span></sup></small></a> est nécessairement exposé à de grands sacrifices.</p><p>Celui qui cache un riche trésor<a href="#ancrage_44-3"><small><sup><span id="lien_44-3">&#160;(3)</span></sup></small></a> éprouve nécessairement de grandes pertes.</p><p>Celui qui sait se suffire<a href="#ancrage_44-4"><small><sup><span id="lien_44-4">&#160;(4)</span></sup></small></a> est à l’abri du déshonneur.</p><p>Celui qui sait s’arrêter<a href="#ancrage_44-5"><small><sup><span id="lien_44-5">&#160;(5)</span></sup></small></a> ne périclite jamais.</p><p>Il pourra subsister<a href="#ancrage_44-6"><small><sup><span id="lien_44-6">&#160;(6)</span></sup></small></a> longtemps. </p><br><div style="text-align:center;clear:both;">NOTES.</div> <br><p><a href="#lien_44-1"><span id="ancrage_44-1">(1)</span></a> C est-à-dire, sans interrogation&#160;: «&#160;Notre personne nous touche de plus près que notre gloire (H), notre personne nous est plus précieuse que les richesses&#160;; c’est un plus grand malheur d’acquérir la gloire et les richesses que de les perdre.&#160;» B&#160;: La gloire et les richesses sont des choses extérieures. Méritent-elles que nous nous réjouissions après les avoir acquises, que nous nous affligions après les avoir perdues&#160;?</p><p><i>Liu-kie-fou&#160;: </i>Ce que les guerriers recherchent avec ardeur, c’est la gloire&#160;; et, pour l’obtenir, ils vont jusqu’à faire le sacrifice de leur vie. Ainsi ils ignorent que leur personne les touche de plus près que la gloire. </p><p>Ce que les hommes cupides recherchent avec ardeur, ce sont les richesses&#160;; et, pour les acquérir, ils vont jusqu’à exposer leur vie&#160;;ils ignorent que leur personne est plus précieuse que les richesses. Ils acquièrent les richesses, et ils perdent leur noblesse intérieure et leur richesse innée (leur vertu)&#160;!</p><p>Celui qui possède la vertu sait que la plus belle noblesse réside en lui-même, et il n’attend rien de la gloire&#160;; c’est pourquoi il sait se suffire et ne connaît point le déshonneur. Il sait que la richesse la plus précieuse réside en lui-même, et il n’attend rien des biens que procure l’opulence. C’est pourquoi il sait s’arrêter et ne périclite pas. N’étant exposé ni au déshonneur, ni au danger, il peut subsister longtemps. </p><p><i>Yen-kiun-ping&#160;: </i>La gloire est le plus grand artisan des malheurs et des désordres&#160;; pour l’obtenir, l’homme s’aliène le ciel et la terre, et court à sa perte. Les richesses l’enflent d’orgueil&#160;; pour les obtenir, il accable le peuple de fatigues, il appauvrit le royaume,il trouble ses esprits, il expose son cœur à une foule de désirs, il se met en révolte contre le Tao, il se livre au vol et au brigandage&#160;;l’univers le déteste, le monde lui déclare la guerre&#160;; c’est souvent un malheur de les acquérir (la gloire et les richesses), un bonheur de les perdre. En effet, celui qui a acquis de la gloire ou de la fortune ne persévère pas dans le Tao et la Vertu. Les esprits l’abandonnent,et il tranche lui-même sa vie&#160;; le ciel même ne pourrait le sauver. Mais dès qu’un homme est délivré de la gloire et des richesses, le Tao et la Vertu le favorisent, et les esprits le protègent. Sa gloire éclate d’elle-même, et ses richesses égalent celles du ciel et de la terre. </p><br><p><a href="#lien_44-2"><span id="ancrage_44-2">(2)</span></a> A&#160;: Celui qui aime beaucoup la volupté consume ses forces&#160;;celui qui aime beaucoup les richesses tombe dans le malheur. Ce qu’il aime est peu de chose, ce qu’il perd est immense I </p><p><i>Lie-kiu-fou&#160;: </i>Celui qui aime la gloire désire s’anoblir&#160;; mais, par son amour immodéré de la gloire, il la perd ainsi que sa noblesse innée (sa vertu)&#160;! Celui qui amasse des richesses désire se rendre opulent&#160;; mais, en les enfouissant en grande quantité, il les perd ainsi que ce qui fait sa véritable richesse (sa vertu). </p><br><p><a href="#lien_44-3"><span id="ancrage_44-3">(3)</span></a> A&#160;: Si, pendant votre vie, vous cachez beaucoup de richesses dans vos coffres, on viendra vous attaquer et vous piller. Si, après votre mort, on dépose de grandes richesses dans votre tombeau, les voleurs violeront votre sépulture et fouilleront votre cercueil. </p><br><p><a href="#lien_44-4"><span id="ancrage_44-4">(4)</span></a> A&#160;: L’homme qui sait se suffire renonce au profit, se dépouille de ses désirs, et ne s’expose pas au déshonneur pour les contenter. </p><br><p><a href="#lien_44-5"><span id="ancrage_44-5">(5)</span></a> A&#160;: Il ne se compromet point pour obtenir les richesses et le profit&#160;; la musique, la beauté des femmes ne troublent point ses oreilles ni ses yeux. C’est pourquoi il n’est exposé à aucun danger. </p><br><p><a href="#lien_44-6"><span id="ancrage_44-6">(6)</span></a> A&#160;: Si un homme sait s’arrêter, se suffire, il trouvera en lui-même le bonheur et la fortune. En se gouvernant lui-même, il n’usera pas ses esprits&#160;; en gouvernant le royaume, il ne tourmentera pas le peuple. C’est pourquoi il pourra subsister longtemps. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 44</b><br><br>De la gloire ou de la santé,<br>quel est le plus important ?<br>De la santé ou de la richesse,<br>quel est le plus précieux ?<br>Du gain ou de la perte,<br>quel est le plus honteux ?<br>L'homme trop passionné s'expose à la souffrance.<br>L'avare qui prévoit et amasse subit de lourdes pertes.<br>Celui qui se contente de ce qu'il a<br>reste serein.<br>Celui qui sait se réfréner tient à distance ledanger.<br>Par là<br>son existence sera préservée.<br>Car qui aura trop aimé<br>sera frustré.<br>Et qui aura trop amassé<br>ne possèdera rien. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 44</b><br><br>La renommée ou la personne<br>Quel est le plus précieux bien ?<br><br>La personne ou les biens matériels<br>Lequel a le plus de valeur ?<br><br>Du gain ou de la perte<br>Quel est le poison ?<br><br>Trop d’attachement<br>Conduit à l’épuisement.<br>Trop de réserves<br>Conduisent à de lourdes pertes.<br><br>Se contenter de peu<br>Evite toute disgrâce.<br><br>Qui sait se réfréner<br>Ne rencontre pas le danger<br>Et peur durer.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 44</b><br><br>Du renom ou de la personne, à quoi tient-on le plus: De la personne ou des richesse qu'est-ce qui importe le plus. Du gain ou del a perte, lequel est affligeant;<br>De fortes affections exigent de grands sacrifices; l'accumulation des biens entraîne de lourdes pertes.<br>Savoir se suffire exempte de revers; savoir s'arrêter préserve du danger, et permet de durer longtemps.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 44</b><br><br>Le corps n’est-il pas plus important que la re­nommée ? La vie n’est-elle pas plus considérable que la richesse ? Est-il sage de s’exposer à une grande perte, pour un mince avantage ?<br>Celui qui aime fortement, use beaucoup (son cœur). Celui qui amasse beaucoup, va à une grande ruine (pillage ou confiscation). Tandis que le mo­deste n’encourt aucune disgrâce, le modéré ne périt pas mais dure.<br></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 44</b><br><br><p>Quels parents le nom procure-t-il au corps ?</p><p>À combien de personnes le corps procure-t-il des biens ?</p><p>Quels malaises leur obtention procure-t-elle à la fuite ?</p><p>De ce fait, l'affection véritable sera certainement un grand gaspillage.</p><p>Se cacher de nombreuses personnes, ce sera certainement fuir l'épaisseur.</p><p>Connaître les parents sans être en disgrâce,</p><p>connaître l'arrêt sans être en danger,</p><p>savoir le faire pour être durable sur une longue période.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 44</b></p><br><p>Nom ou corps, lequel est le plus cher ?</p><p>Corps au biens, lequel compte le plus ?</p><p>Gain ou perte, lequel est le pire ?</p><p>Car, plus il y a parcimonie, plus il y a dépense ; plus il y a de trésors,</p><p>plus il y a de perte.</p><p>Celui qui sait se satisfaire ne sera pas confondu.</p><p>Celui qui sait où se tenir n’est pas en péril.</p><p>Il peut subsister longtemps.</p><p>***</p><p>Pour « celui qui sait se satisfaire » comparer XXXIII et XLVI. « Celui</p><p>qui sait où se tenir n’est pas en péril » veut dire que, si l’on n’essaie</p><p>pas d’empêcher ou de forcer le développement naturel des choses,</p><p>on pourra achever sa propre carrière naturelle. La phrase se trouve</p><p>aussi dans XXXII. On trouvera dans les notes de XXXII l’explication de</p><p>la phrase « savoir où se tenir ». Voir aussi IX et XVI.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

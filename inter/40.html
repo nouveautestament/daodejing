@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html">CH24</a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html"><b><font color="red">CH40</font></b></a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/40.html"> https://www.daodejing.org/40.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11631">https://ctext.org/dictionary.pl?if=en&id=11631</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/40.htm"> https://www.tao-te-king.org/40.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC40.pdf">http://www.daoisopen.com/downloads/CC40.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#40">https://laozirecited.com/#40</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">反者道之動；弱者道之用。天下萬物生於有，有生於無。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11631" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/fan3.mp3').play()" class="zh">反</span><span class="pinyin">fǎn</span><span class="fr">inverse</span><span class="subinfo1"> opposé, contraire, anti</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=反">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/反">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=反">#C</a> <a target="_blank" href="https://www.zdic.net/hans/反">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dao4.mp3').play()" class="zh">道</span><span class="pinyin">dào</span><span class="fr">Voie</span><span class="subinfo1"> chemin, route, rue </span><span class="subinfo2"> méthode, manière ; raconter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=道">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/道">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=道">#C</a> <a target="_blank" href="https://www.zdic.net/hans/道">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dong4.mp3').play()" class="zh">動</span><span class="pinyin">dòng</span><span class="fr">bouger</span><span class="subinfo1"> arriver</span><span class="subinfo2"> mouvement, action</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=動">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/動">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=動">#C</a> <a target="_blank" href="https://www.zdic.net/hans/動">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/ruo4.mp3').play()" class="zh">弱</span><span class="pinyin">ruò</span><span class="fr">faible</span><span class="subinfo1"> fragile, délicat</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=弱">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/弱">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=弱">#C</a> <a target="_blank" href="https://www.zdic.net/hans/弱">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dao4.mp3').play()" class="zh">道</span><span class="pinyin">dào</span><span class="fr">Voie</span><span class="subinfo1"> chemin, route, rue </span><span class="subinfo2"> méthode, manière ; raconter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=道">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/道">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=道">#C</a> <a target="_blank" href="https://www.zdic.net/hans/道">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yong4.mp3').play()" class="zh">用</span><span class="pinyin">yòng</span><span class="fr">utiliser</span><span class="subinfo1"> employer, appliquer, exploiter </span><span class="subinfo2"> utiliser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=用">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/用">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=用">#C</a> <a target="_blank" href="https://www.zdic.net/hans/用">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/tian1.mp3').play()" class="zh">天</span><span class="pinyin">tiān</span><span class="fr">ciel</span><span class="subinfo1"> paradis</span><span class="subinfo2"> dieu, céleste</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=天">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/天">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=天">#C</a> <a target="_blank" href="https://www.zdic.net/hans/天">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xia4.mp3').play()" class="zh">下</span><span class="pinyin">xià</span><span class="fr">dessous</span><span class="subinfo1"> dessous, dessous </span><span class="subinfo2"> vers le bas; inférieur; faire baisser</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=下">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/下">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=下">#C</a> <a target="_blank" href="https://www.zdic.net/hans/下">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wan4.mp3').play()" class="zh">萬</span><span class="pinyin">wàn</span><span class="fr">dix mille</span><span class="subinfo1"> innombrable</span><span class="subinfo2"> myriades</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=萬">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/萬">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=萬">#C</a> <a target="_blank" href="https://www.zdic.net/hans/萬">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu4.mp3').play()" class="zh">物</span><span class="pinyin">wù</span><span class="fr">chose</span><span class="subinfo1"> substance, créature</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=物">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/物">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=物">#C</a> <a target="_blank" href="https://www.zdic.net/hans/物">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng1.mp3').play()" class="zh">生</span><span class="pinyin">shēng</span><span class="fr">la vie</span><span class="subinfo1"> la vie, la vie</span><span class="subinfo2"> naissance</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=生">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/生">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=生">#C</a> <a target="_blank" href="https://www.zdic.net/hans/生">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu2.mp3').play()" class="zh">於</span><span class="pinyin">yú</span><span class="fr">dans</span><span class="subinfo1"> à, sur</span><span class="subinfo2"> interjection hélas !</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=於">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/於">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=於">#C</a> <a target="_blank" href="https://www.zdic.net/hans/於">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/you3.mp3').play()" class="zh">有</span><span class="pinyin">yǒu</span><span class="fr">avoir</span><span class="subinfo1"> posséder, posséder</span><span class="subinfo2"> exister</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=有">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/有">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=有">#C</a> <a target="_blank" href="https://www.zdic.net/hans/有">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/you3.mp3').play()" class="zh">有</span><span class="pinyin">yǒu</span><span class="fr">avoir</span><span class="subinfo1"> posséder, posséder</span><span class="subinfo2"> exister</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=有">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/有">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=有">#C</a> <a target="_blank" href="https://www.zdic.net/hans/有">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/sheng1.mp3').play()" class="zh">生</span><span class="pinyin">shēng</span><span class="fr">la vie</span><span class="subinfo1"> la vie, la vie</span><span class="subinfo2"> naissance</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=生">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/生">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=生">#C</a> <a target="_blank" href="https://www.zdic.net/hans/生">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/yu2.mp3').play()" class="zh">於</span><span class="pinyin">yú</span><span class="fr">dans</span><span class="subinfo1"> à, sur</span><span class="subinfo2"> interjection hélas !</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=於">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/於">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=於">#C</a> <a target="_blank" href="https://www.zdic.net/hans/於">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('40');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="40" class="trs" style="">inverse ce qui Voie de bouger ； faible ce qui Voie de utiliser 。 ciel dessous dix mille chose la vie dans avoir ， avoir la vie dans négatif 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap40" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 40</b></p><br><p>Le retour est le mouvement du Tao.</p><p>L'abandon est la voie du Tao.</p><p>Toutes choses naissent de l'être.</p><p>L'être naît du non-être.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_40" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XL</b><br><br><p>Le retour au non-être (produit) le mouvement<a href="#ancrage_40-1"><small><sup><span id="lien_40-1">&#160;(1)</span></sup></small></a> du Tao.</p><p>La faiblesse<a href="#ancrage_40-2"><small><sup><span id="lien_40-2">&#160;(2)</span></sup></small></a> est la fonction du Tao.</p><p>Toutes les choses<a href="#ancrage_40-3"><small><sup><span id="lien_40-3">&#160;(3)</span></sup></small></a> du monde sont nées de l’être&#160;;l’être<a href="#ancrage_40-4"><small><sup><span id="lien_40-4">&#160;(4)</span></sup></small></a> est né du non-être.</p><br><div style="text-align:center;clear:both;">NOTES.</div><br><p><a href="#lien_40-1"><span id="ancrage_40-1">(1)</span></a> C’est-à-dire&#160;: Dès que les êtres sont retournés au <i>non-être</i>, le Tao leur donne (de nouveau) le mouvement vital.</p><p><i>Pi-ching&#160;: </i>Le moi <i>fan</i> <span class="lang-zh" style="font-size: 150%;">反</span> veut dire <i>fan-iu-wou</i> <span class="lang-zh" style="font-size: 150%;">反於無</span>, «&#160;retourner au <i>non-être</i>.&#160;»</p><p>E&#160;: Le mouvement du Tao, c’est-à-dire l’impulsion que le Tao donne aux êtres, a pour racine, pour origine, leur retour (au <i>non-être</i>). S’ils ne retournaient pas au non-être, (le Tao) ne pourrait les mettre en mouvement. Il faut qu’ils se condensent, qu’ils se resserrent (qu’ils décroissent), pour pouvoir atteindre ensuite toute la plénitude de leur développement. C’est pourquoi le retour au non-être permet au Tao de mettre les êtres en mouvement, c’est-à-dire de les faire renaître. </p><p>B&#160;: Parmi tous les êtres de l’univers, il n’en est pas un seul qui n’ait besoin de retourner au non-être pour exister de nouveau. Ce n’est que lorsqu’ils sont rentrés dans un repos absolu, que le Tao les met de nouveau en mouvement et les ramène à la vie. Ainsi le repos est la base et le principe du mouvement. </p><br><p><a href="#lien_40-2"><span id="ancrage_40-2">(2)</span></a> Littéralement&#160;: «&#160;La faiblesse — du Tao — usage.&#160;» A explique les mots <i>tao-tchi-yong</i> <span class="lang-zh" style="font-size: 150%;">道之用</span> par <span class="lang-zh" style="font-size: 150%;">道之所常用</span>,c’est-à-dire&#160;: «&#160;(La faiblesse est) ce dont le Tao fait constamment usage.&#160;» C’est pourquoi il peut subsister éternellement. E a adopté le même sens&#160;: La faiblesse est l’état constant du Tao&#160;; s’il n’était pas faible, il ne pourrait subsister longtemps.</p><p>D’autres commentateurs ont entendu que la <i>faiblesse</i> était le moyen de <i>faire usage</i> du Tao, c’est-à-dire d’observer, d’imiter le Tao. B&#160;: Si ceux qui cultivent le Tao savaient que le retour au vide, au repos, est la base, le principe du mouvement, ils affaibliraient leur volonté, ils rendraient leur cœur vide. Dès que la volonté est affaiblie, le cœur devient vide&#160;; lorsque ce vide est porté à son comble, on entre dans une quiétude parfaite et l’on retourne à sa racine. Voilà le plus puissant moyen de renouveler sa nature. </p><p><i>Pi-ching&#160;: </i>Par la faiblesse on ressemble en quelque sorte au Tao. <i>Tchao-tcki-kien&#160;: </i>Avoir le cœur vide et tranquille intérieurement,être mou et faible extérieurement, c’est le moyen de retourner à sa racine (au Tao). <i>Li-si-tchaï&#160;: </i>En se développant, les êtres deviennent forts. Si l’on revient de la force à la faiblesse, on pourra arriver peu à peu au Tao. </p><br><p><a href="#lien_40-3"><span id="ancrage_40-3">(3)</span></a> A&#160;: Les dix mille choses sont nées du ciel et de la terre, qui ont une place déterminée dans l’univers. C’est pourquoi <i>Lao-tseu</i> dit&#160;: «&#160;Elles sont nées de l’<i>être</i>. </p><br><p><a href="#lien_40-4"><span id="ancrage_40-4">(4)</span></a> B&#160;: D’où sont nés le ciel et la terre&#160;? Ils sont nés du <i>non-être</i> (du Tao). Le Tao (A) n’a point de forme, c’est pourquoi Lao-tseu dit&#160;: «&#160;l’<i>être</i> est né du <i>non-être</i>.&#160;» </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 40</b><br><br>L'immobilité<br>est le mouvement du Tao.<br>Dans sa faiblesse<br>réside sa puissance.<br>Tous les êtres de ce monde<br>sont nés du visible.<br>Le visible procède de l'invisible.<br>Car<br>tout est<br>et<br>n'est rien. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 40</b><br><br>Le retour est la façon dont la voie se meut<br>La fluidité est le moyen qu’elle emploie<br><br>La multiplicité des êtres<br>Est née de quelque chose<br><br>Et ce quelque chose<br>De rien.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 40</b><br><br>Le retour est le mouvement du Tao; la faiblesse est le moyen dont il se sert.<br>Toutes choses sous le ciel naissent dans l'Etre; l'Etre naît dans le Non-Etre.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 40</b><br><br>Le retour en arrière (vers le Principe), est la forme de mouvement caractéristique de ceux qui se conforment au Principe. L’atténuation est l’effet que produit en eux leur conformation au Principe.<br>Considérant que tout ce qui est, est né de l’être simple, et que l’être est né du non-être de forme, ils tendent, en se diminuant sans cesse, à revenir à la simplicité primordiale.<blockquote><span class="KapKom">Les commentaires n’ajoutent rien au sens, qui est clair.</span></blockquote></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 40</b><br><br><p>Celui qui s'oppose, se déplace sur sa voie.</p><p>Celui qui est faible, sa voie est utilisée.</p><p>Sous le ciel, des milliers d'êtres croissent en propriété.</p><p>Les propriétés croissent dans le néant.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 40</b></p><br><p>Le retour est le mouvement de la Voie. La faiblesse est la</p><p>méthode de la Voie.</p><p>Le ciel et la terre et les dix mille êtres sont issus de l’Être ;</p><p>l’Être est issu du Non être.</p><p>***</p><p>Ce court chapitre est important pour la définition de la Voie. Le mot «</p><p>retour » me paraît indiquer l’alternance continuelle d’être et de non</p><p>être, de fleurir et de périr. Les choses vont toujours en sens inverse.</p><p>Pour ce mot, il faut comparer XXV, LXV et LXXVIII. Dans le faible, il y a</p><p>la qualité potentielle de la force et du développement ; c’est pourquoi</p><p>le faible est la « méthode », littéralement « l’emploi » de la Voie. On</p><p>comparera la dernière phrase avec le passage du chapitre I sur l’Être</p><p>et le Non être.</p><p>D’accord avec Kao Heng, je lis « le ciel et la terre au lieu de « tout</p><p>sous le ciel » du texte reçu. Bien que cette correction ne puisse pas</p><p>s’appuyer sur des variantes, la correspondance avec le premier chapitre,</p><p>où « le ciel et la terre » et « les dix mille choses » s’opposent, la</p><p>rend assez vraisemblable.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>

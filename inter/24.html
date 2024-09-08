@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DAO DE JING</title>
+		<style>
+			html {
+				margin:0;
+				padding:0;
+			}
+			
+			body {
+				margin:0;
+				padding:0;
+				font-family:sans-serif;
+			}
+			
+			p {
+				margin:2px;
+			}
+			
+			a {
+				color:black;
+				text-decoration:none;
+			}
+
+			a:hover {
+				color:#ff006f;
+			}
+			
+			table {
+				border:1px solid #000000;
+			}
+
+			table td {
+				border:1px solid #000000;
+				padding-right:5px;
+			}
+			
+			td:nth-child(1), td:nth-child(2)  {
+				padding-left: 5px;
+			}
+			
+			.td3 {
+				padding-left:7px;
+			}
+
+			#banniere {
+				margin:0px;
+				padding:0px;
+				background-color:black;
+			}
+		
+			
+			.int {
+				display:inline-block;
+				margin:7px
+			}
+
+
+			.zh {
+				font-size:40px;
+				display:block;
+				cursor:pointer;
+			}
+			
+			.zh:hover {
+				font-size: 40px;
+				display:block;
+				cursor: pointer;
+				color: #ff006f;
+			}
+			
+			.pinyin {
+				color:#02b31c;
+			}
+			
+			.fr {
+				font-size:17px;
+				display:block;
+			}
+
+			.info {
+				font-size:13px;
+				color:#888888;
+				display:block;
+			}
+
+			.subinfo {
+				font-size:10px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo1 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.subinfo2 {
+				font-size:12px;
+				color:#888888;
+				display:block;
+			}
+			
+			.lemme {
+				font-size:14px;
+				display:block;
+			}
+			
+			.lemme a {
+				color:#0054ff;
+			}
+			
+			.trs {
+				line-height:1.5em;
+				font-size:16px;
+				outline:none;
+				box-shadow:3px 3px 2px 0px #999999b3;
+			    border:none;
+				outline:none;
+				box-sizing:border-box;
+				padding:10px;
+				width:98%;
+				height:180px;
+				display:block;
+			}
+			
+			#show {
+				background-color:white;
+				position:fixed;
+				width:100%;
+				top:0;
+			}
+			
+		</style>
+		
+		<script>
+		
+		alltrs = ""
+		
+		function addtrs(id)
+		{
+			linetrs = document.getElementById(id).value;
+			alltrs += linetrs+'\n';
+		}
+		
+		function lire()
+		{
+			document.getElementById('show').style.display = "initial";
+			document.getElementById('textarea_trs').value = alltrs;
+		}
+		
+		
+		function save()
+		{
+			alltrs = document.getElementById('textarea_trs').value;
+			document.getElementById('show').style.display = "none";
+		}
+		
+		</script>
+		
+	</head>
+
+<body>
+
+
+<div style="display:none;" id="show">
+<div onclick="save();" style="padding:1em;cursor:pointer;user-select:none;">[SAUVE_ECHAP]</div>
+<textarea class="trs" id="textarea_trs"></textarea>
+</div>
+
+
+<div id="banniere" style="text-align:center;">
+	<span style="color:#fff256;text-align: center;font-size:3.7em;font-weight:bold;">道	德	經</span><br>
+	<span style="color:#fff256;text-align: center;font-size:2em;font-weight:bold;">DÀO	DÉ	JĪNG</span><br>
+	<br>
+</div><br>
+
+
+<div style="font-family:monospace;text-align:center;font-size:1.7em;">
+<a href="1.html">CH01</a>&ensp;
+<a href="2.html">CH02</a>&ensp;
+<a href="3.html">CH03</a>&ensp;
+<a href="4.html">CH04</a>&ensp;
+<a href="5.html">CH05</a>&ensp;
+<a href="6.html">CH06</a>&ensp;
+<a href="7.html">CH07</a>&ensp;
+<a href="8.html">CH08</a>&ensp;
+<a href="9.html">CH09</a>&ensp;<br>
+<a href="10.html">CH10</a>&ensp;
+<a href="11.html">CH11</a>&ensp;
+<a href="12.html">CH12</a>&ensp;
+<a href="13.html">CH13</a>&ensp;
+<a href="14.html">CH14</a>&ensp;
+<a href="15.html">CH15</a>&ensp;
+<a href="16.html">CH16</a>&ensp;
+<a href="17.html">CH17</a>&ensp;
+<a href="18.html">CH18</a>&ensp;<br>
+<a href="19.html">CH19</a>&ensp;
+<a href="20.html">CH20</a>&ensp;
+<a href="21.html">CH21</a>&ensp;
+<a href="22.html">CH22</a>&ensp;
+<a href="23.html">CH23</a>&ensp;
+<a href="24.html"><b><font color="red">CH24</font></b></a>&ensp;
+<a href="25.html">CH25</a>&ensp;
+<a href="26.html">CH26</a>&ensp;
+<a href="27.html">CH27</a>&ensp;<br>
+<a href="28.html">CH28</a>&ensp;
+<a href="29.html">CH29</a>&ensp;
+<a href="30.html">CH30</a>&ensp;
+<a href="31.html">CH31</a>&ensp;
+<a href="32.html">CH32</a>&ensp;
+<a href="33.html">CH33</a>&ensp;
+<a href="34.html">CH34</a>&ensp;
+<a href="35.html">CH35</a>&ensp;
+<a href="36.html">CH36</a>&ensp;<br>
+<a href="37.html">CH37</a>&ensp;
+<a href="38.html">CH38</a>&ensp;
+<a href="39.html">CH39</a>&ensp;
+<a href="40.html">CH40</a>&ensp;
+<a href="41.html">CH41</a>&ensp;
+<a href="42.html">CH42</a>&ensp;
+<a href="43.html">CH43</a>&ensp;
+<a href="44.html">CH44</a>&ensp;
+<a href="45.html">CH45</a>&ensp;<br>
+<a href="46.html">CH46</a>&ensp;
+<a href="47.html">CH47</a>&ensp;
+<a href="48.html">CH48</a>&ensp;
+<a href="49.html">CH49</a>&ensp;
+<a href="50.html">CH50</a>&ensp;
+<a href="51.html">CH51</a>&ensp;
+<a href="52.html">CH52</a>&ensp;
+<a href="53.html">CH53</a>&ensp;
+<a href="54.html">CH54</a>&ensp;<br>
+<a href="55.html">CH55</a>&ensp;
+<a href="56.html">CH56</a>&ensp;
+<a href="57.html">CH57</a>&ensp;
+<a href="58.html">CH58</a>&ensp;
+<a href="59.html">CH59</a>&ensp;
+<a href="60.html">CH60</a>&ensp;
+<a href="61.html">CH61</a>&ensp;
+<a href="62.html">CH62</a>&ensp;
+<a href="63.html">CH63</a>&ensp;<br>
+<a href="64.html">CH64</a>&ensp;
+<a href="65.html">CH65</a>&ensp;
+<a href="66.html">CH66</a>&ensp;
+<a href="67.html">CH67</a>&ensp;
+<a href="68.html">CH68</a>&ensp;
+<a href="69.html">CH69</a>&ensp;
+<a href="70.html">CH70</a>&ensp;
+<a href="71.html">CH71</a>&ensp;
+<a href="72.html">CH72</a>&ensp;<br>
+<a href="73.html">CH73</a>&ensp;
+<a href="74.html">CH74</a>&ensp;
+<a href="75.html">CH75</a>&ensp;
+<a href="76.html">CH76</a>&ensp;
+<a href="77.html">CH77</a>&ensp;
+<a href="78.html">CH78</a>&ensp;
+<a href="79.html">CH79</a>&ensp;
+<a href="80.html">CH80</a>&ensp;
+<a href="81.html">CH81</a>&ensp;
+</div>
+
+
+<br><br><p><a target="_blank" href="https://www.daodejing.org/24.html"> https://www.daodejing.org/24.html</a></p>
+<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id=11615">https://ctext.org/dictionary.pl?if=en&id=11615</a></p>
+<p><a target="_blank" href="https://www.tao-te-king.org/24.htm"> https://www.tao-te-king.org/24.htm</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC24.pdf">http://www.daoisopen.com/downloads/CC24.pdf</a></p>
+<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>
+<p><a target="_blank" href="https://laozirecited.com/#24">https://laozirecited.com/#24</a></p>
+	
+<br><br>
+<table><tbody>
+<tr><td nowrap>DAODEJING</td><td>2024</td><td style="font-size:38px;padding-left:7px;font-family:fangsong;">企者不立；跨者不行；自見者不明；自是者不彰；自伐者無功；自矜者不長。其在道也，曰：餘食贅行。物或惡之，故有道者不處。</td></tr>
+<tr><td class="td1"><a href="https://ctext.org/dictionary.pl?if=en&id=11615" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td><div class="int"><span onclick="new Audio('../son/qi3.mp3').play()" class="zh">企</span><span class="pinyin">qǐ</span><span class="fr">planifier un projet</span><span class="subinfo1"> se tenir sur la pointe des pieds</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=企">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/企">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=企">#C</a> <a target="_blank" href="https://www.zdic.net/hans/企">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/li4.mp3').play()" class="zh">立</span><span class="pinyin">lì</span><span class="fr">rester</span><span class="subinfo1"> laissez reposer</span><span class="subinfo2"> établir, fixer</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=立">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/立">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=立">#C</a> <a target="_blank" href="https://www.zdic.net/hans/立">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/kua4.mp3').play()" class="zh">跨</span><span class="pinyin">kuà</span><span class="fr">enfourcher</span><span class="subinfo1"> enfourcher, chevaucher</span><span class="subinfo2"> porter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=跨">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/跨">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=跨">#C</a> <a target="_blank" href="https://www.zdic.net/hans/跨">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xing2.mp3').play()" class="zh">行</span><span class="pinyin">xíng</span><span class="fr">aller</span><span class="subinfo1"> marcher</span><span class="subinfo2"> déménager, voyager; circuler</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=行">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/行">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=行">#C</a> <a target="_blank" href="https://www.zdic.net/hans/行">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/zi4.mp3').play()" class="zh">自</span><span class="pinyin">zì</span><span class="fr">soi</span><span class="subinfo1"> privé, personnel</span><span class="subinfo2"> depuis</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=自">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/自">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=自">#C</a> <a target="_blank" href="https://www.zdic.net/hans/自">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jian4.mp3').play()" class="zh">見</span><span class="pinyin">jiàn</span><span class="fr">voir</span><span class="subinfo1"> observer, contempler</span><span class="subinfo2"> percevoir</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=見">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/見">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=見">#C</a> <a target="_blank" href="https://www.zdic.net/hans/見">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ming2.mp3').play()" class="zh">明</span><span class="pinyin">míng</span><span class="fr">brillant</span><span class="subinfo1"> léger, brillant</span><span class="subinfo2"> clair</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=明">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/明">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=明">#C</a> <a target="_blank" href="https://www.zdic.net/hans/明">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/zi4.mp3').play()" class="zh">自</span><span class="pinyin">zì</span><span class="fr">soi</span><span class="subinfo1"> privé, personnel</span><span class="subinfo2"> depuis</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=自">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/自">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=自">#C</a> <a target="_blank" href="https://www.zdic.net/hans/自">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi4.mp3').play()" class="zh">是</span><span class="pinyin">shì</span><span class="fr">en effet</span><span class="subinfo1"> oui, c'est vrai </span><span class="subinfo2"> être; pronom démonstratif, ceci, cela</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=是">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/是">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=是">#C</a> <a target="_blank" href="https://www.zdic.net/hans/是">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhang1.mp3').play()" class="zh">彰</span><span class="pinyin">zhāng</span><span class="fr">clair</span><span class="subinfo1"> manifeste, évident</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=彰">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/彰">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=彰">#C</a> <a target="_blank" href="https://www.zdic.net/hans/彰">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/zi4.mp3').play()" class="zh">自</span><span class="pinyin">zì</span><span class="fr">soi</span><span class="subinfo1"> privé, personnel</span><span class="subinfo2"> depuis</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=自">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/自">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=自">#C</a> <a target="_blank" href="https://www.zdic.net/hans/自">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/fa2.mp3').play()" class="zh">伐</span><span class="pinyin">fá</span><span class="fr">abattre</span><span class="subinfo1"> soumettre, attaquer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=伐">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/伐">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=伐">#C</a> <a target="_blank" href="https://www.zdic.net/hans/伐">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/wu2.mp3').play()" class="zh">無</span><span class="pinyin">wú</span><span class="fr">négatif</span><span class="subinfo1"> non, non </span><span class="subinfo2"> manque, n'ai pas</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=無">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/無">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=無">#C</a> <a target="_blank" href="https://www.zdic.net/hans/無">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/gong1.mp3').play()" class="zh">功</span><span class="pinyin">gōng</span><span class="fr">réussite</span><span class="subinfo1"> mérite, bon résultat, succès, réalisation</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=功">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/功">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=功">#C</a> <a target="_blank" href="https://www.zdic.net/hans/功">#Z</a></span></div><div class="int"><span class="zh">；</span><span class="pinyin">&emsp;</span><span class="fr">；</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/zi4.mp3').play()" class="zh">自</span><span class="pinyin">zì</span><span class="fr">soi</span><span class="subinfo1"> privé, personnel</span><span class="subinfo2"> depuis</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=自">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/自">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=自">#C</a> <a target="_blank" href="https://www.zdic.net/hans/自">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/jin1.mp3').play()" class="zh">矜</span><span class="pinyin">jīn</span><span class="fr">pitié</span><span class="subinfo1"> avoir pitié, montrer de la sympathie</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=矜">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/矜">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=矜">#C</a> <a target="_blank" href="https://www.zdic.net/hans/矜">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chang2.mp3').play()" class="zh">長</span><span class="pinyin">cháng</span><span class="fr">long</span><span class="subinfo1"> longueur</span><span class="subinfo2"> exceller dans; chef</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=長">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/長">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=長">#C</a> <a target="_blank" href="https://www.zdic.net/hans/長">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/qi2.mp3').play()" class="zh">其</span><span class="pinyin">qí</span><span class="fr">le sien</span><span class="subinfo1"> elle, son, leur </span><span class="subinfo2"> que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=其">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/其">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=其">#C</a> <a target="_blank" href="https://www.zdic.net/hans/其">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zai4.mp3').play()" class="zh">在</span><span class="pinyin">zài</span><span class="fr">être à</span><span class="subinfo1"> dans, sur</span><span class="subinfo2"> consister en, repos</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=在">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/在">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=在">#C</a> <a target="_blank" href="https://www.zdic.net/hans/在">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dao4.mp3').play()" class="zh">道</span><span class="pinyin">dào</span><span class="fr">Voie</span><span class="subinfo1"> chemin, route, rue </span><span class="subinfo2"> méthode, manière ; raconter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=道">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/道">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=道">#C</a> <a target="_blank" href="https://www.zdic.net/hans/道">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/ye3.mp3').play()" class="zh">也</span><span class="pinyin">yě</span><span class="fr">aussi</span><span class="subinfo1"> particule finale classique d'affirmation ou d'identité forte</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=也">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/也">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=也">#C</a> <a target="_blank" href="https://www.zdic.net/hans/也">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yue1.mp3').play()" class="zh">曰</span><span class="pinyin">yuē</span><span class="fr">dire</span><span class="subinfo1"> prononcer, indiquer, parler, déclarer</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=曰">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/曰">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=曰">#C</a> <a target="_blank" href="https://www.zdic.net/hans/曰">#Z</a></span></div><div class="int"><span class="zh">：</span><span class="pinyin">&emsp;</span><span class="fr">：</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/yu2.mp3').play()" class="zh">餘</span><span class="pinyin">yú</span><span class="fr">surplus</span><span class="subinfo1"> surplus, reste</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=餘">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/餘">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=餘">#C</a> <a target="_blank" href="https://www.zdic.net/hans/餘">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/shi2.mp3').play()" class="zh">食</span><span class="pinyin">shí</span><span class="fr">manger</span><span class="subinfo1"> repas</span><span class="subinfo2"> nourriture</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=食">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/食">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=食">#C</a> <a target="_blank" href="https://www.zdic.net/hans/食">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhui4.mp3').play()" class="zh">贅</span><span class="pinyin">zhuì</span><span class="fr">inutile</span><span class="subinfo1"> superflu</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=贅">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/贅">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=贅">#C</a> <a target="_blank" href="https://www.zdic.net/hans/贅">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/xing2.mp3').play()" class="zh">行</span><span class="pinyin">xíng</span><span class="fr">aller</span><span class="subinfo1"> marcher</span><span class="subinfo2"> déménager, voyager; circuler</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=行">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/行">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=行">#C</a> <a target="_blank" href="https://www.zdic.net/hans/行">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/wu4.mp3').play()" class="zh">物</span><span class="pinyin">wù</span><span class="fr">chose</span><span class="subinfo1"> substance, créature</span><span class="subinfo2">-</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=物">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/物">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=物">#C</a> <a target="_blank" href="https://www.zdic.net/hans/物">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/huo4.mp3').play()" class="zh">或</span><span class="pinyin">huò</span><span class="fr">ou bien</span><span class="subinfo1"> autrement </span><span class="subinfo2"> peut-être, peut-être</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=或">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/或">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=或">#C</a> <a target="_blank" href="https://www.zdic.net/hans/或">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/e4.mp3').play()" class="zh">惡</span><span class="pinyin">è</span><span class="fr">mal</span><span class="subinfo1"> méchant, mauvais</span><span class="subinfo2"> moche, immonde</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=惡">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/惡">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=惡">#C</a> <a target="_blank" href="https://www.zdic.net/hans/惡">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhi1.mp3').play()" class="zh">之</span><span class="pinyin">zhī</span><span class="fr">de</span><span class="subinfo1"> de provenant, ça </span><span class="subinfo2"> aller à</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=之">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/之">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=之">#C</a> <a target="_blank" href="https://www.zdic.net/hans/之">#Z</a></span></div><div class="int"><span class="zh">，</span><span class="pinyin">&emsp;</span><span class="fr">，</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div><div class="int"><span onclick="new Audio('../son/gu4.mp3').play()" class="zh">故</span><span class="pinyin">gù</span><span class="fr">ancien</span><span class="subinfo1"> vieux</span><span class="subinfo2"> raison, parce que</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=故">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/故">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=故">#C</a> <a target="_blank" href="https://www.zdic.net/hans/故">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/you3.mp3').play()" class="zh">有</span><span class="pinyin">yǒu</span><span class="fr">avoir</span><span class="subinfo1"> posséder, posséder</span><span class="subinfo2"> exister</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=有">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/有">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=有">#C</a> <a target="_blank" href="https://www.zdic.net/hans/有">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/dao4.mp3').play()" class="zh">道</span><span class="pinyin">dào</span><span class="fr">Voie</span><span class="subinfo1"> chemin, route, rue </span><span class="subinfo2"> méthode, manière ; raconter</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=道">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/道">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=道">#C</a> <a target="_blank" href="https://www.zdic.net/hans/道">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/zhe3.mp3').play()" class="zh">者</span><span class="pinyin">zhě</span><span class="fr">ce qui</span><span class="subinfo1"> celui qui</span><span class="subinfo2"> ceux qui</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=者">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/者">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=者">#C</a> <a target="_blank" href="https://www.zdic.net/hans/者">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/bu4.mp3').play()" class="zh">不</span><span class="pinyin">bù</span><span class="fr">ne-pas</span><span class="subinfo1"> non </span><span class="subinfo2"> préfixe négatif</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=不">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/不">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=不">#C</a> <a target="_blank" href="https://www.zdic.net/hans/不">#Z</a></span></div><div class="int"><span onclick="new Audio('../son/chu3.mp3').play()" class="zh">處</span><span class="pinyin">chǔ</span><span class="fr">lieu</span><span class="subinfo1"> place, département</span><span class="subinfo2"> prendre place, résider, rester, habiter, traiter avec</span><span class="lemme"><a target="_blank" href="https://www.purpleculture.net/dictionary-details/?word=處">#P</a> <a target="_blank" href="https://fr.wiktionary.org/wiki/處">#W</a> <a target="_blank" href="https://ctext.org/dictionary.pl?if=en&char=處">#C</a> <a target="_blank" href="https://www.zdic.net/hans/處">#Z</a></span></div><div class="int"><span class="zh">。</span><span class="pinyin">&emsp;</span><span class="fr">。</span><span class="subinfo1">&emsp;</span><span class="subinfo2">&emsp;</span><span class="lemme">&emsp;</span></div></td></tr>
+<tr><td class="td1" nowrap><button onclick="addtrs('24');this.style.background='#00eb00'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td><td class="td2">2024</td><td><textarea id="24" class="trs" style="">planifier un projet ce qui ne-pas rester ； enfourcher ce qui ne-pas aller ； soi voir ce qui ne-pas brillant ； soi en effet ce qui ne-pas clair ； soi abattre ce qui négatif réussite ； soi pitié ce qui ne-pas long 。 le sien être à Voie aussi ， dire ： surplus manger inutile aller 。 chose ou bien mal de ， ancien avoir Voie ce qui ne-pas lieu 。</textarea></td></tr>
+<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap24" target="_blank">STEPHEN MITCHELL TRADFR</a></td><td>1988</td><td class="td3"><p><b>CHAPITRE 24</b></p><br><p>Celui qui se tient sur la pointe des pieds</p><p>ne tient pas ferme.</p><p>Celui qui court en avant</p><p>ne va pas loin.</p><p>Celui qui essaie de briller</p><p>atténue sa propre lumière.</p><p>Celui qui se définit lui-même</p><p>ne peut pas savoir qui il est vraiment.</p><p>Celui qui a du pouvoir sur les autres</p><p>ne peut pas se donner du pouvoir.</p><p>Celui qui s'accroche à son travail</p><p>ne créera rien de durable.</p><p>Si vous voulez être en accord avec le Tao,</p><p>faites simplement votre travail, puis lâchez prise.</p></td></tr>
+<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_24" target="_blank">JULIEN STANISLAS</a></td><td>1842</td><td class="td3"><b>CHAPITRE XXIV</b><br><br><p>Celui qui se dresse sur ses pieds ne peut se tenir droit<a href="#ancrage_24-1"><small><sup><span id="lien_24-1">&#160;(1)</span></sup></small></a>&#160;; celui qui étend les jambes ne peut marcher.</p><p>Celui qui tient à ses vues n’est point éclairé<a href="#ancrage_24-2"><small><sup><span id="lien_24-2">&#160;(2)</span></sup></small></a>.</p><p>Celui qui s’approuve lui-même ne brille pas<a href="#ancrage_24-3"><small><sup><span id="lien_24-3">&#160;(3)</span></sup></small></a>.</p><p>Celui qui se vante n’a point de mérite<a href="#ancrage_24-4"><small><sup><span id="lien_24-4">&#160;(4)</span></sup></small></a>.</p><p>Celui qui se glorifie<a href="#ancrage_24-5"><small><sup><span id="lien_24-5">&#160;(5)</span></sup></small></a> ne subsiste pas longtemps<a href="#ancrage_24-6"><small><sup><span id="lien_24-6">&#160;(6)</span></sup></small></a>.</p><p>Si l’on juge cette conduite selon le Tao<a href="#ancrage_24-7"><small><sup><span id="lien_24-7">&#160;(7)</span></sup></small></a>, on la compare à un reste d’aliments ou à un goitre hideux qui inspirent aux hommes un constant<a href="#ancrage_24-8"><small><sup><span id="lien_24-8">&#160;(8)</span></sup></small></a> dégoût.</p><p>C’est pourquoi celui qui possède le Tao ne s’attache pas<a href="#ancrage_24-9"><small><sup><span id="lien_24-9">&#160;(9)</span></sup></small></a> à cela.</p><br><div style="text-align:center;clear:both;">NOTES.</div><br><p><a href="#lien_24-1"><span id="ancrage_24-1">(1)</span></a> Celui qui se dresse sur la pointe des pieds veut s’exhausser pour voir plus loin&#160;; celui qui étend les jambes en marchant veut allonger son pas. Ces deux comparaisons ont pour but de montrer que celui qui s’élève, qui cherche à se faire grand (en se vantant),ne pourra subsister longtemps. </p><p>H&#160;: Ce chapitre est la suite du précédent. Si ceux qui aiment à discuter ne peuvent subsister longtemps, de même ceux qui se tiennent sur la pointe du pied, ou allongent le pas, ne peuvent ni se tenir longtemps debout, ni marcher longtemps. L'auteur veut par là faire ressortir la faute de ceux qui cherchent à l’emporter par leur prudence. </p><p>C&#160;: Celui qui se dresse sur ses pieds ne cherche qu’à dépasser les autres de la tête, il ne sait pas qu’il ne peut se tenir ainsi debout pendant longtemps. Celui qui allonge le pas en marchant ne cherche qu’à dépasser les autres&#160;; il ignore qu’il ne pourra marcher ainsi pendant longtemps. </p><p>E&#160;: L’auteur se sert de comparaisons faciles à saisir pour démontrer les axiomes qu’il rapporte plus bas.</p><br><p><a href="#lien_24-2"><span id="ancrage_24-2">(2)</span></a> B&#160;: Il s’imagine que les autres hommes de l’empire ne le valent pas. Alors il ne peut profiter de leurs qualités ou de leurs talents. C’est pourquoi il n’est pas éclairé. </p><br><p><a href="#lien_24-3"><span id="ancrage_24-3">(3)</span></a> B&#160;: Celui qui s’approuve lui-même avec une sorte de partialité (E&#160;: et qui blâme les autres) s’imagine que tous les autres hommes n’ont pas autant de capacité que lui&#160;; alors il ne peut profiter de leurs talents. C’est pourquoi il ne brille pas. </p><br><p><a href="#lien_24-4"><span id="ancrage_24-4">(4)</span></a> B&#160;: Celui qui se vante de son mérite craint encore de n’être pas connu et estimé des hommes, et les hommes, au contraire, le méprisent. Voilà pourquoi il n’a pas de mérite (ou perd son mérite). </p><br><p><a href="#lien_24-5"><span id="ancrage_24-5">(5)</span></a> B&#160;: Celui qui se glorifie (H&#160;: Celui qui se prévaut de sa capacité) s’imagine que tous les autres hommes ne l’égalent pas.</p><br><p><a href="#lien_24-6"><span id="ancrage_24-6">(6)</span></a> H&#160;: De tels hommes aiment à vaincre les autres.  Non-seulement ils n’acquièrent aucun mérite, mais en outre ils s’attirent promptement la mort. </p><br><p><a href="#lien_24-7"><span id="ancrage_24-7">(7)</span></a> J’ai traduit les mots <i>khi-iu-tao</i> <span class="lang-zh" style="font-size: 150%;">其於道</span> d’après l’explication de <i>Sie-hoeï</i> E&#160;: <span class="lang-zh" style="font-size: 150%;">以道而論之</span>. G&#160;: Le mot <i>hing</i> <span class="lang-zh" style="font-size: 150%;">行</span> (<i>vulgo</i> marcher, ou agir) doit être lu comme s’il y avait <i>hing</i> <span class="lang-zh" style="font-size: 150%;">形</span>, «&#160;corps.&#160;» Anciennement ces deux mots se prenaient l’un pour l’autre. Cette lecture est également conseillée par le commentateur C. <i>Ibidem&#160;:</i> «&#160;<i>Sicut cibi reliquiœ</i> (<i>chi-tchi-iu</i> <span class="lang-zh" style="font-size: 150%;">食之餘</span>), sicut corporis <i>bronchocele</i> (<i>hing-tchi-tchouï</i> <span class="lang-zh" style="font-size: 150%;">形之贅</span>).&#160;» Ce sont là des choses pour lesquelles les hommes ont tous du dégoût (<i>cibi </i>reliquiœ<i> et </i>bronchocele<i> sunt res quas homines simul oderunt). </i></p><br><p><a href="#lien_24-8"><span id="ancrage_24-8">(8)</span></a> Dans la seconde phrase du chapitre <span class="sc">iv</span>, <i>Ho-chang-kong</i> rend le mot <i>hoe</i> <span class="lang-zh" style="font-size: 150%;">或</span> (<i>vulgo</i> peut-être, quelqu’un) par «&#160;constamment.&#160;»</p><br><p><a href="#lien_24-9"><span id="ancrage_24-9">(9)</span></a> C&#160;: L’homme qui possède le Tao persévère dans l’humilité&#160;;nécessairement il ne s’attache pas à (il ne suit pas) cette conduite que blâme <i>Lao-tseu</i>. </p><br></td></tr>
+<tr><td nowrap>CONRADIN VON LAUER</td><td>1990</td><td class="td3"><b>CHAPITRE 24</b><br><br>Qui marche sur la pointe des pieds<br>perd l'équilibre<br>et tombe à terre.<br>Qui avance à grand pas<br>s'essouffle vite<br>et est dépassé.<br>Celui qui se met en vue<br>reste dans l'ombre<br>et personne ne voit son mérite.<br>L'homme imbu de lui-même<br>perd l'estime d'autrui.<br>Qui se glorifie n'est pas considéré.<br>Qui se gonfle d'orgueil<br>ne peut pas progresser.<br>Qui vit ainsi<br>est malade de l'âme.<br>Ces laideurs ne salissent pas<br>celui qui suit la voie. <br><br><br></td></tr>
+<tr><td nowrap>MA KOU</td><td>1984</td><td class="td3"><b>CHAPITRE 24</b><br><br>Celui qui se dresse sur la pointe des pieds<br>Perd vite l’équilibre.<br>Qui marche à pas démesurés<br>Ne tiendra pas la distance.<br><br>Qui veut briller n’éclaire pas<br>Qui se fait valoir n’impose pas<br>Qui se glorifie n’a point de mérites<br>Qui s’exalte lui-même ne sera pas reconnu.<br><br>Pour la voie du Tao ce sont là<br>Excès de nourriture et excroissances inutiles<br>Pratiques détestables à tous.<br><br>Celui qui suit la voie<br>Les écarte.<br><br></td></tr>
+<tr><td nowrap>ALBERT DE POUVOURVILLE</td><td>1999</td><td class="td3"><b>CHAPITRE 24</b><br><br>Celui qui se dresse sur la pointe des pieds ne peut se tenir debout. Celui qui étend les jambes ne peut marcher. Celui qui se met en vue reste obscur; celui qui est satisfait de lui n'est pas estimé; celui qui se glorifie est sans mérite; celui qui est orgueilleux cesse de croître. Par rapport au Tao, ces façons d'agir sont comme des vomissures et des tumeurs qui répugnent aux êtres.<br>C'est pourquoi celui qui a le Tao ne suit pas cette voie.<br></td></tr>
+<tr><td nowrap>LEON WIEGER</td><td>1913</td><td class="td3"><b>CHAPITRE 24</b><br><br>A force de se dresser sur la pointe des pieds, on perd son équilibre. A vouloir faire de trop grandes enjambées, on n’avance pas. A se montrer, on perd sa réputation. A s’imposer, on perd son influence. A se vanter, on se déconsidère. A se pousser, on cesse de croître.<br>A la lumière du Principe, toutes ces manières d’agir sont odieuses, dégoûtantes. Car elles sont excès, superfétation ; ce qu’une indigestion est à l’estomac, ce qu’une tumeur est au corps. Quiconque a des principes (conformes au Principe), ne fait pas ainsi.<blockquote><span class="KapKom">Ce chapitre est la suite des deux précédents. Le sens est clair. Les commentateurs s’accordent. Excès sur la simplicité naturelle.</span></blockquote></td></tr>
+<tr><td nowrap>OLIVIER NYSSEN</td><td>2022</td><td class="td3"><b>CHAPITRE 24</b><br><br><p>Qui se tient sur la pointe des pieds ne se tient pas debout.</p><p>Qui fait de grandes enjambées ne marche pas.</p><p>Qui s'exhibe ne voit pas clair.</p><p>Qui se donne raison ne se révèle pas.</p><p>Qui se scinde¹ soi-même est sans mérite.</p><p>Qui s'apitoie sur soi-même n'est pas durable.</p><p>Eux aussi se tiennent sur la voie,</p><p>ils disent que marcher sans nécessité est un repas superflu.</p><p>Ils sont peut-être de mauvais êtres,</p><p>ainsi ils ne s'entendent pas avec celui qui est sur la voie.</p><p>1. voir chapitre 28, dernier paragraphe.</p></td></tr>
+<tr><td nowrap>JAN DUYVENDAK</td><td>1949</td><td class="td3"><p><b>CHAPITRE 24</b></p><br><p>Sur la pointe des pieds, on ne se tient pas debout.</p><p>Avec les jambes écartées, on ne marche pas.</p><p>En s’exhibant, on ne brille pas.</p><p>En s’affirmant, on ne se manifeste pas.</p><p>En se vantant, on ne réussit pas.</p><p>En se targuant, on ne devient pas le chef.</p><p>D’une telle attitude à l’égard de la Voie, on peut dire : « Une</p><p>nourriture surabondante et des actions répétées jusqu’à</p><p>l’écoeurement répugnent, sans doute, à (tous) les êtres. »</p><p>C’est pourquoi celui qui possède la Voie ne s’en occupe</p><p>pas.</p><p>***</p><p>Pour la pensée, comparer le ch. XXII. Tout excès est nuisible ; le sage</p><p>est donc humble et discret.</p><p>L’expression entre guillemets a donné lieu à de nombreuses explications</p><p>et corrections textuelles. Je m’en tiens à la version habituelle</p><p>qui, me semble t il, donne un sens convenable. L’expression « répété</p><p>jusqu’à l’écoeurement » se rencontre souvent avec une idée comme «</p><p>parler » ; avec l’idée d’ « agir », on ne la retrouve pas ailleurs. Par ana</p><p>logie, pourtant, on peut très bien comprendre ce terme ici, surtout si</p><p>l’on se rappelle les actes rituels. Le point de comparaison est la trop</p><p>grande emphase dans les attitudes décrites.</p><p>Les phrases : « répugnent sans doute à (tous) les êtres. C’est pourquoi</p><p>celui qui possède la Voie ne s’en occupe pas » se retrouvent dans</p><p>XXXI ; voir mes remarques dans les notes de XXXI.</p></td></tr>
+</tbody></table>
+<br>
+</body>
+
+<script>
+
+
+show	= 0;
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+	e = e || window.event;
+	
+	if (e.keyCode == '27') 
+	{
+		alltrs = document.getElementById('textarea_trs').value;
+		document.getElementById('show').style.display = "none";
+	}
+}
+
+
+</script>
+
+</html>
