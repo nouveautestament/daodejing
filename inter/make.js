@@ -392,7 +392,10 @@ for (line = 0 ; line != dao_ch.length ; line++)
 	data	+= '<p><a target="_blank" href="https://www.tao-te-king.org/'+chap+'.htm"> https://www.tao-te-king.org/'+chap+'.htm</a></p>\n';
 	data	+= '<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC'+chap+'.pdf">http://www.daoisopen.com/downloads/CC'+chap+'.pdf</a></p>\n';
 	data	+= '<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>\n';
-	data	+= '<p><a target="_blank" href="https://laozirecited.com/#'+chap+'">https://laozirecited.com/#'+chap+'</a></p>\n	';
+	data	+= '<p><a target="_blank" href="https://laozirecited.com/#'+chap+'">https://laozirecited.com/#'+chap+'</a></p>\n';
+	data	+= '<p><a href="../index.html">https://nouveautestament.github.io/DAODEJING/index.html</a></p>\n';
+	data	+= '<p><a target="_blank" href="https://github.com/nouveautestament/DAODEJING">https://github.com/nouveautestament/DAODEJING</a></p>\n';
+	
 
 	
 	data +=`
@@ -507,7 +510,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 			}
 			
 			
-			console.log(caracteres[caractere])
+			//console.log(caracteres[caractere])
 			//console.log(caracteres[caractere] +' >> '+ traduction+ ' || '+ traduction_a + ' || ' + traduction_b )
 			//console.log(subinfo1 + ' || ' + subinfo2 )
 			
