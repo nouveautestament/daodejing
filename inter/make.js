@@ -124,6 +124,10 @@ intro =
 				color:#0054ff;
 			}
 			
+			.pa {
+				font-size:20px;
+			}
+			
 			.trs {
 				line-height:1.5em;
 				font-size:16px;
@@ -370,6 +374,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 	chap		= line+1;
 	chap_00 = chap.toString().padStart(2, '0')
 	data		= '';
+	ch_pi		= '';
 	dao_inter	= '';
 	textefr		= [];
 	
@@ -462,6 +467,9 @@ for (line = 0 ; line != dao_ch.length ; line++)
 					`<span class="subinfo2">&emsp;</span>`+
 					`<span class="lemme">&emsp;</span>`+
 					`</div>`;
+					
+					ch_pi = ch_pi.slice(0, -1);
+					ch_pi += caracteres[caractere]+ ' ';
 			
 			
 		}
@@ -499,6 +507,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 			}
 			
 			
+			console.log(caracteres[caractere])
 			//console.log(caracteres[caractere] +' >> '+ traduction+ ' || '+ traduction_a + ' || ' + traduction_b )
 			//console.log(subinfo1 + ' || ' + subinfo2 )
 			
@@ -526,6 +535,9 @@ for (line = 0 ; line != dao_ch.length ; line++)
 					`</div>`;
 			
 			
+					ch_pi += caracteres[caractere]+'<span class="pa">'+pinyin_accent+'</span> ';
+
+			
 			
 		}
 		
@@ -544,7 +556,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 			data += 
 			'<tr><td nowrap>DAODEJING</td>'+
 			'<td>2024</td>'+
-			'<td style="font-size:38px;padding-left:7px;font-family:fangsong;">'+dao_ch[line]+'</td></tr>'
+			'<td style="font-size:35px;padding-left:7px;font-family:simsun;">'+ch_pi+'</td></tr>'
 			
 	
 	
