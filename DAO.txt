@@ -2,6 +2,9 @@
 
 道可道，非常道。
 Voie qui peut être Voie {voyagée, racontée}，non éternel Voie。
+{Une voie qui peut être voyagée n'est pas La Voie éternelle.
+Une voie qui peut-être voyagée (est) une voie non constante.}
+
 
 名可名，非常名。
 Nom qui peut être Nom {nommé}，non éternel Nom。
