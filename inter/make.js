@@ -37,6 +37,11 @@ intro =
 				text-decoration:none;
 			}
 
+			p a {
+				font-size:1.5rem;
+			}
+			
+			
 			a:hover {
 				color:#ff006f;
 			}
