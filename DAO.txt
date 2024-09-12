@@ -1,13 +1,13 @@
 --1
 
 道可道，非常道。
-Voie qui peut être Voie {voyagée, racontée}，non éternel Voie。
-{Une voie qui peut être voyagée n'est pas La Voie éternelle.
-Une voie qui peut-être voyagée (est) une voie non constante.}
+Voie pouvant-être Voie {voyagée, racontée}，non éternel Voie。
+{Une voie qui peut être voyagée, (est) 非:opposée à La Voie éternelle.}
+{Une voie qui peut-être voyagée, (est) une 非常:in-constante voie.}
 
 
 名可名，非常名。
-Nom qui peut être Nom {nommé}，non éternel Nom。
+Nom pouvant-être Nom {nommé}，non éternel Nom。
 
 無名天地之始；
 Sans nom (c'est) de ciel (et) terre l'origine；
