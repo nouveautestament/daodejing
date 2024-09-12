@@ -401,14 +401,14 @@ for (line = 0 ; line != dao_ch.length ; line++)
 	link_ctext = 'https://ctext.org/dictionary.pl?if=en&id='+(11591+chap)
 
 	//INFO
-	data	+= '<p><a target="_blank" href="https://www.daodejing.org/'+chap+'.html"> https://www.daodejing.org/'+chap+'.html</a></p>\n';
-	data	+= '<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id='+(11591+chap)+'">https://ctext.org/dictionary.pl?if=en&id='+(11591+chap)+'</a></p>\n';
-	data	+= '<p><a target="_blank" href="https://www.tao-te-king.org/'+chap+'.htm"> https://www.tao-te-king.org/'+chap+'.htm</a></p>\n';
-	data	+= '<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC'+chap+'.pdf">http://www.daoisopen.com/downloads/CC'+chap+'.pdf</a></p>\n';
-	data	+= '<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">http://www.daoisopen.com/downloads/About the Charts.pdf</a></p>\n';
-	data	+= '<p><a target="_blank" href="https://laozirecited.com/#'+chap+'">https://laozirecited.com/#'+chap+'</a></p>\n';
-	data	+= '<p><a href="../index.html">https://nouveautestament.github.io/DAODEJING/index.html</a></p>\n';
-	data	+= '<p><a target="_blank" href="https://github.com/nouveautestament/DAODEJING">https://github.com/nouveautestament/DAODEJING</a></p>\n';
+	data	+= '<p><a target="_blank" href="https://www.daodejing.org/'+chap+'.html">daodejing.org/'+chap+'.html</a></p>\n';
+	data	+= '<p><a target="_blank" href="https://ctext.org/dictionary.pl?if=en&id='+(11591+chap)+'">ctext.org/dictionary.pl?if=en&id='+(11591+chap)+'</a></p>\n';
+	data	+= '<p><a target="_blank" href="https://www.tao-te-king.org/'+chap+'.htm">tao-te-king.org/'+chap+'.htm</a></p>\n';
+	data	+= '<p><a target="_blank" href="http://www.daoisopen.com/downloads/CC'+chap+'.pdf">daoisopen.com/downloads/CC'+chap+'.pdf</a></p>\n';
+	data	+= '<p><a target="_blank" href="http://www.daoisopen.com/downloads/About%20the%20Charts.pdf">daoisopen.com/downloads/About the Charts.pdf</a></p>\n';
+	data	+= '<p><a target="_blank" href="https://laozirecited.com/#'+chap+'">laozirecited.com/#'+chap+'</a></p>\n';
+	data	+= '<p><a href="../index.html">nouveautestament.github.io/DAODEJING/index.html</a></p>\n';
+	data	+= '<p><a target="_blank" href="https://github.com/nouveautestament/DAODEJING">github.com/nouveautestament/DAODEJING</a></p>\n';
 	
 
 	
