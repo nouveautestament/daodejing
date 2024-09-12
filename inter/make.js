@@ -138,9 +138,13 @@ intro =
 				font-family:simsun;
 			}
 			
+			.cp {
+				white-space:nowrap;
+			}
+			
 			.pa {
-				font-family: sans-serif;
-				font-size: 1.5rem;
+				font-family:sans-serif;
+				font-size:1.5rem;
 			}
 			
 			.trs {
@@ -152,7 +156,7 @@ intro =
 				outline:none;
 				box-sizing:border-box;
 				padding:10px;
-				width:98%;
+				width:100%;
 				height:180px;
 				display:block;
 			}
@@ -553,7 +557,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 					`</div>`;
 			
 			
-					ch_pi += caracteres[caractere]+'<span class="pa">'+pinyin_accent+'</span> ';
+					ch_pi += '<span class="cp">'+caracteres[caractere]+'<span class="pa">'+pinyin_accent+'</span></span> ';
 
 			
 			
