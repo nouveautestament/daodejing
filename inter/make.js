@@ -18,12 +18,14 @@ intro =
 			html {
 				margin:0;
 				padding:0;
+				font-size:62.5%;
 			}
 			
 			body {
 				margin:0;
 				padding:0;
 				font-family:sans-serif;
+				font-size:1.5rem;
 			}
 			
 			p {
@@ -70,13 +72,13 @@ intro =
 
 
 			.zh {
-				font-size:40px;
+				font-size:4rem;
 				display:block;
 				cursor:pointer;
 			}
 			
 			.zh:hover {
-				font-size: 40px;
+				font-size: 4rem;
 				display:block;
 				cursor: pointer;
 				color: #ff006f;
@@ -87,36 +89,36 @@ intro =
 			}
 			
 			.fr {
-				font-size:17px;
+				font-size:1.7rem;
 				display:block;
 			}
 
 			.info {
-				font-size:13px;
+				font-size:1.3rem;
 				color:#888888;
 				display:block;
 			}
 
 			.subinfo {
-				font-size:10px;
+				font-size:1rem;
 				color:#888888;
 				display:block;
 			}
 			
 			.subinfo1 {
-				font-size:12px;
+				font-size:1.2rem;
 				color:#888888;
 				display:block;
 			}
 			
 			.subinfo2 {
-				font-size:12px;
+				font-size:1.2rem;
 				color:#888888;
 				display:block;
 			}
 			
 			.lemme {
-				font-size:14px;
+				font-size:1.4rem;
 				display:block;
 			}
 			
@@ -124,13 +126,20 @@ intro =
 				color:#0054ff;
 			}
 			
+			
+			.ch1 {
+				font-size:3.8rem;
+				padding-left:7px;
+				font-family:simsun;
+			}
+			
 			.pa {
-				font-size:20px;
+				font-size:2rem;
 			}
 			
 			.trs {
 				line-height:1.5em;
-				font-size:16px;
+				font-size:1.6rem;
 				outline:none;
 				box-shadow:3px 3px 2px 0px #999999b3;
 			    border:none;
@@ -556,62 +565,54 @@ for (line = 0 ; line != dao_ch.length ; line++)
 		
 	}
 	
-			data += 
-			'<tr><td nowrap>DAODEJING</td>'+
-			'<td>2024</td>'+
-			'<td style="font-size:35px;padding-left:7px;font-family:simsun;">'+ch_pi+'</td></tr>'
+			data += '<tr>'+ 
+			//'<tr><td nowrap>DAODEJING</td>'+
+			//'<td>2024</td>'+
+			'<td class="ch1">'+ch_pi+'</td></tr>'
 			
 	
-	
-			data += `\n<tr><td class="td1"><a href="`+link_ctext+`" target="_blank">DAODEJING</a></td><td class="td2">2024</td><td>`+dao_inter+`</td></tr>`;
+			/*
+			<td class="td1">
+			<a href="`+link_ctext+`" target="_blank">DAODEJING</a></td>
+			<td class="td2">2024</td>
+			*/
+			data += `\n<tr><td>`+dao_inter+`</td></tr>`;
 			
 			
-			data += 
+			/*
+			'<td class="td1" nowrap>
+			<button onclick="addtrs(\''+chap+'\');this.style.background=\'#00eb00\'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td>
+			<td class="td2">2024</td>'
+			*/
+			data += '<tr>'+ 
 			'\n<tr>'+
-			'<td class="td1" nowrap><button onclick="addtrs(\''+chap+'\');this.style.background=\'#00eb00\'">DAODEJING</button> <span style="padding-left:1em;cursor:pointer;user-select:none;" onclick="lire()">LIRE</span></td>'+
-			'<td class="td2">2024</td>'+
 			'<td><textarea id="'+chap+'" class="trs" style="">'+textefr.join(' ').replace(/;/g," ?")+'</textarea></td></tr>'
 			
-			data += 
-			'\n<tr><td nowrap><a href="https://terebess.hu/english/tao/mitchell.html#Kap'+chap.toString().padStart(2, '0')+'" target="_blank">STEPHEN MITCHELL TRADFR</a></td>'+
-			'<td>1988</td>'+
-			'<td class="td3">'+trad7[line]+'</td></tr>'
+			//<a href="https://terebess.hu/english/tao/mitchell.html#Kap'+chap.toString().padStart(2, '0')+'" target="_blank"></a>
+			data += '<tr>'+
+			'<td class="td3">STEPHEN MITCHELL TRADFR 1988 '+trad7[line]+'</td></tr>'
 	
-			data += 
-			'\n<tr><td nowrap><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_'+
-			chap.toString().padStart(2, '0')+'" target="_blank">JULIEN STANISLAS</a></td>'+
-			'<td>1842</td>'+
-			'<td class="td3">'+trad2[line]+'</td></tr>'
+			data += '<tr>'+
+			'<td class="td3"><a href="https://fr.wikisource.org/wiki/Tao_Te_King_(Stanislas_Julien)/Chapitre_'+
+			chap.toString().padStart(2, '0')+'" target="_blank">JULIEN STANISLAS</a> 1842 '+trad2[line]+'</td></tr>'
 			
-			data += 
-			'\n<tr><td nowrap>CONRADIN VON LAUER</td>'+
-			'<td>1990</td>'+
-			'<td class="td3">'+trad3[line]+'</td></tr>'
+			data += '<tr>'+
+			'<td class="td3">CONRADIN VON LAUER 1990 '+trad3[line]+'</td></tr>'
 			
-			data += 
-			'\n<tr><td nowrap>MA KOU</td>'+
-			'<td>1984</td>'+
-			'<td class="td3">'+trad4[line]+'</td></tr>'
+			data += '<tr>'+
+			'<td class="td3">MA KOU 1984 '+trad4[line]+'</td></tr>'
 			
-			data += 
-			'\n<tr><td nowrap>ALBERT DE POUVOURVILLE</td>'+
-			'<td>1999</td>'+
-			'<td class="td3">'+trad5[line]+'</td></tr>'
+			data += '<tr>'+
+			'<td class="td3">ALBERT DE POUVOURVILLE 1999 '+trad5[line]+'</td></tr>'
 			
-			data += 
-			'\n<tr><td nowrap>LEON WIEGER</td>'+
-			'<td>1913</td>'+
-			'<td class="td3">'+trad6[line]+'</td></tr>'
+			data += '<tr>'+
+			'<td class="td3">LEON WIEGER 1913 '+trad6[line]+'</td></tr>'
 	
-			data += 
-			'\n<tr><td nowrap>OLIVIER NYSSEN</td>'+
-			'<td>2022</td>'+
-			'<td class="td3">'+trad1[line]+'</td></tr>'
+			data += '<tr>'+
+			'<td class="td3">OLIVIER NYSSEN 2022 '+trad1[line]+'</td></tr>'
 			
-			data += 
-			'\n<tr><td nowrap>JAN DUYVENDAK</td>'+
-			'<td>1949</td>'+
-			'<td class="td3">'+trad8[line]+'</td></tr>'
+			data += '<tr>'+
+			'<td class="td3">JAN DUYVENDAK 1949 '+trad8[line]+'</td></tr>'
 	
 	fs.writeFileSync(chap+'.html',intros+data+end, 'utf8');
 	
