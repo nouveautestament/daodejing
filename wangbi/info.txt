@@ -1,0 +1,112 @@
+< 眾 nina chineseclassic tao_te_king
+> 衆 wagner ctext
+
+< 民 nina wagner tao_te_king chineseclassic
+>   ctext   
+
+< 智 nina tao_te_king chineseclassic
+> 知 ctext wagner
+
+< 邪 nina wagner tao_te_king chineseclassic_txt
+> 耶 ctext(+image) chineseclassic_web(+image)
+
+< 湍 nina
+> 揣 ctext wagner tao_te_king chineseclassic
+
+< 梲 nina chineseclassic
+> 銳 ctext wagner tao_te_king
+
+< 為 nina tao_te_king
+> 知 ctext wagner chineseclassic
+
+< 畋 nina tao_te_king chineseclassic
+> 田 ctext wagner chineseclassic
+
+< 其 nina wagner 
+>   ctext tao_te_king chineseclassic
+
+< 昏 nina wagner tao_te_king chineseclassic_web
+> 若 ctext chineseclassic_txt
+
+< 惟 nina wagner tao_te_king chineseclassic
+> 唯 ctext
+
+
+物唯恍唯惚。忽兮恍兮 ctext
+物惟恍惟惚 惚兮恍兮 nina tao_te_king chineseclassic
+物惟怳惟惚 怳兮惚兮 wagner
+
+
+< 处 nina (simplifiée)
+> 處 ctext wagner tao_te_king chineseclassic (traditionnelle)
+
+< 於 nina tao_te_king chineseclassic
+> 與 ctext wagner
+
+功成 遂 不 nina
+功成    不 ctext chineseclassic
+功成 而 不 wagner tao_te_king
+
+
+< 亦 nina wagner tao_te_king chineseclassic
+>   ctext
+
+
+< 而 nina wagner chineseclassic tao_te_king
+>   ctext
+
+
+CH52
+< 以知其子         復守其母 nina
+> 以知其子 既知其子 復守其母 ctext wagner tao_te_king chineseclassic
+
+
+< 謂 nina wagner ctext(+image)
+> 為 ctext(-image) tao_te_king chineseclassic(+image)
+
+
+
+< 者 nina wagner tao_te_king chineseclassic
+>   ctext
+
+
+可得而親亦 nina wagner
+可得而親 ctext tao_te_king chineseclassic
+
+可得而利亦 nina wagner
+可得而利，ctext tao_te_king chineseclassic
+
+可得而貴亦 nina wagner
+可得而貴，ctext tao_te_king chineseclassic
+
+
+< 法物滋 nina wagner
+> 法令滋 ctext tao_te_king chineseclassic
+
+
+< 百谷王 是以     欲  nina chineseclassic
+> 百谷王 是以 聖人 欲 ctext wagner tao_te_king
+
+
+< 夫代司殺者殺  是謂  代大匠 nina
+<   代司殺者殺  是   代大匠 wagner
+> 夫  司殺者    是    大匠 ctext
+< 夫代司殺者殺， 是謂 代大匠 chineseclassic
+< 夫代司殺者殺， 是謂 代大匠 tao_te_king
+
+
+< 代 nina wagner tao_te_king
+>   ctext chineseclassic
+
+
+< 人 nina chineseclassic
+> 民 ctext wagner tao_te_king
+
+
+
+
+
+
+
+
+DONE

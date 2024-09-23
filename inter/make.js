@@ -52,11 +52,11 @@ intro =
 
 			table td {
 				border:1px solid #000000;
-				padding-right:5px;
 			}
 			
-			td:nth-child(1), td:nth-child(2)  {
-				padding-left: 5px;
+			.compn td {
+				font-size:3rem;
+				text-align:center;
 			}
 			
 			.td3 {
@@ -415,6 +415,70 @@ for (line = 0 ; line != dao_ch.length ; line++)
 	data	+= '<p><a href="../index.html">nouveautestament.github.io/DAODEJING/index.html</a></p>\n';
 	data	+= '<p><a target="_blank" href="https://github.com/nouveautestament/DAODEJING">github.com/nouveautestament/DAODEJING</a></p>\n';
 	
+
+
+
+	//OLD INTER
+	all_old		= fs.readFileSync('../old/'+chap+'.txt',"utf8").split('\n');
+	if (all_old[all_old.length-1] == '') {all_old.pop()}
+	
+	
+	tr1 = '';tr2 = '';tr3 = '';tr4 = '';tr5 = '';tr6 = '';tr7 = '';
+	cco = 0;
+	for (xx = 0 ; xx != all_old.length ; xx++)
+	{
+		all_old[xx]	= all_old[xx].replace(/[a-z]+[0-9]+/g,'')
+		word_old	= all_old[xx].split(/\s+/)
+		cco++;
+		
+		if (cco == 12)
+		{
+			cco = 0;
+			tr1 +='<td>'+word_old[0]+'</td>'
+			tr2 +='<td>'+word_old[1]+'</td>'
+			tr3 +='<td>'+word_old[2]+'</td>'
+			tr4 +='<td>'+word_old[3]+'</td>'
+			tr5 +='<td>'+word_old[4]+'</td>'
+			tr6 +='<td>'+word_old[5]+'</td>'
+			tr7 +='<td>'+word_old[6]+'</td>'
+			
+			data	+=`<br><table class="compn"><tbody>`;
+			data	+=`<tr>`+tr1+`</tr>`
+			data	+=`<tr>`+tr2+`</tr>`
+			data	+=`<tr>`+tr3+`</tr>`
+			data	+=`<tr>`+tr4+`</tr>`
+			data	+=`<tr>`+tr5+`</tr>`
+			data	+=`<tr>`+tr6+`</tr>`
+			data	+=`<tr>`+tr7+`</tr>`
+			data	+=`</tbody></table>`;
+			
+			tr1 = '';tr2 = '';tr3 = '';tr4 = '';tr5 = '';tr6 = '';tr7 = '';
+			
+		}
+		else
+		{
+		
+			tr1 +='<td>'+word_old[0]+'</td>'
+			tr2 +='<td>'+word_old[1]+'</td>'
+			tr3 +='<td>'+word_old[2]+'</td>'
+			tr4 +='<td>'+word_old[3]+'</td>'
+			tr5 +='<td>'+word_old[4]+'</td>'
+			tr6 +='<td>'+word_old[5]+'</td>'
+			tr7 +='<td>'+word_old[6]+'</td>'
+		}
+		
+		
+		
+	}
+	data	+=`<br><br><table class="compn"><tbody>`;
+	data	+=`<tr>`+tr1+`</tr>`
+	data	+=`<tr>`+tr2+`</tr>`
+	data	+=`<tr>`+tr3+`</tr>`
+	data	+=`<tr>`+tr4+`</tr>`
+	data	+=`<tr>`+tr5+`</tr>`
+	data	+=`<tr>`+tr6+`</tr>`
+	data	+=`<tr>`+tr7+`</tr>`
+	data	+=`</tbody></table>`;
 
 	
 	data +=`
