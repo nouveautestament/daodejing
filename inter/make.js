@@ -55,7 +55,7 @@ intro =
 			}
 			
 			.compn td {
-				font-size:3rem;
+				font-size:2.5rem;
 				text-align:center;
 			}
 			
@@ -423,7 +423,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 	if (all_old[all_old.length-1] == '') {all_old.pop()}
 	
 	
-	tr1 = '';tr2 = '';tr3 = '';tr4 = '';tr5 = '';tr6 = '';tr7 = '';
+	tr1 = '';tr2 = '';tr3 = '';tr4 = '';tr5 = '';tr6 = '';tr7 = '';tr8 = '';
 	cco = 0;
 	for (xx = 0 ; xx != all_old.length ; xx++)
 	{
@@ -431,7 +431,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 		word_old	= all_old[xx].split(/\s+/)
 		cco++;
 		
-		if (cco == 12)
+		if (cco == 1000)
 		{
 			cco = 0;
 			tr1 +='<td>'+word_old[0]+'</td>'
@@ -452,7 +452,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 			data	+=`<tr>`+tr7+`</tr>`
 			data	+=`</tbody></table>`;
 			
-			tr1 = '';tr2 = '';tr3 = '';tr4 = '';tr5 = '';tr6 = '';tr7 = '';
+			tr1 = '';tr2 = '';tr3 = '';tr4 = '';tr5 = '';tr6 = '';tr7 = '';tr8 = '';
 			
 		}
 		else
@@ -465,6 +465,20 @@ for (line = 0 ; line != dao_ch.length ; line++)
 			tr5 +='<td>'+word_old[4]+'</td>'
 			tr6 +='<td>'+word_old[5]+'</td>'
 			tr7 +='<td>'+word_old[6]+'</td>'
+			
+			/*
+			totalElements = word_old.length;
+			counts = {};
+			word_old.forEach(char => {
+			counts[char] = (counts[char] || 0) + 1;
+			});
+			maxCount = Math.max(...Object.values(counts));
+			equalityPercentage = Math.round((maxCount / totalElements) * 100);
+			tr8 +=`<td>${equalityPercentage}%</td>`
+			*/
+
+			
+			
 		}
 		
 		
@@ -478,6 +492,7 @@ for (line = 0 ; line != dao_ch.length ; line++)
 	data	+=`<tr>`+tr5+`</tr>`
 	data	+=`<tr>`+tr6+`</tr>`
 	data	+=`<tr>`+tr7+`</tr>`
+	//data	+=`<tr>`+tr8+`</tr>`
 	data	+=`</tbody></table>`;
 
 	
