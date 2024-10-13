@@ -570,7 +570,14 @@ for (line = 0 ; line != dao_ch.length ; line++)
 					`</div>`;
 					
 					ch_pi = ch_pi.slice(0, -1);
-					ch_pi += caracteres[caractere]+ ' ';
+					if (caracteres[caractere] == "，")
+					{
+						ch_pi += caracteres[caractere]+ '';
+					}
+					else {
+						ch_pi += caracteres[caractere]+ ' ';
+					}
+					
 			
 			
 		}
